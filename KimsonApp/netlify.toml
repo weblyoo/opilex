@@ -1,0 +1,12 @@
+# Netlify config for KimsonApp **mobile app** (Expo web)
+# Build command and publish directory deploy the mobile app, not the admin panel.
+# For admin panel: in Netlify UI set Build command = "npm run build", Publish directory = "dist"
+
+[build]
+  command = "npm run build:mobile-web"
+  publish = "web-build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

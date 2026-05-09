@@ -1,0 +1,56 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // Helper function to check if user is admin
+    function isAdmin() {
+      return request.auth != null && 
+             firestore.exists(/databases/(default)/documents/admins/$(request.auth.uid));
+    }
+
+    // Slider images - only admins can upload, authenticated users can read
+    match /sliders/{sliderType}/{fileName} {
+      allow read: if request.auth != null;
+      allow write: if isAdmin() && 
+                      request.resource.size < 10 * 1024 * 1024 && // 10MB limit
+                      request.resource.contentType.matches('image/.*');
+    }
+
+    // Documents (PDFs) - only admins can upload; allow read by anyone (pricelist, catalog, etc.)
+    match /documents/{docType}/{fileName} {
+      allow read: if true;
+      allow write: if isAdmin() && 
+                      request.resource.size < 50 * 1024 * 1024 && // 50MB limit
+                      request.resource.contentType == 'application/pdf';
+    }
+
+    // Document Images (and PDFs under images path) - only admins can upload; allow read by anyone
+    match /documents/{docType}/images/{fileName} {
+      allow read: if true;
+      allow write: if isAdmin() && 
+                      (request.resource.size < 10 * 1024 * 1024) && // 10MB limit
+                      (request.resource.contentType.matches('image/.*') || request.resource.contentType == 'application/pdf');
+    }
+
+    // Scheme Images - only admins can upload; allow read by anyone (for app display)
+    match /schemes/images/{fileName} {
+      allow read: if true;
+      allow write: if isAdmin() && 
+                      request.resource.size < 10 * 1024 * 1024 && // 10MB limit
+                      request.resource.contentType.matches('image/.*');
+    }
+
+    // Scheme-specific images (by scheme ID)
+    match /schemes/{schemeId}/{fileName} {
+      allow read: if true;
+      allow write: if isAdmin() && 
+                      request.resource.size < 10 * 1024 * 1024 && // 10MB limit
+                      request.resource.contentType.matches('image/.*');
+    }
+
+    // Default: deny all other access
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

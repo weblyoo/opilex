@@ -1,0 +1,62 @@
+export default {
+  expo: {
+    name: "Opilex Admin",
+    slug: "opilex-admin-panel",
+    version: "1.0.0",
+    orientation: "portrait",
+    icon: "./assets/icon.png",
+    userInterfaceStyle: "light",
+    newArchEnabled: true,
+    splash: {
+      image: "./assets/icon.png",
+      resizeMode: "contain",
+      backgroundColor: "#E30613"
+    },
+    ios: {
+      supportsTablet: true,
+      bundleIdentifier: "com.opilex.cables.admin",
+      icon: "./assets/icon.png",
+      buildNumber: "1.0.0"
+    },
+    android: {
+      icon: "./assets/icon.png",
+      adaptiveIcon: {
+        foregroundImage: "./assets/icon.png",
+        backgroundColor: "#E30613",
+        monochromeImage: "./assets/icon.png"
+      },
+      package: "com.opilex.cables.admin",
+      permissions: [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      edgeToEdgeEnabled: true,
+      predictiveBackGestureEnabled: false,
+      versionCode: 1
+    },
+    web: {
+      favicon: "./assets/icon.png",
+      bundler: "metro"
+    },
+    plugins: [
+      [
+        "expo-camera",
+        {
+          cameraPermission: "Allow Opilex Admin to access your camera to scan QR codes."
+        }
+      ]
+    ],
+    extra: {
+      eas: {
+        projectId: "b5c11a5b-9371-4fb7-91b8-73fd20c9980d"
+      }
+    },
+    assetBundlePatterns: [
+      "**/*"
+    ],
+    updates: {
+      fallbackToCacheTimeout: 0
+    }
+  }
+};
+

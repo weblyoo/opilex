@@ -1,0 +1,52 @@
+✅ YOUR SHA CERTIFICATE FINGERPRINTS
+====================================
+
+📱 These are the fingerprints for your debug keystore:
+
+SHA-1 Fingerprint:
+5E:8F:16:06:2E:A3:CD:2C:4A:0D:54:78:76:BA:A6:F3:8C:AB:F6:25
+
+SHA-256 Fingerprint:
+FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C
+
+====================================
+📋 HOW TO ADD THESE TO FIREBASE:
+====================================
+
+1. Open Firebase Console:
+   https://console.firebase.google.com/project/kimson-3373e/settings/general
+
+2. Scroll to "Your apps" section
+
+3. Click on your Android app (com.kimson.wireauth)
+   - If you don't see it, click "Add app" → Android → 
+     Package name: com.kimson.wireauth
+
+4. Scroll to "SHA certificate fingerprints" section
+
+5. Click "Add fingerprint" button
+
+6. Paste the SHA-1 fingerprint:
+   5E:8F:16:06:2E:A3:CD:2C:4A:0D:54:78:76:BA:A6:F3:8C:AB:F6:25
+   Click "Save"
+
+7. Click "Add fingerprint" again
+
+8. Paste the SHA-256 fingerprint:
+   FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C
+   Click "Save"
+
+9. Wait 5 minutes, then rebuild your APK:
+   npx expo run:android
+
+10. Reinstall APK and test OTP!
+
+====================================
+
+⚠️  IMPORTANT NOTES:
+- These are DEBUG fingerprints (for development builds)
+- If you build a RELEASE APK, you'll need RELEASE keystore fingerprints
+- Changes take 5-10 minutes to propagate in Firebase
+
+====================================
+

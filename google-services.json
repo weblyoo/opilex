@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "403960941472",
+    "project_id": "opilex-2a79f",
+    "storage_bucket": "opilex-2a79f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403960941472:android:94ec248999123ed81432c5",
+        "android_client_info": {
+          "package_name": "com.opilex.cables"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTSyv3CXpFa5Serc1nHpJ-tehKPKiu_pY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

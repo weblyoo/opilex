@@ -1,0 +1,37 @@
+# Build kimson-admin-panel and deploy to Netlify on push to main
+name: Build and Deploy Admin Panel to Netlify
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: kimson-admin-panel/package-lock.json
+
+      - name: Install and Build
+        working-directory: kimson-admin-panel
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy to Netlify
+        uses: nwtgck/netlify-action@v4.0
+        with:
+          publish-dir: 'kimson-admin-panel/dist'
+          production-branch: main
+          production-deploy: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

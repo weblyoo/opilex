@@ -1,0 +1,122 @@
+========================================
+FINAL EMAIL TO SANDBOX TEAM
+Copy and send this email
+========================================
+
+TO: support@sandbox.co.in
+SUBJECT: OKYC Endpoint - Request for Correct Request Body Format
+
+----------------------------------------
+
+Hi Sandbox Team,
+
+Thank you for your previous feedback. We've successfully applied all three fixes:
+
+✅ 1. Removed "Bearer" prefix from Authorization header
+✅ 2. Using OKYC endpoint: POST /kyc/aadhaar/okyc/otp
+✅ 3. Using LIVE API key: key_live_bdc866212c0e40c78fcf4f41acd45bb1
+
+**Current Status:**
+- Authentication works perfectly (200 OK, access token received)
+- OKYC endpoint returns: 400 "Invalid request body"
+
+**What We've Tested:**
+
+We tested multiple request body formats, all return "Invalid request body":
+
+Format 1:
+```json
+{
+  "aadhaar_number": "123456789012",
+  "consent": true
+}
+```
+Result: 400 - Invalid request body
+
+Format 2:
+```json
+{
+  "aadhaarNumber": "123456789012",
+  "consent": true
+}
+```
+Result: 400 - Invalid request body
+
+Format 3:
+```json
+{
+  "id_number": "123456789012",
+  "consent": "Y"
+}
+```
+Result: 400 - Invalid request body
+
+Format 4 (minimal):
+```json
+{
+  "aadhaar_number": "123456789012"
+}
+```
+Result: 400 - Invalid request body
+
+**Request:**
+
+Could you please provide:
+1. The EXACT request body format for `/kyc/aadhaar/okyc/otp`
+2. A working code example (cURL or Node.js/JavaScript)
+3. Documentation link with request/response examples
+
+**What works:**
+```bash
+curl -X POST https://api.sandbox.co.in/authenticate \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: key_live_bdc866212c0e40c78fcf4f41acd45bb1" \
+  -H "x-api-secret: secret_live_943291b891064242852c18425341a379"
+```
+Response: 200 OK with access token ✅
+
+**What doesn't work:**
+```bash
+curl -X POST https://api.sandbox.co.in/kyc/aadhaar/okyc/otp \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: key_live_bdc866212c0e40c78fcf4f41acd45bb1" \
+  -H "x-api-secret: secret_live_943291b891064242852c18425341a379" \
+  -H "Authorization: [access_token]" \
+  -H "x-api-version: 2.0" \
+  -d '{"aadhaar_number": "123456789012", "consent": true}'
+```
+Response: 400 "Invalid request body" ❌
+
+**Question:**
+What is the correct request body structure for OKYC OTP generation?
+
+A working example would be extremely helpful for quick integration.
+
+Thank you for your support!
+
+Best regards,
+[Your Name]
+[Your Email]
+[Your Company]
+
+========================================
+ALTERNATIVE - SHORTER VERSION
+========================================
+
+Hi Sandbox Team,
+
+Applied all fixes. Now getting "400 Invalid request body" on OKYC endpoint.
+
+Endpoint: POST /kyc/aadhaar/okyc/otp
+API Key: key_live_bdc866212c0e40c78fcf4f41acd45bb1
+
+Tested multiple request body formats - all fail with "Invalid request body".
+
+Could you provide:
+- Correct request body format/structure
+- Working cURL example
+
+Thanks!
+[Your Name]
+
+========================================

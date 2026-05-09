@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Kimson",
+    "slug": "kimson-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F5F5F5"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kimson.wireauth",
+      "icon": "./assets/icon.png"
+    },
+    "android": {
+      "icon": "./assets/icon.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#F5F5F5"
+      },
+      "package": "com.kimson.wireauth",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/icon.png",
+      "icon": "./assets/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Kimson app to access your camera to scan QR codes."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b5c11a5b-9371-4fb7-91b8-73fd20c9980d"
+      }
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

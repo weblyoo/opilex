@@ -1,0 +1,176 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && 
+             exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    function canClaimLegacyUser(oldUid) {
+      return isSignedIn() &&
+             request.auth.token.phone_number is string &&
+             exists(/databases/$(database)/documents/legacyClaims/$(request.auth.token.phone_number)) &&
+             get(/databases/$(database)/documents/legacyClaims/$(request.auth.token.phone_number)).data.oldUid == oldUid &&
+             get(/databases/$(database)/documents/legacyClaims/$(request.auth.token.phone_number)).data.claimed != true &&
+             get(/databases/$(database)/documents/legacyClaims/$(request.auth.token.phone_number)).data.claimedBy == null;
+    }
+
+    function legacyUserIdRewriteOnly() {
+      return request.resource.data.userId == request.auth.uid &&
+             request.resource.data.diff(resource.data).changedKeys().hasOnly([
+               'userId',
+               'legacyUid',
+               'legacyClaimedAt'
+             ]);
+    }
+
+    match /admins/{adminId} {
+      allow read, write: if isAdmin();
+    }
+
+    match /legacyClaims/{phoneNumber} {
+      allow read: if isAdmin() || (isSignedIn() && request.auth.token.phone_number == phoneNumber);
+      allow create, delete: if isAdmin();
+      allow update: if isAdmin() || (
+        isSignedIn() &&
+        request.auth.token.phone_number == phoneNumber &&
+        resource.data.claimed != true &&
+        request.resource.data.claimed == true &&
+        request.resource.data.claimedBy == request.auth.uid &&
+        request.resource.data.diff(resource.data).changedKeys().hasOnly([
+          'claimed',
+          'claimedBy',
+          'claimedAt',
+          'updatedRecords',
+          'skippedReason'
+        ])
+      );
+    }
+
+    match /users/{userId} {
+      allow read: if isSignedIn() && (request.auth.uid == userId || isAdmin() || canClaimLegacyUser(userId));
+      allow write: if isSignedIn() && (request.auth.uid == userId || isAdmin());
+    }
+    
+    match /wireAuthentications/{authId} {
+      allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid;
+      allow read: if isSignedIn() && 
+                       (resource.data.userId == request.auth.uid || isAdmin() || canClaimLegacyUser(resource.data.userId));
+      allow update: if isAdmin() || (canClaimLegacyUser(resource.data.userId) && legacyUserIdRewriteOnly());
+      allow delete: if isAdmin();
+    }
+    
+    match /rewards/{rewardId} {
+      allow read: if isSignedIn() && 
+                       (resource.data.userId == request.auth.uid || isAdmin() || canClaimLegacyUser(resource.data.userId));
+      allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid;
+      allow update: if isAdmin() || (canClaimLegacyUser(resource.data.userId) && legacyUserIdRewriteOnly());
+      allow delete: if isAdmin();
+    }
+    
+    match /transactions/{transactionId} {
+      allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid;
+      allow read: if isSignedIn() && 
+                       (resource.data.userId == request.auth.uid || isAdmin() || canClaimLegacyUser(resource.data.userId));
+      allow update: if isAdmin() || (canClaimLegacyUser(resource.data.userId) && legacyUserIdRewriteOnly());
+      allow delete: if isAdmin();
+    }
+    
+    match /gst_verifications/{userId} {
+      allow create, update: if isSignedIn() && request.auth.uid == userId;
+      allow read: if isSignedIn() && (request.auth.uid == userId || isAdmin());
+    }
+    
+    match /kyc_verifications/{userId} {
+      allow create, update: if isSignedIn() && request.auth.uid == userId;
+      allow read: if isSignedIn() && (request.auth.uid == userId || isAdmin());
+    }
+    
+    match /bankAccounts/{accountId} {
+      allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid;
+      allow read: if isSignedIn() && 
+                       (resource.data.userId == request.auth.uid || isAdmin() || canClaimLegacyUser(resource.data.userId));
+      allow update: if isAdmin() ||
+                         (resource.data.userId == request.auth.uid) ||
+                         (canClaimLegacyUser(resource.data.userId) && legacyUserIdRewriteOnly());
+      allow delete: if isSignedIn() && (resource.data.userId == request.auth.uid || isAdmin());
+    }
+    
+    match /rewardQRCodes/{qrId} {
+      allow read: if isSignedIn();
+      allow create: if isAdmin();
+      allow update: if isAdmin() || (
+        isSignedIn() &&
+        (resource.data.used == false || resource.data.get('used', false) == false) &&
+        request.resource.data.used == true &&
+        request.resource.data.usedBy == request.auth.uid &&
+        request.resource.data.diff(resource.data).changedKeys().hasOnly([
+          'used',
+          'usedBy',
+          'usedAt'
+        ])
+      ) || (
+        canClaimLegacyUser(resource.data.usedBy) &&
+        request.resource.data.usedBy == request.auth.uid &&
+        request.resource.data.diff(resource.data).changedKeys().hasOnly([
+          'usedBy',
+          'legacyUid',
+          'legacyClaimedAt'
+        ])
+      );
+      allow delete: if isAdmin();
+    }
+
+    match /products/{productId} {
+      allow read, write: if isAdmin();
+    }
+
+    match /schemes/{schemeId} {
+      allow read: if isSignedIn() &&
+                       (isAdmin() || (resource.data.isActive == true && resource.data.isPublished == true));
+      allow write: if isAdmin();
+    }
+
+    match /schemeJoins/{joinId} {
+      allow create: if isSignedIn() && request.auth.uid == request.resource.data.userId;
+      allow read: if isSignedIn() &&
+                       (resource.data.userId == request.auth.uid || isAdmin() || canClaimLegacyUser(resource.data.userId));
+      allow update: if isAdmin() || (canClaimLegacyUser(resource.data.userId) && legacyUserIdRewriteOnly());
+      allow delete: if isAdmin();
+    }
+
+    match /settings/{document=**} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    match /settings/documents/{kind}/{document=**} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    match /sliders/{sliderType}/{document=**} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    match /scratchRewards/{rewardId} {
+      allow create: if isAdmin();
+      allow read: if isSignedIn() &&
+                       (resource.data.userId == request.auth.uid || isAdmin() || canClaimLegacyUser(resource.data.userId));
+      allow update: if isAdmin() ||
+                         (resource.data.userId == request.auth.uid && resource.data.claimed == false) ||
+                         (canClaimLegacyUser(resource.data.userId) && legacyUserIdRewriteOnly());
+      allow delete: if isAdmin();
+    }
+    
+    match /test/{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

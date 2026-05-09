@@ -1,0 +1,51 @@
+/* App styles - Opilex Theme */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #111111;
+  color: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Custom scrollbar to match Opilex theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(227, 30, 36, 0.35);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(227, 30, 36, 0.55);
+}
+
+/* Input focus styles - Opilex Red */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #E31E24 !important;
+}
+
+/* Button hover transitions */
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Smooth transitions */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}

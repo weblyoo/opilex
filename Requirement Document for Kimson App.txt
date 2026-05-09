@@ -1,0 +1,209 @@
+Here’s the revised requirement document for the **Kimson App** incorporating elements and features inspired by the provided screenshots, while adhering to the requested black and white color scheme.
+
+---
+
+# **Requirement Document for Kimson App**
+
+### **Project Overview**
+
+The **Kimson App** will allow consumers, electricians, and retailers to authenticate Kimson wire purchases and earn rewards for buying original Kimson products. The app will be developed using **Expo** (React Native) and **Firebase** technologies, ensuring a smooth and scalable experience. The app will offer a user-friendly design in **black and white**, inspired by modern app layouts and features for easy navigation, seamless authentication, and effective rewards management.
+
+---
+
+### **Technologies**
+
+* **Frontend**: Expo (React Native)
+* **Backend**: Firebase
+
+---
+
+### **App Flow & Screens**
+
+#### **1. Splash Screen**
+
+* **Description**: The initial screen will display the Kimson logo with a smooth animation.
+* **Design**: Black background with the **Kimson** logo in white, transitioning to the next screen after 3 seconds.
+
+---
+
+#### **2. Language Selection Screen**
+
+* **Description**: Users will select their preferred language.
+* **Languages Offered**:
+
+  * English
+  * Hindi
+  * Marathi
+  * Gujarati
+* **UI Elements**:
+
+  * Black and white interface with buttons for language options.
+  * A **Next** button beneath the language options.
+  * Simple iconography for the selected language.
+
+---
+
+#### **3. Welcome Screen**
+
+* **Description**: A banner will be displayed welcoming users to the Kimson program with a short description of the benefits.
+* **UI Elements**:
+
+  * Black background with white text.
+  * **Banner** at the top with the text: *"An exclusive program to recognize your contribution as our valued partner."*
+  * **Next** button beneath the text.
+
+---
+
+#### **4. Login Screen**
+
+* **Description**: The user will log in using their mobile number.
+* **UI Elements**:
+
+  * **Phone number input** field (black background, white text).
+  * **OTP** (One-Time Password) verification for authentication (black/white theme).
+  * **Login** button beneath the phone number field.
+  * A clean, minimal design, similar to the login screen in the sample app.
+
+---
+
+#### **5. Registration Screen**
+
+* **Description**: Users will register by selecting their category: **Electrician** or **Retailer**.
+* **UI Elements**:
+
+  * **Two buttons** with icons for selecting **Register as Electrician** or **Register as Retailer**.
+  * Buttons styled in black and white for clarity.
+  * A **Next** button that transitions to KYC.
+
+---
+
+#### **6. KYC (Know Your Customer) Screen**
+
+* **Description**: The user will complete one-time KYC verification with their **Aadhar**.
+* **UI Elements**:
+
+  * **Aadhar number input** field.
+  * **OTP** verification to complete KYC.
+  * Clean, simple black and white design for this section.
+
+---
+
+#### **7. Dashboard Screen**
+
+* **Description**: After successful registration and KYC, users will access their personalized dashboard.
+* **UI Elements**:
+
+  * **Banner** at the top showcasing rewards, offers, or other relevant information.
+  * **Eight square buttons** arranged in 2 rows of 4 buttons for quick access to major features like wire authentication, rewards, profile, etc.
+
+    * Row 1: 4 buttons (black with white icons).
+    * Row 2: 4 buttons (black with white icons).
+  * **Small banner** under the first set of buttons for additional offers or updates.
+  * **Repeat of Eight Buttons** after the small banner for navigation.
+
+---
+
+### **Features & Functionalities**
+
+#### **1. Kimson Wire Authentication**
+
+* Users can authenticate their purchased Kimson wires by scanning a QR code or entering a unique code found on the packaging.
+* Once authenticated, users will receive rewards for purchasing original products.
+
+#### **2. Rewards System**
+
+* Users will earn points for every verified purchase.
+* Rewards can be in the form of **discounts, coupons, or cashbacks**.
+* The available balance in the **wallet** (based on points) will be displayed on the **Dashboard**.
+
+#### **3. Wallet**
+
+* Users can view available points and request transfers to their bank accounts.
+* Users can also track **transfer requests** and **history** of rewards and transactions.
+
+#### **4. User Profile**
+
+* Users can view and update their profile information:
+
+  * Name
+  * Phone number
+  * KYC status
+  * Preferred language
+
+#### **5. Notification System**
+
+* Users will receive notifications about:
+
+  * New rewards, offers, or discounts.
+  * Wire authentication status updates.
+  * KYC verification reminders.
+
+#### **6. Admin Panel (Firebase Console)**
+
+* Admins will have access to a backend where they can manage:
+
+  * User details (KYC, rewards, etc.).
+  * Wire authentication records.
+  * Notifications and promotions.
+
+---
+
+### **UI/UX Design Requirements**
+
+* **Color Scheme**: **Black and White** theme for a clean, professional, and minimal design.
+* **Modern and User-Friendly**: The app should have a clean, easy-to-use interface with intuitive navigation, inspired by the simplicity of the provided screenshots.
+* **Responsive**: Ensure that the app works well on all device sizes, maintaining consistency in design.
+* **Minimal Icons**: Use minimalistic icons for actions (as seen in the provided screenshots) and buttons, with a focus on user flow.
+
+---
+
+### **Backend (Firebase)**
+
+#### **1. Firebase Authentication**
+
+* Firebase will manage the user's authentication flow (Login, Registration, OTP, KYC).
+
+#### **2. Firebase Firestore**
+
+* Store user data (profile, authentication details, KYC status, language preferences, and rewards points).
+
+#### **3. Firebase Cloud Functions**
+
+* Handle wire authentication (via QR code scanning).
+* Trigger rewards and transaction notifications.
+
+#### **4. Firebase Push Notifications**
+
+* Send notifications related to new rewards, wire authentication reminders, and offers.
+
+---
+
+### **Third-Party Integrations**
+
+* **Aadhar API**: Integration for KYC verification (OTP-based authentication).
+* **SMS Gateway**: For OTP-based mobile number verification.
+
+---
+
+### **Security**
+
+* All user data, especially sensitive information like Aadhar details and phone numbers, will be encrypted.
+* The app will comply with **data privacy regulations** (such as **GDPR** if applicable).
+
+---
+
+### **Testing & Deployment**
+
+* **Unit Testing**: Test individual components of the app.
+* **Integration Testing**: Test interactions between different modules.
+* **User Acceptance Testing (UAT)**: Ensure the app meets user expectations.
+* **Deployment**: The app will be deployed on both **Google Play Store** and **Apple App Store**.
+
+---
+
+### **Conclusion**
+
+The **Kimson App** will be designed with a modern black and white theme, inspired by the sleek and minimalistic layout of the reference app. The app will provide users with an easy way to authenticate their Kimson wires and earn rewards. Key features include a streamlined registration process, KYC verification, rewards management, and a user-friendly dashboard. By leveraging **Expo** and **Firebase** technologies, the app will provide a seamless and secure experience for all users.
+
+---
+ 

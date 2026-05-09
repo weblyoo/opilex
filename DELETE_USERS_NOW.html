@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Users - Firebase</title>
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+        import { getFirestore, collection, query, where, getDocs, writeBatch, doc } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
+        import { getAuth, signInAnonymously } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js';
+
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
+            authDomain: "kimson-3373e.firebaseapp.com",
+            projectId: "kimson-3373e",
+            storageBucket: "kimson-3373e.firebasestorage.app",
+            messagingSenderId: "1002505057634",
+            appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
+            measurementId: "G-40Z3KKDR4Y"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const auth = getAuth(app);
+
+        // Phone numbers to delete
+        const phoneNumbersToDelete = [
+            '+918380843472',  // +91 83808 43472
+            '+919112005199',  // +91 91120 05199
+        ];
+
+        // Normalize phone number
+        function normalizePhoneNumber(phone) {
+            let normalized = phone.replace(/\s+/g, '').trim();
+            if (!normalized.startsWith('+91')) {
+                if (normalized.startsWith('91')) {
+                    normalized = '+' + normalized;
+                } else if (normalized.startsWith('0')) {
+                    normalized = '+91' + normalized.substring(1);
+                } else {
+                    normalized = '+91' + normalized;
+                }
+            }
+            return normalized;
+        }
+
+        // Delete user and all related data
+        async function deleteUserByPhoneNumber(phoneNumber) {
+            const normalizedPhone = normalizePhoneNumber(phoneNumber);
+            const logDiv = document.getElementById('log');
+            const addLog = (msg) => {
+                logDiv.innerHTML += '<div>' + msg + '</div>';
+                console.log(msg);
+            };
+            
+            addLog(`🔍 Searching for user with phone: ${normalizedPhone}`);
+            
+            try {
+                // Find user
+                const usersQuery = query(
+                    collection(db, 'users'),
+                    where('phoneNumber', '==', normalizedPhone)
+                );
+                
+                const userSnapshot = await getDocs(usersQuery);
+                
+                if (userSnapshot.empty) {
+                    addLog(`   ⚠️  No user found with phone: ${normalizedPhone}`);
+                    return { success: false, message: 'User not found' };
+                }
+                
+                const userDoc = userSnapshot.docs[0];
+                const userId = userDoc.id;
+                const userData = userDoc.data();
+                
+                addLog(`   ✅ Found user: ${userData.name || 'No name'} (ID: ${userId})`);
+                addLog(`      Phone: ${userData.phoneNumber}`);
+                addLog(`      Email: ${userData.email || 'No email'}`);
+                addLog(`      User Type: ${userData.userType || 'Not set'}`);
+                
+                // Delete all related data using batch
+                const batch = writeBatch(db);
+                let deleteCount = 0;
+                
+                // 1. Wire authentications
+                addLog(`   📋 Checking wireAuthentications...`);
+                const authsQuery = query(
+                    collection(db, 'wireAuthentications'),
+                    where('userId', '==', userId)
+                );
+                const authsSnapshot = await getDocs(authsQuery);
+                authsSnapshot.forEach((doc) => {
+                    batch.delete(doc.ref);
+                    deleteCount++;
+                });
+                addLog(`      Found ${authsSnapshot.size} wireAuthentications`);
+                
+                // 2. Rewards
+                addLog(`   📋 Checking rewards...`);
+                const rewardsQuery = query(
+                    collection(db, 'rewards'),
+                    where('userId', '==', userId)
+                );
+                const rewardsSnapshot = await getDocs(rewardsQuery);
+                rewardsSnapshot.forEach((doc) => {
+                    batch.delete(doc.ref);
+                    deleteCount++;
+                });
+                addLog(`      Found ${rewardsSnapshot.size} rewards`);
+                
+                // 3. Transactions
+                addLog(`   📋 Checking transactions...`);
+                const transactionsQuery = query(
+                    collection(db, 'transactions'),
+                    where('userId', '==', userId)
+                );
+                const transactionsSnapshot = await getDocs(transactionsQuery);
+                transactionsSnapshot.forEach((doc) => {
+                    batch.delete(doc.ref);
+                    deleteCount++;
+                });
+                addLog(`      Found ${transactionsSnapshot.size} transactions`);
+                
+                // 4. User document
+                addLog(`   📋 Deleting user document...`);
+                const userRef = doc(db, 'users', userId);
+                batch.delete(userRef);
+                deleteCount++;
+                
+                // Commit all deletions
+                if (deleteCount > 0) {
+                    await batch.commit();
+                    addLog(`   ✅ Successfully deleted ${deleteCount} documents`);
+                    return { 
+                        success: true, 
+                        userId, 
+                        deletedCount,
+                        message: `Successfully deleted user and ${deleteCount} related documents`
+                    };
+                } else {
+                    addLog(`   ⚠️  No documents found to delete`);
+                    return { success: false, message: 'No documents found' };
+                }
+            } catch (error) {
+                addLog(`   ❌ Error: ${error.message}`);
+                return { success: false, message: `Error: ${error.message}` };
+            }
+        }
+
+        // Main function
+        window.deleteUsersNow = async function() {
+            const logDiv = document.getElementById('log');
+            logDiv.innerHTML = '';
+            const addLog = (msg) => {
+                logDiv.innerHTML += '<div>' + msg + '</div>';
+                console.log(msg);
+            };
+            
+            addLog('🚀 Starting user deletion process...');
+            addLog(`📱 Phone numbers to delete: ${phoneNumbersToDelete.join(', ')}`);
+            addLog('='.repeat(60));
+            
+            // Try to authenticate (may fail due to security rules, but try anyway)
+            try {
+                await signInAnonymously(auth);
+                addLog('✅ Authenticated anonymously');
+            } catch (authError) {
+                addLog(`⚠️  Anonymous auth failed: ${authError.message}`);
+                addLog('   Continuing anyway (may fail if security rules require auth)...');
+            }
+            
+            const results = [];
+            
+            for (const phoneNumber of phoneNumbersToDelete) {
+                const result = await deleteUserByPhoneNumber(phoneNumber);
+                results.push({
+                    phoneNumber,
+                    ...result
+                });
+            }
+            
+            // Summary
+            addLog('\n' + '='.repeat(60));
+            addLog('📊 DELETION SUMMARY');
+            addLog('='.repeat(60));
+            
+            results.forEach((result, index) => {
+                addLog(`\n${index + 1}. Phone: ${result.phoneNumber}`);
+                addLog(`   Status: ${result.success ? '✅ SUCCESS' : '❌ FAILED'}`);
+                if (result.userId) {
+                    addLog(`   User ID: ${result.userId}`);
+                }
+                if (result.deletedCount) {
+                    addLog(`   Documents Deleted: ${result.deletedCount}`);
+                }
+                addLog(`   Message: ${result.message}`);
+            });
+            
+            const successCount = results.filter(r => r.success).length;
+            const failCount = results.filter(r => !r.success).length;
+            
+            addLog(`\n📈 Total: ${results.length} users processed`);
+            addLog(`   ✅ Successfully deleted: ${successCount}`);
+            addLog(`   ❌ Failed: ${failCount}`);
+            
+            if (successCount > 0) {
+                addLog('\n✅ Users deleted successfully! You can now register again.');
+                alert('✅ Users deleted successfully! Check log below for details.');
+            } else if (failCount > 0) {
+                addLog('\n❌ Deletion failed. Please use Firebase Console:');
+                addLog('   https://console.firebase.google.com/project/kimson-3373e/firestore');
+                alert('❌ Deletion failed due to permissions. Please use Firebase Console method.');
+            }
+            
+            return results;
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #dc3545;
+            margin-bottom: 10px;
+        }
+        .info {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+        button {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 20px 0;
+            width: 100%;
+        }
+        button:hover {
+            background: #c82333;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        #log {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 20px;
+            max-height: 500px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        #log div {
+            margin: 5px 0;
+        }
+        .warning {
+            color: #856404;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗑️ Delete Users</h1>
+        <div class="info">
+            <p><strong>⚠️ Important:</strong> This requires proper Firestore security rules.</p>
+            <p><strong>Phone numbers to delete:</strong></p>
+            <ul>
+                <li>+91 83808 43472</li>
+                <li>+91 91120 05199</li>
+            </ul>
+        </div>
+        <p>Click the button below to delete these users and all their related data.</p>
+        <button onclick="window.deleteUsersNow()" id="deleteBtn">Delete Users</button>
+        <div id="log"></div>
+        <div style="margin-top: 20px; padding: 15px; background: #e7f3ff; border-radius: 4px;">
+            <p><strong>What will be deleted:</strong></p>
+            <ul>
+                <li>User documents from Firestore</li>
+                <li>All wireAuthentications</li>
+                <li>All rewards</li>
+                <li>All transactions</li>
+            </ul>
+            <p style="margin-top: 10px;"><strong>Note:</strong> If deletion fails due to permissions, use Firebase Console instead.</p>
+        </div>
+    </div>
+</body>
+</html>

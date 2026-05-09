@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  /* Opilex Color Scheme - Black & White */
+  color-scheme: dark;
+  color: #FFFFFF;
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+  color: #FFFFFF;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+}
+
+/* Modern Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Modern Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-slideIn {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Glassmorphism Effect */
+.glass {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Modern Card Hover Effect */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+}
+
+/* Glow Effect */
+.glow {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+/* Ubuntu Font Variants */
+.font-ubuntu-light {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+.font-ubuntu-regular {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+.font-ubuntu-medium {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.font-ubuntu-bold {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+.font-ubuntu-black {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 900;
+}

@@ -1,0 +1,168 @@
+========================================
+EMAIL TO SANDBOX API SUPPORT
+========================================
+
+TO: support@sandbox.co.in
+SUBJECT: Request to Enable KYC/Aadhaar Verification API Permissions
+
+----------------------------------------
+
+Dear Sandbox API Support Team,
+
+I am developing a mobile application (Kimson Wire Authentication App) that requires KYC/Aadhaar verification functionality. I am currently unable to access the KYC endpoints due to insufficient permissions on my API keys.
+
+PROJECT DETAILS:
+- Application: Kimson Wire Authentication App (React Native/Expo)
+- Platform: Mobile (Android/iOS)
+- Use Case: Aadhaar-based KYC verification for user onboarding
+- Required APIs: Aadhaar Offline OTP and Verification endpoints
+
+CURRENT ISSUE:
+When attempting to use the KYC endpoints, I receive the following error:
+- Error Code: 403 Forbidden
+- Error Message: "Insufficient privilege"
+- Endpoints: /kyc/aadhaar/offline/otp and /kyc/aadhaar/offline/verify
+
+API KEYS REQUIRING PERMISSIONS:
+1. Test Key (for development/testing):
+   API Key: key_test_8d548e4b104b454bbcefe09d1fbbb4a7
+   
+2. Live Key (for production):
+   API Key: key_live_bdc866212c0e40c78fcf4f41acd45bb1
+
+REQUEST:
+Please enable the following permissions on both API keys:
+- KYC/Aadhaar Verification API access
+- Aadhaar Offline OTP generation
+- Aadhaar Offline OTP verification
+- Any other permissions required for Aadhaar-based KYC services
+
+ADDITIONAL INFORMATION:
+- I do not see any permission configuration options in my dashboard
+- My account subscription: [Please check my account status]
+- Wallet balance: [Please verify if credits are required]
+- Intended usage: Development and production deployment
+
+TECHNICAL DETAILS:
+- API Version: 2.0
+- Authentication: Using x-api-key and x-api-secret headers
+- Current Status: Successfully authenticating but KYC endpoints return 403
+
+Please let me know:
+1. If there are any additional steps I need to complete
+2. If my current subscription plan includes KYC services
+3. If there are any costs associated with enabling these permissions
+4. Estimated time for permission activation
+
+I am ready to provide any additional information or complete any verification steps required to enable these services.
+
+Thank you for your assistance. I look forward to your prompt response.
+
+Best regards,
+[Your Name]
+[Your Company Name - if applicable]
+[Your Contact Number]
+[Your Email Address]
+[Your Sandbox Account Email]
+
+----------------------------------------
+
+ALTERNATIVE - SHORTER VERSION:
+(If you prefer a brief email)
+
+----------------------------------------
+
+TO: support@sandbox.co.in
+SUBJECT: Enable KYC API Permissions
+
+Hello,
+
+I need KYC/Aadhaar verification API access enabled on my Sandbox API keys.
+
+My API Keys:
+- Test: key_test_8d548e4b104b454bbcefe09d1fbbb4a7
+- Live: key_live_bdc866212c0e40c78fcf4f41acd45bb1
+
+Current Issue:
+- Receiving "403 Insufficient privilege" on KYC endpoints
+- Endpoints: /kyc/aadhaar/offline/otp and /kyc/aadhaar/offline/verify
+- No permission options available in dashboard
+
+Request:
+Please enable KYC/Aadhaar Verification permissions on both keys.
+
+Use Case: Mobile app for Aadhaar-based KYC user verification
+
+Let me know if you need any additional information.
+
+Thanks,
+[Your Name]
+[Contact Email]
+
+========================================
+TIPS FOR SENDING:
+========================================
+
+1. SEND TO: support@sandbox.co.in
+
+2. USE YOUR ACCOUNT EMAIL: 
+   Send from the email address associated with your Sandbox account
+
+3. ATTACH SCREENSHOT (optional but helpful):
+   - Screenshot of the 403 error from test-sandbox-kyc.js
+   - Screenshot of your Sandbox dashboard showing API keys
+
+4. BE RESPONSIVE:
+   - Check email regularly for their response
+   - They may ask for additional verification
+   - Response time: Usually 1-3 business days
+
+5. FOLLOW UP:
+   - If no response in 3 days, send a polite follow-up
+   - Reference your original email/ticket number
+
+========================================
+WHAT TO EXPECT:
+========================================
+
+1. They may ask for:
+   - Business verification documents
+   - Use case details
+   - Intended user volume
+   - Compliance information
+
+2. They might:
+   - Enable permissions directly
+   - Ask you to upgrade subscription
+   - Request credit purchase for KYC API usage
+   - Provide additional setup instructions
+
+3. Timeline:
+   - Account verification: 1-3 days
+   - Permission activation: Few hours to 1 day
+   - Testing ready: 1-5 business days total
+
+========================================
+AFTER PERMISSIONS ARE ENABLED:
+========================================
+
+1. Wait 5-10 minutes for changes to propagate
+
+2. Test with command:
+   node test-sandbox-kyc.js
+
+3. If still failing:
+   - Clear AsyncStorage/cache
+   - Restart dev server
+   - Try again
+
+4. In your app (src/config/sandbox.ts):
+   - Keep USE_MOCK_KYC: false
+   - App will automatically use real API
+
+========================================
+
+Copy the email above, fill in your details, and send!
+Your app will work with mock KYC until permissions are enabled.
+
+========================================

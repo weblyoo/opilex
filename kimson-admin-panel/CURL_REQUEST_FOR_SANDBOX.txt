@@ -1,0 +1,172 @@
+========================================
+CURL REQUEST & JSON RESPONSE FOR SANDBOX SUPPORT
+========================================
+
+ISSUE: 403 Forbidden - "Insufficient privilege" on KYC endpoints
+API Keys: Test key (key_test_8d548e4b104b454bbcefe09d1fbbb4a7)
+
+========================================
+STEP 1: AUTHENTICATION (SUCCESS)
+========================================
+
+CURL REQUEST:
+```bash
+curl -X POST https://api.sandbox.co.in/authenticate \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: key_test_8d548e4b104b454bbcefe09d1fbbb4a7" \
+  -H "x-api-secret: secret_test_007adeaa9a304513a1e7a9de7ee475dc"
+```
+
+JSON RESPONSE (SUCCESS - 200 OK):
+```json
+{
+  "code": 200,
+  "timestamp": 1766039455977,
+  "access_token": "eyJ0eXAiOiJKV1MiLCJhbGciOiJSU0FTU0FfUFNTX1NIQV81MTIiLCJraWQiOiIwYzYwMGUzMS01MDAwLTRkYTItYjM3YS01ODdkYTA0ZTk4NTEifQ.eyJ3b3Jrc3BhY2VfaWQiOiI2ZjQ3NDBkMS03M2FlLTRlNDUtOTk2NS02N2Q2NjdhZDUzMTciLCJzdWIiOiJrZXlfdGVzdF84ZDU0OGU0YjEwNGI0NTRiYmNlZmUwOWQxZmJiYjRhNyIsImFwaV9rZXkiOiJrZXlfdGVzdF84ZDU0OGU0YjEwNGI0NTRiYmNlZmUwOWQxZmJiYjRhNyIsImF1ZCI6IkFQSSIsImludGVudCI6IkFDQ0VTU19UT0tFTiIsImlzcyI6InByb2QxLWFwaS5zYW5kYm94LmNvLmluIiwiaWF0IjoxNzY2MDM5NDU2LCJleHAiOjE3NjYxMjU4NTZ9.bP90RWQeUsk6BzxdB2HAKtFnZdVjlA34EQM1WHxJXMzTYOz7ZM4wfMhRSZ9ydZgVhNzOpipkBw02okaCnnsmj-XR6pU9OGKP1UUZuOdCoBet_afUhtl1UimwxGAweNUlP0n-Djlrrct79c5jJn4SbaqPXQqjqMLS4Nys3_sDeCw3Es-lVI6cYSHxN5L26ESqjnxU2ti8818_E_ean6s9Myk5Ua_Dnh_UX5422vplgX9TfN-qzxvl2Xe6ox-rQIU1ymoSNx_zxmcLklyfLUCVS2sZwat2PyWtCEkxC-aVyDeLgK8nBQ__jQeKrMloU2XmCHzHwlz8iL42aVkA3oRIOg",
+  "data": {
+    "access_token": "eyJ0eXAiOiJKV1MiLCJhbGciOiJSU0FTU0FfUFNTX1NIQV81MTIiLCJraWQiOiIwYzYwMGUzMS01MDAwLTRkYTItYjM3YS01ODdkYTA0ZTk4NTEifQ.eyJ3b3Jrc3BhY2VfaWQiOiI2ZjQ3NDBkMS03M2FlLTRlNDUtOTk2NS02N2Q2NjdhZDUzMTciLCJzdWIiOiJrZXlfdGVzdF84ZDU0OGU0YjEwNGI0NTRiYmNlZmUwOWQxZmJiYjRhNyIsImFwaV9rZXkiOiJrZXlfdGVzdF84ZDU0OGU0YjEwNGI0NTRiYmNlZmUwOWQxZmJiYjRhNyIsImF1ZCI6IkFQSSIsImludGVudCI6IkFDQ0VTU19UT0tFTiIsImlzcyI6InByb2QxLWFwaS5zYW5kYm94LmNvLmluIiwiaWF0IjoxNzY2MDM5NDU2LCJleHAiOjE3NjYxMjU4NTZ9.bP90RWQeUsk6BzxdB2HAKtFnZdVjlA34EQM1WHxJXMzTYOz7ZM4wfMhRSZ9ydZgVhNzOpipkBw02okaCnnsmj-XR6pU9OGKP1UUZuOdCoBet_afUhtl1UimwxGAweNUlP0n-Djlrrct79c5jJn4SbaqPXQqjqMLS4Nys3_sDeCw3Es-lVI6cYSHxN5L26ESqjnxU2ti8818_E_ean6s9Myk5Ua_Dnh_UX5422vplgX9TfN-qzxvl2Xe6ox-rQIU1ymoSNx_zxmcLklyfLUCVS2sZwat2PyWtCEkxC-aVyDeLgK8nBQ__jQeKrMloU2XmCHzHwlz8iL42aVkA3oRIOg"
+  },
+  "transaction_id": "43330cf4-8eb5-4be1-866f-45de05e49bdb"
+}
+```
+
+RESULT: ✅ Authentication successful - access_token received
+
+
+========================================
+STEP 2: KYC OTP GENERATION (FAILS - 403)
+========================================
+
+CURL REQUEST:
+```bash
+curl -X POST https://api.sandbox.co.in/kyc/aadhaar/offline/otp \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: key_test_8d548e4b104b454bbcefe09d1fbbb4a7" \
+  -H "x-api-secret: secret_test_007adeaa9a304513a1e7a9de7ee475dc" \
+  -H "Authorization: Bearer eyJ0eXAiOiJKV1MiLCJhbGciOiJSU0FTU0FfUFNTX1NIQV81MTIiLCJraWQiOiIwYzYwMGUzMS01MDAwLTRkYTItYjM3YS01ODdkYTA0ZTk4NTEifQ.eyJ3b3Jrc3BhY2VfaWQiOiI2ZjQ3NDBkMS03M2FlLTRlNDUtOTk2NS02N2Q2NjdhZDUzMTciLCJzdWIiOiJrZXlfdGVzdF84ZDU0OGU0YjEwNGI0NTRiYmNlZmUwOWQxZmJiYjRhNyIsImFwaV9rZXkiOiJrZXlfdGVzdF84ZDU0OGU0YjEwNGI0NTRiYmNlZmUwOWQxZmJiYjRhNyIsImF1ZCI6IkFQSSIsImludGVudCI6IkFDQ0VTU19UT0tFTiIsImlzcyI6InByb2QxLWFwaS5zYW5kYm94LmNvLmluIiwiaWF0IjoxNzY2MDM5NDU2LCJleHAiOjE3NjYxMjU4NTZ9.bP90RWQeUsk6BzxdB2HAKtFnZdVjlA34EQM1WHxJXMzTYOz7ZM4wfMhRSZ9ydZgVhNzOpipkBw02okaCnnsmj-XR6pU9OGKP1UUZuOdCoBet_afUhtl1UimwxGAweNUlP0n-Djlrrct79c5jJn4SbaqPXQqjqMLS4Nys3_sDeCw3Es-lVI6cYSHxN5L26ESqjnxU2ti8818_E_ean6s9Myk5Ua_Dnh_UX5422vplgX9TfN-qzxvl2Xe6ox-rQIU1ymoSNx_zxmcLklyfLUCVS2sZwat2PyWtCEkxC-aVyDeLgK8nBQ__jQeKrMloU2XmCHzHwlz8iL42aVkA3oRIOg" \
+  -H "x-api-version: 2.0" \
+  -d '{
+    "aadhaar_number": "123456789012",
+    "consent": true
+  }'
+```
+
+JSON RESPONSE (ERROR - 403 FORBIDDEN):
+```json
+{
+  "code": 403,
+  "message": "Insufficient privilege",
+  "timestamp": 1766039456421,
+  "transaction_id": "f0c1e6e7-a5e4-442e-8883-67453cf58757"
+}
+```
+
+RESPONSE HEADERS:
+```
+connection: keep-alive
+content-length: 154
+content-type: application/json
+date: Thu, 18 Dec 2025 06:30:56 GMT
+x-amz-apigw-id: VxXhIHilhcwEGrw=
+x-amzn-errortype: AccessDeniedException
+x-amzn-requestid: f0c1e6e7-a5e4-442e-8883-67453cf58757
+```
+
+RESULT: ❌ 403 Forbidden - "Insufficient privilege"
+
+
+========================================
+STEP 3: ALTERNATIVE ENDPOINT TESTED (ALSO FAILS)
+========================================
+
+CURL REQUEST (Online KYC endpoint):
+```bash
+curl -X POST https://api.sandbox.co.in/kyc/aadhaar/okyc/otp \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: key_test_8d548e4b104b454bbcefe09d1fbbb4a7" \
+  -H "x-api-secret: secret_test_007adeaa9a304513a1e7a9de7ee475dc" \
+  -H "Authorization: Bearer [access_token]" \
+  -H "x-api-version: 2.0" \
+  -d '{
+    "aadhaar_number": "123456789012",
+    "consent": true
+  }'
+```
+
+JSON RESPONSE (ERROR - 403 FORBIDDEN):
+```json
+{
+  "code": 403,
+  "message": "Insufficient privilege",
+  "timestamp": 1766039456592,
+  "transaction_id": "6bc09a50-2e2d-4ede-bc37-8e5799a70d40"
+}
+```
+
+RESULT: ❌ 403 Forbidden - Same error
+
+
+========================================
+SUMMARY FOR SANDBOX SUPPORT
+========================================
+
+PROBLEM:
+- Authentication works (200 OK, access_token received)
+- KYC endpoints return 403 "Insufficient privilege"
+- Both offline and online KYC endpoints fail
+- Error type: AccessDeniedException (from x-amzn-errortype header)
+
+API CREDENTIALS TESTED:
+- Test API Key: key_test_8d548e4b104b454bbcefe09d1fbbb4a7
+- Test API Secret: secret_test_007adeaa9a304513a1e7a9de7ee475dc
+
+ENDPOINTS TESTED (ALL FAILING WITH 403):
+1. /kyc/aadhaar/offline/otp
+2. /kyc/aadhaar/okyc/otp
+
+WHAT WORKS:
+✅ Authentication endpoint (/authenticate)
+✅ Access token generation
+✅ All request headers are correct
+
+WHAT DOESN'T WORK:
+❌ KYC/Aadhaar endpoints (403 Forbidden)
+
+REQUEST:
+Please enable KYC/Aadhaar Verification API permissions for:
+- Test Key: key_test_8d548e4b104b454bbcefe09d1fbbb4a7
+- Live Key: key_live_bdc866212c0e40c78fcf4f41acd45bb1
+
+DASHBOARD STATUS:
+- No permission configuration options visible
+- Cannot self-enable KYC permissions
+
+USE CASE:
+- Mobile app (React Native) for Aadhaar-based user KYC verification
+- Required for user onboarding and authentication
+
+========================================
+ADDITIONAL INFORMATION
+========================================
+
+Testing Environment:
+- Platform: Windows
+- Testing Method: Node.js script
+- API Version Header: 2.0 (as documented)
+- All headers match API documentation
+
+Error Details:
+- HTTP Status: 403 Forbidden
+- Error Type: AccessDeniedException (AWS API Gateway)
+- Message: "Insufficient privilege"
+- This indicates permission/authorization issue, not authentication
+
+Next Steps Needed:
+1. Enable KYC API permissions on test key
+2. Enable KYC API permissions on live key
+3. Confirm if subscription includes KYC services
+4. Confirm if credits/payment required for KYC API
+
+========================================
+
+Copy and paste the relevant sections above into your reply to Sandbox support.

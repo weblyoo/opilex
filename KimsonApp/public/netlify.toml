@@ -1,0 +1,5 @@
+# Applied when deploying the built dist folder (e.g. manual upload)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

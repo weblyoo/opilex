@@ -1,0 +1,118 @@
+========================================
+READY TO SEND - REPLY TO SANDBOX TEAM
+========================================
+
+Copy everything below and send as your email reply:
+
+========================================
+
+Hi,
+
+Thank you for your response. Here are the cURL requests and JSON responses showing the 403 error:
+
+---
+
+**STEP 1: AUTHENTICATION (Works Successfully)**
+
+cURL Request:
+```
+curl -X POST https://api.sandbox.co.in/authenticate \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: key_test_8d548e4b104b454bbcefe09d1fbbb4a7" \
+  -H "x-api-secret: secret_test_007adeaa9a304513a1e7a9de7ee475dc"
+```
+
+JSON Response (200 OK):
+```json
+{
+  "code": 200,
+  "timestamp": 1766039455977,
+  "access_token": "eyJ0eXAiOiJKV1MiLCJhbGciOiJSU0FTU0FfUFNTX1NIQV81MTIi...",
+  "transaction_id": "43330cf4-8eb5-4be1-866f-45de05e49bdb"
+}
+```
+✅ Authentication successful - access token received.
+
+---
+
+**STEP 2: KYC OTP GENERATION (Fails with 403)**
+
+cURL Request:
+```
+curl -X POST https://api.sandbox.co.in/kyc/aadhaar/offline/otp \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: key_test_8d548e4b104b454bbcefe09d1fbbb4a7" \
+  -H "x-api-secret: secret_test_007adeaa9a304513a1e7a9de7ee475dc" \
+  -H "Authorization: Bearer eyJ0eXAiOiJKV1MiLCJhbGciOiJSU0FTU0FfUFNTX1NIQV81MTIi..." \
+  -H "x-api-version: 2.0" \
+  -d '{
+    "aadhaar_number": "123456789012",
+    "consent": true
+  }'
+```
+
+JSON Response (403 Forbidden):
+```json
+{
+  "code": 403,
+  "message": "Insufficient privilege",
+  "timestamp": 1766039456421,
+  "transaction_id": "f0c1e6e7-a5e4-442e-8883-67453cf58757"
+}
+```
+
+Response Headers:
+```
+x-amzn-errortype: AccessDeniedException
+x-amzn-requestid: f0c1e6e7-a5e4-442e-8883-67453cf58757
+```
+❌ Error: 403 Forbidden - "Insufficient privilege"
+
+---
+
+**SUMMARY:**
+
+✅ Authentication endpoint works fine
+❌ KYC endpoints return 403 "Insufficient privilege"
+
+**API Keys:**
+- Test Key: key_test_8d548e4b104b454bbcefe09d1fbbb4a7
+- Live Key: key_live_bdc866212c0e40c78fcf4f41acd45bb1
+
+**Endpoints Tested (both fail with same 403 error):**
+- /kyc/aadhaar/offline/otp
+- /kyc/aadhaar/okyc/otp
+
+**Dashboard Status:**
+I don't see any permission configuration options in my dashboard to enable KYC/Aadhaar services.
+
+**Request:**
+Could you please:
+1. Enable KYC/Aadhaar Verification permissions on both API keys
+2. Confirm if my subscription includes KYC services
+3. Let me know if there are any additional costs or steps required
+
+**Use Case:**
+Mobile application (React Native) for Aadhaar-based user KYC verification during onboarding.
+
+Please let me know if you need any additional information.
+
+Thank you!
+
+[Your Name]
+[Your Email]
+
+========================================
+
+That's it! Copy everything between the lines and send it.
+
+The Sandbox team now has:
+✅ Working cURL for authentication
+✅ Failing cURL for KYC with exact 403 error
+✅ JSON responses for both
+✅ Your API keys
+✅ Clear request for permission enablement
+
+They should be able to enable the permissions now.
+
+========================================
