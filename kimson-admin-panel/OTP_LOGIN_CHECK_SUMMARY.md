@@ -1,7 +1,7 @@
 # 📱 OTP Login Check Summary - Firebase MCP Analysis
 
 **Date:** November 2024  
-**Project:** kimson-3373e  
+**Project:** opilex-3373e  
 **Analysis Method:** Firebase MCP
 
 ---
@@ -9,7 +9,7 @@
 ## 🔍 Current Status (From Firebase MCP)
 
 ### ✅ Firebase Project
-- **Project ID:** `kimson-3373e` ✅ ACTIVE
+- **Project ID:** `opilex-3373e` ✅ ACTIVE
 - **Project Number:** `1002505057634`
 - **Web App:** Configured (`1:1002505057634:web:fe5a29d0d3945c850ae83b`)
 
@@ -17,8 +17,8 @@
 
 **Current Auth Users:**
 - ✅ 2 Admin users (Email/Password):
-  - `superadmin@kimson.com` (UID: `0GpunGg9R7NaLpsXZNfwyz2KfZd2`)
-  - `admin@kimson.com` (UID: `LnDHQWN8uQaQQPKCBpCLvNXDWgu1`)
+  - `superadmin@opilex.com` (UID: `0GpunGg9R7NaLpsXZNfwyz2KfZd2`)
+  - `admin@opilex.com` (UID: `LnDHQWN8uQaQQPKCBpCLvNXDWgu1`)
 - ❌ **0 Phone Authentication Users**
 
 **Phone Authentication:**
@@ -79,7 +79,7 @@
 
 1. Go to Firebase Console:
    ```
-   https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+   https://console.firebase.google.com/project/opilex-3373e/authentication/providers
    ```
 
 2. Enable Phone Provider:
@@ -190,8 +190,8 @@ npm install @react-native-firebase/app @react-native-firebase/auth
 ## 📝 Quick Reference
 
 **Firebase Console:**
-- Authentication: https://console.firebase.google.com/project/kimson-3373e/authentication
-- Firestore: https://console.firebase.google.com/project/kimson-3373e/firestore
+- Authentication: https://console.firebase.google.com/project/opilex-3373e/authentication
+- Firestore: https://console.firebase.google.com/project/opilex-3373e/firestore
 
 **Current Mock Auth:**
 - File: `src/services/mockAuth.ts`
@@ -205,6 +205,6 @@ npm install @react-native-firebase/app @react-native-firebase/auth
 ---
 
 **Generated using:** Firebase MCP  
-**Project:** kimson-3373e  
+**Project:** opilex-3373e  
 **Status:** ⚠️ OTP Login NOT Ready for Production
 

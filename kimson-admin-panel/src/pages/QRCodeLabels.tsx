@@ -45,7 +45,7 @@ export const QRCodeLabels = () => {
 
   const getQRCodeData = (code: QRCodeItem): string => {
     return JSON.stringify({
-      type: 'kimson_reward',
+      type: 'opilex_reward',
       rewardId: code.rewardId,
       points: code.points,
       description: code.description,
@@ -119,7 +119,7 @@ export const QRCodeLabels = () => {
     const link = document.createElement('a');
     const url = URL.createObjectURL(blob);
     link.setAttribute('href', url);
-    link.setAttribute('download', `kimson-qr-codes-${userTypeDisplay.toLowerCase()}-${new Date().toISOString().split('T')[0]}.csv`);
+    link.setAttribute('download', `opilex-qr-codes-${userTypeDisplay.toLowerCase()}-${new Date().toISOString().split('T')[0]}.csv`);
     link.style.visibility = 'hidden';
     document.body.appendChild(link);
     link.click();

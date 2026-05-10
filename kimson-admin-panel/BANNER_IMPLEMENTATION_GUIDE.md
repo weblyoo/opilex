@@ -1,4 +1,4 @@
-# Banner Implementation Guide for Kimson App
+# Banner Implementation Guide for Opilex App
 
 ## ✅ Implementation Status: COMPLETE
 
@@ -40,11 +40,11 @@ Based on the attached wire/cable banners you provided, prepare images with these
   - `quality-assurance-banner.jpg`
 
 ### Step 2: Add Images to Project
-1. Place images in: `KimsonApp/assets/banners/`
+1. Place images in: `OpilexApp/assets/banners/`
 2. Update the banner data in `DashboardScreen.tsx`
 
 ### Step 3: Enable Images in Code
-Uncomment these lines in `KimsonApp/src/screens/DashboardScreen.tsx`:
+Uncomment these lines in `OpilexApp/src/screens/DashboardScreen.tsx`:
 
 ```javascript
 // In specialOfferSlides array:

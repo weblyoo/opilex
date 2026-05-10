@@ -2,7 +2,7 @@
 
 ## 🎯 Overview
 
-This document outlines the complete registration and Aadhaar KYC integration setup for the Kimson App.
+This document outlines the complete registration and Aadhaar KYC integration setup for the Opilex App.
 
 ---
 

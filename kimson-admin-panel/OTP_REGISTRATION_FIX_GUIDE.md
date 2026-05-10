@@ -1,14 +1,14 @@
 # 📱 OTP Registration Fix & Testing Guide
 
 **Date:** December 24, 2025  
-**Project:** Kimson App  
+**Project:** Opilex App  
 **Status:** ✅ Fixed & Ready for Testing
 
 ---
 
 ## 🎯 Overview
 
-This guide documents the fixes applied to the mobile OTP registration system for new users in the Kimson App. Phone authentication was already enabled in Firebase, but there were issues with error handling and verification flow.
+This guide documents the fixes applied to the mobile OTP registration system for new users in the Opilex App. Phone authentication was already enabled in Firebase, but there were issues with error handling and verification flow.
 
 ---
 
@@ -106,7 +106,7 @@ Based on Firebase MCP analysis:
 
 ### ✅ Phone Authentication Status
 - **Status:** ✅ ENABLED
-- **Project ID:** `kimson-3373e`
+- **Project ID:** `opilex-3373e`
 - **Project Number:** `1002505057634`
 - **Active Users:** 3 total users
   - 2 Email/Password users (admins)
@@ -116,8 +116,8 @@ Based on Firebase MCP analysis:
 ```javascript
 {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  authDomain: "kimson-3373e.firebaseapp.com",
-  projectId: "kimson-3373e",
+  authDomain: "opilex-3373e.firebaseapp.com",
+  projectId: "opilex-3373e",
   messagingSenderId: "1002505057634",
   appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b"
 }
@@ -239,7 +239,7 @@ node test-otp-registration.js
 
 1. **Go to Firebase Console:**
    ```
-   https://console.firebase.google.com/project/kimson-3373e/authentication/users
+   https://console.firebase.google.com/project/opilex-3373e/authentication/users
    ```
 
 2. **Check Users Tab:**
@@ -248,7 +248,7 @@ node test-otp-registration.js
 
 3. **Check Firestore:**
    ```
-   https://console.firebase.google.com/project/kimson-3373e/firestore/data
+   https://console.firebase.google.com/project/opilex-3373e/firestore/data
    ```
    - Navigate to `users` collection
    - Verify user documents are created
@@ -556,7 +556,7 @@ Monitor these console logs during testing:
 
 - **Firebase Phone Auth Docs:** https://firebase.google.com/docs/auth/web/phone-auth
 - **React Native Firebase:** https://rnfirebase.io/auth/phone-auth
-- **Firebase Console:** https://console.firebase.google.com/project/kimson-3373e
+- **Firebase Console:** https://console.firebase.google.com/project/opilex-3373e
 - **Error Handling Guide:** See `src/utils/firebaseErrorHandler.ts`
 - **Testing Script:** `test-otp-registration.js`
 
@@ -625,7 +625,7 @@ Monitor these console logs during testing:
 
 **Status:** ✅ Ready for Testing  
 **Last Updated:** December 24, 2025  
-**Tested On:** Firebase Project kimson-3373e
+**Tested On:** Firebase Project opilex-3373e
 
 ---
 

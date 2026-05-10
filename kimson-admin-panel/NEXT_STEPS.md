@@ -1,4 +1,4 @@
-# Kimson App - Next Steps & Progress
+# Opilex App - Next Steps & Progress
 
 ## ✅ What We've Accomplished
 
@@ -141,7 +141,7 @@ npm run web
 - Configure test phone numbers in Firebase Console
 
 ### 3. **QR Code Testing**
-Create test QR codes with format: `KIMSON_WIRE_BATCH123_2024`
+Create test QR codes with format: `OPILEX_WIRE_BATCH123_2024`
 
 ### 4. **Database Testing**
 - Verify Firestore rules work correctly
@@ -154,7 +154,7 @@ Create test QR codes with format: `KIMSON_WIRE_BATCH123_2024`
 ```javascript
 // Create .env file
 FIREBASE_API_KEY=AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c
-FIREBASE_PROJECT_ID=kimson-3373e
+FIREBASE_PROJECT_ID=opilex-3373e
 FIREBASE_APP_ID=1:1002505057634:web:fe5a29d0d3945c850ae83b
 ```
 
@@ -163,8 +163,8 @@ FIREBASE_APP_ID=1:1002505057634:web:fe5a29d0d3945c850ae83b
 // app.json updates needed
 {
   "expo": {
-    "name": "Kimson",
-    "slug": "kimson-app",
+    "name": "Opilex",
+    "slug": "opilex-app",
     "privacy": "public",
     "platforms": ["ios", "android"],
     "version": "1.0.0",
@@ -195,7 +195,7 @@ FIREBASE_APP_ID=1:1002505057634:web:fe5a29d0d3945c850ae83b
 
 ## 📞 Support & Resources
 
-- Firebase Console: https://console.firebase.google.com/project/kimson-3373e
+- Firebase Console: https://console.firebase.google.com/project/opilex-3373e
 - Expo Documentation: https://docs.expo.dev/
 - React Navigation: https://reactnavigation.org/
 

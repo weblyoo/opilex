@@ -1,7 +1,7 @@
-# Kimson App Icon Setup Instructions
+# Opilex App Icon Setup Instructions
 
 ## Overview
-You've provided a beautiful "K" logo design for the Kimson app. Here's how to set it up properly:
+You've provided a beautiful "K" logo design for the Opilex app. Here's how to set it up properly:
 
 ## Required Icon Sizes
 

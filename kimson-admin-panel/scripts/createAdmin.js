@@ -7,9 +7,9 @@ import { getFirestore, doc, setDoc, serverTimestamp } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  authDomain: "kimson-3373e.firebaseapp.com",
-  projectId: "kimson-3373e",
-  storageBucket: "kimson-3373e.firebasestorage.app",
+  authDomain: "opilex-3373e.firebaseapp.com",
+  projectId: "opilex-3373e",
+  storageBucket: "opilex-3373e.firebasestorage.app",
   messagingSenderId: "1002505057634",
   appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
   measurementId: "G-40Z3KKDR4Y"
@@ -20,7 +20,7 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 
 // Get email and password from command line or use defaults
-const email = process.argv[2] || 'admin@kimson.com';
+const email = process.argv[2] || 'admin@opilex.com';
 const password = process.argv[3] || 'Admin@123456';
 
 async function createAdmin() {
@@ -28,7 +28,7 @@ async function createAdmin() {
     console.log('Creating admin user...');
     console.log('Email:', email);
     console.log('\n⚠️  Make sure Email/Password authentication is enabled in Firebase Console!');
-    console.log('   URL: https://console.firebase.google.com/project/kimson-3373e/authentication/providers\n');
+    console.log('   URL: https://console.firebase.google.com/project/opilex-3373e/authentication/providers\n');
     
     // Create Firebase Auth user
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
@@ -68,7 +68,7 @@ async function createAdmin() {
       console.log('='.repeat(60));
       console.log('\n📝 To fix this:');
       console.log('   1. Go to Firebase Console:');
-      console.log('      https://console.firebase.google.com/project/kimson-3373e/authentication/providers');
+      console.log('      https://console.firebase.google.com/project/opilex-3373e/authentication/providers');
       console.log('   2. Click on "Email/Password"');
       console.log('   3. Toggle "Enable" to ON');
       console.log('   4. Click "Save"');

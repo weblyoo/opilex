@@ -12,7 +12,7 @@ This document outlines the design for a QR code generator system that creates se
    - QR code data structure:
      ```json
      {
-       "type": "kimson_reward",
+       "type": "opilex_reward",
        "rewardId": "REWARD-{timestamp}-{random}",
        "points": number,
        "description": string,
@@ -98,7 +98,7 @@ This document outlines the design for a QR code generator system that creates se
 **Embedded QR Code JSON** - Add `userType` field:
 ```json
 {
-  "type": "kimson_reward",
+  "type": "opilex_reward",
   "rewardId": "REWARD-{timestamp}-{random}",
   "points": number,
   "description": string,

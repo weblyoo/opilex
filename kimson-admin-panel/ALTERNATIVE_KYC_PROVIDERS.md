@@ -123,7 +123,7 @@ If Sandbox API doesn't work out, here are excellent alternatives for Aadhaar KYC
 
 ## 💡 Recommended Approach
 
-### For Your App (Kimson):
+### For Your App (Opilex):
 
 **1. Short-term (Now):**
 - ✅ Keep using Mock KYC (already implemented)
@@ -256,7 +256,7 @@ Once you choose a provider, I can help you:
 
 ---
 
-## 🎯 My Recommendation for Kimson App
+## 🎯 My Recommendation for Opilex App
 
 **Go with Digio** because:
 1. ✅ Government-backed (DigiLocker)
@@ -277,11 +277,11 @@ Once you choose a provider, I can help you:
 ## 📧 Email Template for Digio
 
 ```
-Subject: API Access for Aadhaar eKYC - Kimson Wire Authentication App
+Subject: API Access for Aadhaar eKYC - Opilex Wire Authentication App
 
 Hi Digio Team,
 
-I am developing a mobile application (Kimson Wire Authentication App) 
+I am developing a mobile application (Opilex Wire Authentication App) 
 that requires Aadhaar-based KYC verification for user onboarding.
 
 APPLICATION DETAILS:

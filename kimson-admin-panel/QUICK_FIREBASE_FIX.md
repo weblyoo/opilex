@@ -8,7 +8,7 @@
 ### Step 1: Open Firebase Console
 1. Go to: https://console.firebase.google.com
 2. Sign in (if needed)
-3. Click on project: **kimson-3373e**
+3. Click on project: **opilex-3373e**
 
 ### Step 2: Navigate to Firestore Rules
 1. In the left sidebar, click **"Firestore Database"**
@@ -54,7 +54,7 @@ The rules require users to be **authenticated** before they can read/write data.
 ## 📸 Visual Guide
 
 ```
-Firebase Console → kimson-3373e
+Firebase Console → opilex-3373e
     ↓
 Firestore Database (left menu)
     ↓
@@ -69,5 +69,5 @@ Click "Publish"
 
 ## 🔗 Direct Links
 
-- **Firestore Rules**: https://console.firebase.google.com/project/kimson-3373e/firestore/rules
-- **Authentication Setup**: https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+- **Firestore Rules**: https://console.firebase.google.com/project/opilex-3373e/firestore/rules
+- **Authentication Setup**: https://console.firebase.google.com/project/opilex-3373e/authentication/providers

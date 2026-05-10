@@ -10,7 +10,7 @@ The admin user document in Firestore needs to have this exact structure, but the
 
 ### Step 1: Open Firestore
 
-Go to: https://console.firebase.google.com/project/kimson-3373e/firestore
+Go to: https://console.firebase.google.com/project/opilex-3373e/firestore
 
 ### Step 2: Open/Create Document
 
@@ -23,7 +23,7 @@ Click on the document and add these fields:
 
 | Field Name | Type | Value |
 |------------|------|-------|
-| `email` | string | `superadmin@kimson.com` |
+| `email` | string | `superadmin@opilex.com` |
 | `role` | string | `superAdmin` |
 | `name` | string | `Admin User` |
 | `permissions` | array | `users`, `authentications`, `rewards`, `transactions` |
@@ -38,7 +38,7 @@ Click **Update** or **Save**
 If you prefer using the script:
 
 ```bash
-cd kimson-admin-panel
+cd opilex-admin-panel
 node scripts/updateAdminUser.js YourPassword
 ```
 
@@ -48,7 +48,7 @@ node scripts/updateAdminUser.js YourPassword
 
 ```json
 {
-  "email": "superadmin@kimson.com",
+  "email": "superadmin@opilex.com",
   "role": "superAdmin",
   "name": "Admin User",
   "permissions": ["users", "authentications", "rewards", "transactions"],

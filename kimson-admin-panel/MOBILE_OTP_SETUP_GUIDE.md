@@ -1,7 +1,7 @@
 # 📱 Mobile OTP Setup Guide - Firebase Phone Authentication
 
 **Date:** January 2025  
-**Project:** Kimson App  
+**Project:** Opilex App  
 **Current Status:** Using Mock Authentication  
 **Target:** Real Firebase Phone Authentication with OTP
 
@@ -9,7 +9,7 @@
 
 ## 📋 Overview
 
-This guide will help you set up real Firebase Phone Authentication with OTP SMS verification in your Kimson App. Currently, the app uses mock authentication - this guide will replace it with production-ready Firebase Phone Auth.
+This guide will help you set up real Firebase Phone Authentication with OTP SMS verification in your Opilex App. Currently, the app uses mock authentication - this guide will replace it with production-ready Firebase Phone Auth.
 
 ---
 
@@ -17,7 +17,7 @@ This guide will help you set up real Firebase Phone Authentication with OTP SMS 
 
 ### What's Currently Working
 - ✅ UI flow is complete (Login → OTP → Registration)
-- ✅ Firebase project is configured (`kimson-3373e`)
+- ✅ Firebase project is configured (`opilex-3373e`)
 - ✅ Firestore is set up
 - ✅ Mock authentication for development
 
@@ -35,7 +35,7 @@ This guide will help you set up real Firebase Phone Authentication with OTP SMS 
 
 1. **Go to Firebase Console:**
    ```
-   https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+   https://console.firebase.google.com/project/opilex-3373e/authentication/providers
    ```
 
 2. **Enable Phone Provider:**
@@ -99,7 +99,7 @@ keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -sto
 2. Ensure Bundle ID matches your `app.json`:
    ```json
    "ios": {
-     "bundleIdentifier": "com.kimson.wireauth"
+     "bundleIdentifier": "com.opilex.wireauth"
    }
    ```
 
@@ -392,9 +392,9 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  authDomain: "kimson-3373e.firebaseapp.com",
-  projectId: "kimson-3373e",
-  storageBucket: "kimson-3373e.firebasestorage.app",
+  authDomain: "opilex-3373e.firebaseapp.com",
+  projectId: "opilex-3373e",
+  storageBucket: "opilex-3373e.firebasestorage.app",
   messagingSenderId: "1002505057634",
   appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
   measurementId: "G-40Z3KKDR4Y"
@@ -589,7 +589,7 @@ Check console logs for:
 - **Firebase Phone Auth Docs:** https://firebase.google.com/docs/auth/web/phone-auth
 - **Expo Auth Session:** https://docs.expo.dev/guides/authentication/#phone-authentication
 - **React Native Firebase:** https://rnfirebase.io/auth/phone-auth
-- **Firebase Console:** https://console.firebase.google.com/project/kimson-3373e
+- **Firebase Console:** https://console.firebase.google.com/project/opilex-3373e
 
 ---
 

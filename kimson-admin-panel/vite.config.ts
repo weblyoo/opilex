@@ -31,13 +31,10 @@ export default defineConfig(({ command }) => ({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: reactNativeExternals,
-    },
-    commonjsOptions: {
-      ignore: reactNativeExternals,
+      // Removed externals that might be causing resolution issues
     },
   },
   optimizeDeps: {
-    exclude: reactNativeExternals,
+    // Removed excludes that might be causing resolution issues
   },
 }))

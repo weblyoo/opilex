@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { schemeService, Scheme, SchemeType, VisibilityType, UserCategory } from '../services/schemes';
+import { schemeService } from '../services/schemes';
+import type { Scheme, SchemeType, VisibilityType, UserCategory } from '../services/schemes';
 import { uploadImage } from '../services/storage';
 import { StatsCard } from '../components/StatsCard';
 import { ConfirmDialog } from '../components/ConfirmDialog';

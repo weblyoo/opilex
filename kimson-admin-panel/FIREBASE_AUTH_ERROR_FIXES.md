@@ -110,7 +110,7 @@ await printDiagnostics(phoneNumber);
 **What it means:** Phone Authentication is not enabled
 
 **Fix:**
-1. Go to: https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+1. Go to: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
 2. Click "Phone"
 3. Toggle "Enable" ON
 4. Click "Save"

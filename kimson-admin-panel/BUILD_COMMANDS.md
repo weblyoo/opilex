@@ -1,4 +1,4 @@
-# Complete Command List for Building Kimson App APK
+# Complete Command List for Building Opilex App APK
 
 ## Prerequisites Setup Commands
 
@@ -26,7 +26,7 @@ eas login
 ### 3. Navigate to Project Directory
 ```bash
 # Go to the project directory
-cd KimsonApp
+cd OpilexApp
 
 # Verify you're in the right place
 dir
@@ -86,7 +86,7 @@ eas build:view <BUILD_ID>
 # Copy and paste this entire block:
 
 # 1. Navigate to project
-cd KimsonApp
+cd OpilexApp
 
 # 2. Update dependencies
 npm install
@@ -111,7 +111,7 @@ eas login
 
 #### Step 2: Project Preparation
 ```bash
-cd KimsonApp
+cd OpilexApp
 npm install
 ```
 
@@ -227,7 +227,7 @@ eas build --platform android --profile preview --clear-cache
 eas build:list --platform android --limit 1
 
 # Download APK directly (if URL provided)
-curl -L -o kimson-app.apk "YOUR_DOWNLOAD_URL"
+curl -L -o opilex-app.apk "YOUR_DOWNLOAD_URL"
 
 # Or download via browser from expo.dev dashboard
 ```
@@ -235,7 +235,7 @@ curl -L -o kimson-app.apk "YOUR_DOWNLOAD_URL"
 ### Install on Android Device:
 ```bash
 # Transfer APK to device via ADB (if device connected)
-adb install kimson-app.apk
+adb install opilex-app.apk
 
 # Or manually:
 # 1. Enable "Unknown Sources" in Android settings
@@ -246,7 +246,7 @@ adb install kimson-app.apk
 ## Complete One-Line Build Command
 
 ```bash
-cd KimsonApp && npm install && npx expo install @react-native-async-storage/async-storage expo react-native-reanimated react-native-worklets && npx expo-doctor && eas build --platform android --profile preview
+cd OpilexApp && npm install && npx expo install @react-native-async-storage/async-storage expo react-native-reanimated react-native-worklets && npx expo-doctor && eas build --platform android --profile preview
 ```
 
 ## Expected Output
@@ -254,7 +254,7 @@ cd KimsonApp && npm install && npx expo install @react-native-async-storage/asyn
 ### Successful Build Output:
 ```
 ✔ Build completed!
-  Build details: https://expo.dev/accounts/weblyoapp/projects/kimson-app/builds/...
+  Build details: https://expo.dev/accounts/weblyoapp/projects/opilex-app/builds/...
   APK: https://expo.dev/artifacts/...
 ```
 
@@ -281,7 +281,7 @@ eas build:list --platform android --limit 1
 
 ### Generated Files:
 - `.expo/` - Expo configuration cache
-- `kimson-app.apk` - Final APK file (downloaded)
+- `opilex-app.apk` - Final APK file (downloaded)
 
 ## Next Steps After APK Creation
 

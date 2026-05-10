@@ -10,11 +10,11 @@ The rules need to allow an authenticated user to create their own admin document
 
 ### Option 1: Using Firebase CLI (Recommended)
 
-1. **Update the rules file** (already updated in `../KimsonApp/firestore.rules`)
+1. **Update the rules file** (already updated in `../OpilexApp/firestore.rules`)
 
 2. **Deploy the updated rules**:
    ```bash
-   cd ../KimsonApp
+   cd ../OpilexApp
    firebase deploy --only firestore:rules
    ```
 
@@ -22,13 +22,13 @@ The rules need to allow an authenticated user to create their own admin document
 
 4. **Run the update script again**:
    ```bash
-   cd ../kimson-admin-panel
+   cd ../opilex-admin-panel
    node scripts/updateAdminUser.js 123456
    ```
 
 ### Option 2: Update in Firebase Console
 
-1. Go to: https://console.firebase.google.com/project/kimson-3373e/firestore/rules
+1. Go to: https://console.firebase.google.com/project/opilex-3373e/firestore/rules
 
 2. Update the `admins` collection rule from:
    ```javascript

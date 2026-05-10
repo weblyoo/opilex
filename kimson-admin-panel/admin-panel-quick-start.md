@@ -14,9 +14,9 @@ import { getAnalytics } from 'firebase/analytics';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  authDomain: "kimson-3373e.firebaseapp.com",
-  projectId: "kimson-3373e",
-  storageBucket: "kimson-3373e.firebasestorage.app",
+  authDomain: "opilex-3373e.firebaseapp.com",
+  projectId: "opilex-3373e",
+  storageBucket: "opilex-3373e.firebasestorage.app",
   messagingSenderId: "1002505057634",
   appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
   measurementId: "G-40Z3KKDR4Y"
@@ -48,8 +48,8 @@ import { getFirestore, doc, setDoc, serverTimestamp } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  authDomain: "kimson-3373e.firebaseapp.com",
-  projectId: "kimson-3373e",
+  authDomain: "opilex-3373e.firebaseapp.com",
+  projectId: "opilex-3373e",
   // ... rest of config
 };
 
@@ -58,7 +58,7 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 
 async function createAdmin() {
-  const email = 'admin@kimson.com';
+  const email = 'admin@opilex.com';
   const password = 'YourSecurePassword123!';
   
   try {
@@ -93,7 +93,7 @@ createAdmin();
 
 ```json
 {
-  "name": "kimson-admin-panel",
+  "name": "opilex-admin-panel",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -125,8 +125,8 @@ createAdmin();
 
 ### Step 1: Create Project
 ```bash
-npm create vite@latest kimson-admin -- --template react-ts
-cd kimson-admin
+npm create vite@latest opilex-admin -- --template react-ts
+cd opilex-admin
 npm install
 ```
 

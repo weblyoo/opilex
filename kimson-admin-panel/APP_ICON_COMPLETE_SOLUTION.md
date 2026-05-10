@@ -59,7 +59,7 @@ android/app/src/main/res/
 
 **Development Build:**
 ```bash
-cd C:\Users\aarch\Desktop\kimson\app\KimsonApp
+cd C:\Users\aarch\Desktop\opilex\app\OpilexApp
 eas build --profile development --platform android
 ```
 
@@ -115,8 +115,8 @@ adb install app\build\outputs\apk\release\app-release.apk
 ```javascript
 export default {
   expo: {
-    name: "Kimson Wire Authentication",
-    slug: "kimson-app",
+    name: "Opilex Wire Authentication",
+    slug: "opilex-app",
     version: "1.0.0",
     icon: "./assets/icon.png",
     
@@ -127,12 +127,12 @@ export default {
         backgroundColor: "#F5F5F5",
         monochromeImage: "./assets/adaptive-icon.png"
       },
-      package: "com.kimson.wireauth"
+      package: "com.opilex.wireauth"
     },
     
     ios: {
       icon: "./assets/icon.png",
-      bundleIdentifier: "com.kimson.wireauth"
+      bundleIdentifier: "com.opilex.wireauth"
     }
   }
 };
@@ -166,7 +166,7 @@ eas login
 
 3. **Build APK**:
 ```bash
-cd C:\Users\aarch\Desktop\kimson\app\KimsonApp
+cd C:\Users\aarch\Desktop\opilex\app\OpilexApp
 eas build --profile production --platform android
 ```
 
@@ -303,8 +303,8 @@ You'll know the icon is working when:
 1. ✅ Native Android project has mipmap folders
 2. ✅ `ic_launcher.webp` files exist in mipmap folders
 3. ✅ APK installation shows custom icon
-4. ✅ Home screen displays Kimson icon
-5. ✅ App drawer shows Kimson icon
+4. ✅ Home screen displays Opilex icon
+5. ✅ App drawer shows Opilex icon
 
 ## Final Status
 

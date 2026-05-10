@@ -22,7 +22,7 @@
 ## 📋 What You Need to Do:
 
 ### ✅ Already Done (Via MCP):
-- [x] Android app registered in Firebase (`com.kimson.wireauth`)
+- [x] Android app registered in Firebase (`com.opilex.wireauth`)
 - [x] SHA-1 fingerprint added: `5E:8F:16:06:2E:A3:CD:2C:4A:0D:54:78:76:BA:A6:F3:8C:AB:F6:25`
 - [x] SHA-256 fingerprint added: `FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C`
 - [x] API key updated to Android app key
@@ -32,7 +32,7 @@
 
 1. **Enable Phone Authentication in Firebase Console:**
    ```
-   - Go to: https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+   - Go to: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
    - Click on "Phone"
    - Toggle "Enable" ON
    - Click "Save"
@@ -86,7 +86,7 @@
 
 3. **API Key:**
    - Using Android app API key: `AIzaSyD5eJ5TGK-3lgYTuodBXWWrgp1z0q9SrMw`
-   - This identifies your Android app (`com.kimson.wireauth`)
+   - This identifies your Android app (`com.opilex.wireauth`)
 
 ---
 

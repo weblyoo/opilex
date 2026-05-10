@@ -1,4 +1,4 @@
-# Kimson App - Development Setup
+# Opilex App - Development Setup
 
 ## 🔧 Current Development Mode
 
@@ -25,14 +25,14 @@ KYC OTP: Any 6 digits (e.g., 654321)
 #### 2. Wire Authentication Testing
 ```
 Valid Codes (will succeed):
-- KIMSON_WIRE_BATCH001_2024
-- KIMSON_WIRE_BATCH002_2024
-- KIMSON_COPPER_TEST_2024
+- OPILEX_WIRE_BATCH001_2024
+- OPILEX_WIRE_BATCH002_2024
+- OPILEX_COPPER_TEST_2024
 
 Invalid Codes (will fail):
 - FAKE_WIRE_123
 - OLD_BATCH_2020
-- Any code not starting with "KIMSON_"
+- Any code not starting with "OPILEX_"
 ```
 
 #### 3. Expected Results

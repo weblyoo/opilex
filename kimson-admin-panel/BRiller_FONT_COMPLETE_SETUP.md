@@ -26,21 +26,21 @@ Since the web font link you provided (`https://use.typekit.net/ejj2plt.css`) doe
 
 1. Create the fonts folder:
    ```
-   KimsonApp/assets/fonts/
+   OpilexApp/assets/fonts/
    ```
 
 2. Copy the font file to:
    ```
-   KimsonApp/assets/fonts/Briller-Bold.ttf
+   OpilexApp/assets/fonts/Briller-Bold.ttf
    ```
    OR
    ```
-   KimsonApp/assets/fonts/Briller-Bold.otf
+   OpilexApp/assets/fonts/Briller-Bold.otf
    ```
 
 ### Step 3: Enable Font Loading
 
-Open `KimsonApp/App.tsx` and find line 32. Change:
+Open `OpilexApp/App.tsx` and find line 32. Change:
 
 ```typescript
 // 'Briller-Bold': require('./assets/fonts/Briller-Bold.ttf'),
@@ -58,7 +58,7 @@ To:
 
 1. Clear cache and restart:
    ```bash
-   cd KimsonApp
+   cd OpilexApp
    npx expo start --clear
    ```
 
@@ -98,7 +98,7 @@ To:
 
 ## 🎯 Expected Result
 
-Once you complete these steps, the "KIMSON" text in the splash screen will display in the beautiful Briller Bold font with the rolling animation effect.
+Once you complete these steps, the "OPILEX" text in the splash screen will display in the beautiful Briller Bold font with the rolling animation effect.
 
 ---
 

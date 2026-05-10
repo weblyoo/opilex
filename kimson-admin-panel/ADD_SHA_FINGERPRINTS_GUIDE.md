@@ -48,11 +48,11 @@
 ### Step 2: Add Fingerprints to Firebase Console
 
 1. **Open Firebase Console:**
-   - Go to: https://console.firebase.google.com/project/kimson-3373e/settings/general
+   - Go to: https://console.firebase.google.com/project/opilex-3373e/settings/general
 
 2. **Find Your Android App:**
    - Scroll down to the "Your apps" section
-   - Look for the Android app with package name: `com.kimson.wireauth`
+   - Look for the Android app with package name: `com.opilex.wireauth`
    - If you don't see it, you may need to register it first (see Step 3 below)
 
 3. **Click on the Android App:**
@@ -85,15 +85,15 @@
 If you don't see your Android app in Firebase Console:
 
 1. **Go to Project Settings:**
-   - https://console.firebase.google.com/project/kimson-3373e/settings/general
+   - https://console.firebase.google.com/project/opilex-3373e/settings/general
 
 2. **Click "Add app" → Select Android:**
    - Look for the "Add app" button
    - Click it and select the Android icon
 
 3. **Enter App Details:**
-   - **Android package name:** `com.kimson.wireauth`
-   - **App nickname (optional):** Kimson App
+   - **Android package name:** `com.opilex.wireauth`
+   - **App nickname (optional):** Opilex App
    - **Debug signing certificate SHA-1 (optional):** Leave empty for now
    - Click "Register app"
 
@@ -131,13 +131,13 @@ After adding the fingerprints:
 ## 🔗 Direct Links
 
 **Firebase Project Settings:**
-- https://console.firebase.google.com/project/kimson-3373e/settings/general
+- https://console.firebase.google.com/project/opilex-3373e/settings/general
 
 **Firebase Authentication Providers:**
-- https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+- https://console.firebase.google.com/project/opilex-3373e/authentication/providers
 
 **Firebase Android App Settings (if app is registered):**
-- https://console.firebase.google.com/project/kimson-3373e/settings/general/android:com.kimson.wireauth
+- https://console.firebase.google.com/project/opilex-3373e/settings/general/android:com.opilex.wireauth
 
 ---
 
@@ -172,7 +172,7 @@ After adding the fingerprints:
 ### Issue: Fingerprints not showing in Firebase Console
 **Solution:**
 - Make sure you're viewing the correct Android app
-- Check that the package name matches: `com.kimson.wireauth`
+- Check that the package name matches: `com.opilex.wireauth`
 - Try refreshing the page
 
 ### Issue: Still getting MISSING_CLIENT_IDENTIFIER error
@@ -189,7 +189,7 @@ After adding the fingerprints:
 - [ ] Got SHA-1 fingerprint from Gradle
 - [ ] Got SHA-256 fingerprint from Gradle
 - [ ] Opened Firebase Console project settings
-- [ ] Found/registered Android app (`com.kimson.wireauth`)
+- [ ] Found/registered Android app (`com.opilex.wireauth`)
 - [ ] Added SHA-1 fingerprint to Firebase
 - [ ] Added SHA-256 fingerprint to Firebase
 - [ ] Waited 5 minutes for changes to propagate

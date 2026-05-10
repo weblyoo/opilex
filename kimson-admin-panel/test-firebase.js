@@ -7,9 +7,9 @@ import { getFirestore, connectFirestoreEmulator, collection, getDocs, doc, setDo
 
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  authDomain: "kimson-3373e.firebaseapp.com",
-  projectId: "kimson-3373e",
-  storageBucket: "kimson-3373e.firebasestorage.app",
+  authDomain: "opilex-3373e.firebaseapp.com",
+  projectId: "opilex-3373e",
+  storageBucket: "opilex-3373e.firebasestorage.app",
   messagingSenderId: "1002505057634",
   appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
   measurementId: "G-40Z3KKDR4Y"
@@ -90,7 +90,7 @@ async function testFirebaseConnection() {
     console.log('   1. ✅ Firestore rules deployed');
     console.log('   2. ⏭️  Enable Phone Authentication in Firebase Console');
     console.log('   3. ⏭️  Replace mock auth with real Firebase auth in app');
-    console.log('\n🔗 Firebase Console: https://console.firebase.google.com/project/kimson-3373e\n');
+    console.log('\n🔗 Firebase Console: https://console.firebase.google.com/project/opilex-3373e\n');
     
     process.exit(0);
     

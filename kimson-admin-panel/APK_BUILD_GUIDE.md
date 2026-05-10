@@ -1,7 +1,7 @@
-# Kimson App - APK Build Guide
+# Opilex App - APK Build Guide
 
 ## Overview
-This guide will help you generate an APK file for the Kimson Wire Authentication app using Expo.
+This guide will help you generate an APK file for the Opilex Wire Authentication app using Expo.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ npm install -g eas-cli
 
 #### Step 1: Initialize EAS
 ```bash
-cd KimsonApp
+cd OpilexApp
 eas build:configure
 ```
 
@@ -58,22 +58,22 @@ eas build --platform android --profile production
 
 #### Step 2: Build Locally
 ```bash
-cd KimsonApp
+cd OpilexApp
 eas build --platform android --local
 ```
 
 ### Method 3: Expo Classic Build (Deprecated but may work)
 
 ```bash
-cd KimsonApp
+cd OpilexApp
 expo build:android
 ```
 
 ## Build Configuration
 
 ### Current App Configuration:
-- **App Name**: Kimson Wire Authentication
-- **Package**: com.kimson.wireauth
+- **App Name**: Opilex Wire Authentication
+- **Package**: com.opilex.wireauth
 - **Version**: 1.0.0
 - **Version Code**: 1
 - **Orientation**: Portrait
@@ -142,7 +142,7 @@ npm config set registry https://registry.npmjs.org/
 
 2. **Navigate to project**:
    ```bash
-   cd KimsonApp
+   cd OpilexApp
    ```
 
 3. **Login to Expo**:

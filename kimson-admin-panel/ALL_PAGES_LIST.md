@@ -1,7 +1,7 @@
-# Complete List of All Pages/Screens in Kimson App
+# Complete List of All Pages/Screens in Opilex App
 
 ## Overview
-This document contains a complete list of all pages/screens available in the Kimson application.
+This document contains a complete list of all pages/screens available in the Opilex application.
 
 ---
 
@@ -29,7 +29,7 @@ This document contains a complete list of all pages/screens available in the Kim
 4. **Login Screen** (`LoginScreen.tsx`)
    - Route: `Login`
    - Phone number input for OTP login
-   - Displays "Welcome to kimson" text
+   - Displays "Welcome to opilex" text
 
 5. **OTP Verification Screen** (`OTPVerificationScreen.tsx`)
    - Route: `OTPVerification`

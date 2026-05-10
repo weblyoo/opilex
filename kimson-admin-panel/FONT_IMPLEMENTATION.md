@@ -1,6 +1,6 @@
 # Conquera Font Implementation Guide
 
-This guide explains how to implement Conquera font throughout the entire Kimson app.
+This guide explains how to implement Conquera font throughout the entire Opilex app.
 
 ## 1. Font Files Setup
 
@@ -11,7 +11,7 @@ Place the following font files in the `assets/fonts/` directory:
 
 ### Directory Structure
 ```
-KimsonApp/
+OpilexApp/
 ├── assets/
 │   └── fonts/
 │       ├── Conquera.ttf
@@ -204,7 +204,7 @@ const ExampleScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={[globalTextStyles.h1, { color: theme.colors.text }]}>
-        Welcome to Kimson
+        Welcome to Opilex
       </Text>
       <Text style={[globalTextStyles.body, { color: theme.colors.accent }]}>
         This text uses Conquera Bold font

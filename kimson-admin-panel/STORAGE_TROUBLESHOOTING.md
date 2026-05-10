@@ -6,12 +6,12 @@
 
 **Solution:**
 1. Go to **Google Cloud Console** directly:
-   https://console.cloud.google.com/storage/browser?project=kimson-3373e
+   https://console.cloud.google.com/storage/browser?project=opilex-3373e
 
 2. Click **"Create Bucket"**
 
 3. Configure:
-   - **Name**: `kimson-3373e.firebasestorage.app`
+   - **Name**: `opilex-3373e.firebasestorage.app`
    - **Location type**: Single region
    - **Location**: `us-central1` (Iowa)
    - **Storage class**: Standard
@@ -21,14 +21,14 @@
 4. Click **"Create"**
 
 5. After creation, go back to Firebase Console:
-   https://console.firebase.google.com/project/kimson-3373e/storage
+   https://console.firebase.google.com/project/opilex-3373e/storage
    - Firebase should detect the bucket
 
 ### Error 2: "Permission denied" or "Access denied"
 
 **Solution:**
 1. Go to IAM & Admin:
-   https://console.cloud.google.com/iam-admin/iam?project=kimson-3373e
+   https://console.cloud.google.com/iam-admin/iam?project=opilex-3373e
 
 2. Find your account: `weblyo.com@gmail.com`
 
@@ -42,7 +42,7 @@
 
 **Solution:**
 1. Enable Storage API:
-   https://console.cloud.google.com/apis/library/storage-component.googleapis.com?project=kimson-3373e
+   https://console.cloud.google.com/apis/library/storage-component.googleapis.com?project=opilex-3373e
 
 2. Click **"Enable"**
 
@@ -54,8 +54,8 @@
 
 **Solution:**
 - The bucket might already exist! Check:
-  1. Go to: https://console.cloud.google.com/storage/browser?project=kimson-3373e
-  2. Look for `kimson-3373e.firebasestorage.app`
+  1. Go to: https://console.cloud.google.com/storage/browser?project=opilex-3373e
+  2. Look for `opilex-3373e.firebasestorage.app`
   3. If it exists, just deploy rules: `firebase deploy --only storage`
 
 ### Error 5: "Billing required"
@@ -63,7 +63,7 @@
 **Solution:**
 - Firebase Storage free tier doesn't require billing
 - But if you see this error:
-  1. Go to: https://console.firebase.google.com/project/kimson-3373e/settings/billing
+  1. Go to: https://console.firebase.google.com/project/opilex-3373e/settings/billing
   2. Check if billing account is linked
   3. Note: Free tier (5 GB) should work without billing
 
@@ -74,13 +74,13 @@ If Firebase Console keeps failing, use Google Cloud Console directly:
 ### Step-by-Step:
 
 1. **Open Google Cloud Console:**
-   https://console.cloud.google.com/storage/browser?project=kimson-3373e
+   https://console.cloud.google.com/storage/browser?project=opilex-3373e
 
 2. **Click "Create Bucket"**
 
 3. **Bucket Configuration:**
    ```
-   Name: kimson-3373e.firebasestorage.app
+   Name: opilex-3373e.firebasestorage.app
    Location type: Single region
    Location: us-central1 (Iowa)
    Storage class: Standard

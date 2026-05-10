@@ -2,7 +2,7 @@
 import { Storage } from '@google-cloud/storage';
 import { execSync } from 'child_process';
 
-const projectId = 'kimson-3373e';
+const projectId = 'opilex-3373e';
 const bucketName = `${projectId}.firebasestorage.app`;
 const location = 'US-CENTRAL1';
 
@@ -74,7 +74,7 @@ async function enableStorageAndCreate() {
     if (error.code === 403 || error.message.includes('Permission denied')) {
       console.log('\n💡 Permission denied. Solutions:\n');
       console.log('Option 1: Grant Storage Admin role');
-      console.log('   1. Go to: https://console.cloud.google.com/iam-admin/iam?project=kimson-3373e');
+      console.log('   1. Go to: https://console.cloud.google.com/iam-admin/iam?project=opilex-3373e');
       console.log('   2. Find your account: weblyo.com@gmail.com');
       console.log('   3. Add role: "Storage Admin"\n');
       
@@ -85,9 +85,9 @@ async function enableStorageAndCreate() {
       
       console.log('Option 3: Manual Console Creation');
       console.log('   If console gives location error, try:');
-      console.log('   1. Go to: https://console.cloud.google.com/storage/browser?project=kimson-3373e');
+      console.log('   1. Go to: https://console.cloud.google.com/storage/browser?project=opilex-3373e');
       console.log('   2. Click "Create Bucket"');
-      console.log('   3. Name: kimson-3373e.firebasestorage.app');
+      console.log('   3. Name: opilex-3373e.firebasestorage.app');
       console.log('   4. Location: us-central1');
       console.log('   5. Click "Create"\n');
 
@@ -97,7 +97,7 @@ async function enableStorageAndCreate() {
       console.log('   firebase deploy --only storage\n');
     } else if (error.message.includes('API not enabled')) {
       console.log('\n💡 Storage API not enabled. Enable it:');
-      console.log('   1. Go to: https://console.cloud.google.com/apis/library/storage-component.googleapis.com?project=kimson-3373e');
+      console.log('   1. Go to: https://console.cloud.google.com/apis/library/storage-component.googleapis.com?project=opilex-3373e');
       console.log('   2. Click "Enable"');
       console.log('   3. Run this script again\n');
     } else {

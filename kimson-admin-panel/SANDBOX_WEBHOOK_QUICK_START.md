@@ -78,7 +78,7 @@ firebase deploy --only functions:sandboxWebhook
 #### Step 4: Get Webhook URL
 After deployment, you'll get:
 ```
-https://us-central1-kimson-3373e.cloudfunctions.net/sandboxWebhook
+https://us-central1-opilex-3373e.cloudfunctions.net/sandboxWebhook
 ```
 
 #### Step 5: Configure in Sandbox Dashboard

@@ -8,16 +8,16 @@ Generated: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
 ## 1. Firebase MCP Connection
 - **Status**: ✅ Connected and Working
 - **Authenticated User**: weblyo.com@gmail.com
-- **Project Directory**: `c:\Users\info\OneDrive\Desktop\kimson\kimson\app\KimsonApp`
+- **Project Directory**: `c:\Users\info\OneDrive\Desktop\opilex\opilex\app\OpilexApp`
 - **Billing Enabled**: ✅ Yes
 - **Gemini TOS**: ✅ Accepted
 
 ---
 
 ## 2. Firebase Project
-- **Project ID**: `kimson-3373e`
+- **Project ID**: `opilex-3373e`
 - **Project Number**: `1002505057634`
-- **Display Name**: `kimson`
+- **Display Name**: `opilex`
 - **Status**: ✅ ACTIVE
 - **Lifecycle State**: ACTIVE
 - **Created**: 2025-09-19T16:32:54.109355Z
@@ -28,19 +28,19 @@ Generated: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
 
 ### Android Apps
 1. **App ID**: `1:1002505057634:android:462ce0293d35d5f50ae83b`
-   - **Package Name**: `com.kimsonindia`
+   - **Package Name**: `com.opilexindia`
    - **Status**: ✅ ACTIVE
-   - **Display Name**: kimson
+   - **Display Name**: opilex
 
 2. **App ID**: `1:1002505057634:android:5108de2c2f9ace6d0ae83b`
-   - **Package Name**: `com.kimson.wireauth`
+   - **Package Name**: `com.opilex.wireauth`
    - **Status**: ✅ ACTIVE
-   - **Display Name**: kimson
+   - **Display Name**: opilex
 
 ### Web App
 1. **App ID**: `1:1002505057634:web:fe5a29d0d3945c850ae83b`
    - **Status**: ✅ ACTIVE
-   - **Display Name**: kimson
+   - **Display Name**: opilex
 
 **Total Apps**: 3 (2 Android + 1 Web)
 
@@ -70,20 +70,20 @@ Generated: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
 
 ### google-services.json
 - **Status**: ✅ Present
-- **Project ID**: `kimson-3373e` ✅ Matches
+- **Project ID**: `opilex-3373e` ✅ Matches
 - **Project Number**: `1002505057634` ✅ Matches
 - **Configured Apps**: 
-  - `com.kimson.wireauth` ✅
-  - `com.kimsonindia` ✅
+  - `com.opilex.wireauth` ✅
+  - `com.opilexindia` ✅
 
 ---
 
 ## 5. Firebase SDK Configuration (src/config/firebase.ts)
 
 - **API Key**: ✅ Configured
-- **Auth Domain**: `kimson-3373e.firebaseapp.com` ✅
-- **Project ID**: `kimson-3373e` ✅ Matches
-- **Storage Bucket**: `kimson-3373e.firebasestorage.app` ✅
+- **Auth Domain**: `opilex-3373e.firebaseapp.com` ✅
+- **Project ID**: `opilex-3373e` ✅ Matches
+- **Storage Bucket**: `opilex-3373e.firebasestorage.app` ✅
 - **Messaging Sender ID**: `1002505057634` ✅ Matches
 - **Web App ID**: `1:1002505057634:web:fe5a29d0d3945c850ae83b` ✅ Matches
 - **Measurement ID**: `G-40Z3KKDR4Y` ✅

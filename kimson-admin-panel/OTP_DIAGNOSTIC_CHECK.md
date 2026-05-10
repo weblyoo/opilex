@@ -1,7 +1,7 @@
 # 🔍 OTP Sending Diagnostic Checklist
 
 ## Firebase Project Status
-- **Project ID:** kimson-3373e
+- **Project ID:** opilex-3373e
 - **Project Number:** 1002505057634
 - **Status:** ACTIVE ✅
 
@@ -25,7 +25,7 @@ LOG  📥 REST API Response Data: {...}
 #### Error 1: `OPERATION_NOT_ALLOWED`
 - **Meaning:** Phone authentication is not enabled in Firebase Console
 - **Fix:** 
-  1. Go to: https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+  1. Go to: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
   2. Click "Phone"
   3. Toggle "Enable" ON
   4. Click "Save"
@@ -81,7 +81,7 @@ Go to Firebase Console and verify:
 2. **Project Settings → Your App (Android):**
    - [ ] SHA-1 fingerprint added
    - [ ] SHA-256 fingerprint added
-   - [ ] Package name matches: `com.kimson.wireauth`
+   - [ ] Package name matches: `com.opilex.wireauth`
 
 3. **Authentication → Users:**
    - [ ] Check if authentication attempts are logged

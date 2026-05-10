@@ -1,4 +1,4 @@
-# Firebase Setup Instructions for Kimson App
+# Firebase Setup Instructions for Opilex App
 
 ## ✅ Current Status
 Firebase is **successfully connected** and all services are properly initialized:
@@ -14,7 +14,7 @@ Firebase is **successfully connected** and all services are properly initialized
 The security rules are ready in `firestore-rules.txt`. You need to deploy them to your Firebase project:
 
 1. Go to [Firebase Console](https://console.firebase.google.com)
-2. Select your project: `kimson-3373e`
+2. Select your project: `opilex-3373e`
 3. Navigate to **Firestore Database** → **Rules**
 4. Copy the contents from `firestore-rules.txt` and paste them
 5. Click **Publish**
@@ -52,8 +52,8 @@ node test-firebase-simple.js
 
 ### Firebase Configuration
 The app is configured with your Firebase project:
-- **Project ID**: kimson-3373e
-- **Auth Domain**: kimson-3373e.firebaseapp.com
+- **Project ID**: opilex-3373e
+- **Auth Domain**: opilex-3373e.firebaseapp.com
 - **API Key**: AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c
 
 ### Features Ready

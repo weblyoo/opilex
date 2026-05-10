@@ -1,6 +1,6 @@
 # Sandbox API - cURL Request & JSON Response Examples
 
-This document provides cURL request examples and expected JSON responses for all Sandbox API endpoints used in the Kimson App.
+This document provides cURL request examples and expected JSON responses for all Sandbox API endpoints used in the Opilex App.
 
 ---
 

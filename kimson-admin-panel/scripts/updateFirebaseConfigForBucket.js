@@ -1,7 +1,7 @@
 // Script to update Firebase config with custom bucket name
 import { readFileSync, writeFileSync } from 'fs';
 
-const bucketName = process.argv[2] || 'kimson-3373e-storage';
+const bucketName = process.argv[2] || 'opilex-3373e-storage';
 
 console.log(`📝 Updating Firebase config to use bucket: ${bucketName}\n`);
 

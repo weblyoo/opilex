@@ -1,10 +1,10 @@
-# 🚀 Kimson Admin Panel - Project Setup Complete
+# 🚀 Opilex Admin Panel - Project Setup Complete
 
 ## ✅ What's Been Set Up
 
 ### 1. Project Structure
 ```
-kimson-admin-panel/
+opilex-admin-panel/
 ├── src/
 │   ├── config/
 │   │   └── firebase.ts          ✅ Firebase configuration
@@ -35,7 +35,7 @@ kimson-admin-panel/
 - ✅ Date-fns (for date formatting)
 
 ### 3. Firebase Configuration
-- ✅ Connected to same Firebase project (kimson-3373e)
+- ✅ Connected to same Firebase project (opilex-3373e)
 - ✅ Firestore database ready
 - ✅ Authentication ready
 - ✅ Services implemented
@@ -51,7 +51,7 @@ kimson-admin-panel/
 
 ### Step 1: Enable Email/Password Authentication
 
-1. Go to Firebase Console: https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+1. Go to Firebase Console: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
 2. Click on **Email/Password**
 3. Enable it
 4. Click **Save**
@@ -63,8 +63,8 @@ kimson-admin-panel/
 1. Make sure Email/Password auth is enabled
 2. Run the script:
 ```bash
-cd kimson-admin-panel
-node scripts/createAdmin.js admin@kimson.com YourSecurePassword
+cd opilex-admin-panel
+node scripts/createAdmin.js admin@opilex.com YourSecurePassword
 ```
 
 **Option B: Manual Creation**
@@ -78,7 +78,7 @@ node scripts/createAdmin.js admin@kimson.com YourSecurePassword
 7. Create document with UID as document ID:
 ```json
 {
-  "email": "admin@kimson.com",
+  "email": "admin@opilex.com",
   "role": "superAdmin",
   "name": "Admin User",
   "permissions": ["users", "authentications", "rewards", "transactions"],
@@ -153,9 +153,9 @@ Based on the requirements document:
 
 ## 🔗 Related Documentation
 
-- **Requirements**: See `../KimsonApp/ADMIN_PANEL_REQUIREMENTS.md`
-- **Setup Guide**: See `../KimsonApp/ADMIN_PANEL_SETUP_GUIDE.md`
-- **Database Connections**: See `../KimsonApp/FIREBASE_DATABASE_CONNECTIONS.md`
+- **Requirements**: See `../OpilexApp/ADMIN_PANEL_REQUIREMENTS.md`
+- **Setup Guide**: See `../OpilexApp/ADMIN_PANEL_SETUP_GUIDE.md`
+- **Database Connections**: See `../OpilexApp/FIREBASE_DATABASE_CONNECTIONS.md`
 
 ## ✅ Status
 

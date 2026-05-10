@@ -42,19 +42,19 @@ You need to add a remote repository first:
 #### For GitHub:
 ```bash
 # Create a new repository on GitHub first, then:
-git remote add origin https://github.com/yourusername/kimson-app.git
+git remote add origin https://github.com/yourusername/opilex-app.git
 git push -u origin master
 ```
 
 #### For GitLab:
 ```bash
-git remote add origin https://gitlab.com/yourusername/kimson-app.git
+git remote add origin https://gitlab.com/yourusername/opilex-app.git
 git push -u origin master
 ```
 
 #### For Bitbucket:
 ```bash
-git remote add origin https://bitbucket.org/yourusername/kimson-app.git
+git remote add origin https://bitbucket.org/yourusername/opilex-app.git
 git push -u origin master
 ```
 

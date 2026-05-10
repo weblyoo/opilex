@@ -2,7 +2,7 @@
  * OTP Registration Testing & Diagnostic Script
  * 
  * This script helps test and diagnose Firebase Phone Authentication
- * for new user registration in the Kimson App.
+ * for new user registration in the Opilex App.
  * 
  * Usage:
  *   node test-otp-registration.js
@@ -16,7 +16,7 @@ const serviceAccount = require('./serviceAccountKey.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  projectId: 'kimson-3373e'
+  projectId: 'opilex-3373e'
 });
 
 const auth = admin.auth();
@@ -216,7 +216,7 @@ async function checkFirebaseConfig() {
 async function main() {
   console.log('\n╔════════════════════════════════════════════════════╗');
   console.log('║   OTP REGISTRATION TESTING & DIAGNOSTIC TOOL     ║');
-  console.log('║   Kimson App - Firebase Phone Authentication     ║');
+  console.log('║   Opilex App - Firebase Phone Authentication     ║');
   console.log('╚════════════════════════════════════════════════════╝\n');
   
   while (true) {

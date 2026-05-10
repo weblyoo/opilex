@@ -21,7 +21,7 @@ The icon is **NOT displaying** because you're using **Expo Go**.
 npm install -g eas-cli
 
 # 2. Navigate to project
-cd C:\Users\aarch\Desktop\kimson\app\KimsonApp
+cd C:\Users\aarch\Desktop\opilex\app\OpilexApp
 
 # 3. Login to Expo
 eas login
@@ -37,7 +37,7 @@ eas build --profile production --platform android
 ### Method 2: Quick APK Build
 
 ```bash
-cd C:\Users\aarch\Desktop\kimson\app\KimsonApp
+cd C:\Users\aarch\Desktop\opilex\app\OpilexApp
 
 # Build (no login required for first time)
 npx eas-cli build --platform android --profile preview
@@ -48,7 +48,7 @@ npx eas-cli build --platform android --profile preview
 ### Method 3: Use Android Studio
 
 1. Open Android Studio
-2. File → Open → Select `KimsonApp/android` folder
+2. File → Open → Select `OpilexApp/android` folder
 3. Click "Run" (green play button)
 4. App installs with icon ✅
 
@@ -59,7 +59,7 @@ npx eas-cli build --platform android --profile preview
 Run these commands **RIGHT NOW**:
 
 ```bash
-cd C:\Users\aarch\Desktop\kimson\app\KimsonApp
+cd C:\Users\aarch\Desktop\opilex\app\OpilexApp
 
 # Install EAS (one time)
 npm install -g eas-cli
@@ -83,7 +83,7 @@ When prompted:
 Your icon is configured correctly:
 
 ```bash
-cd C:\Users\aarch\Desktop\kimson\app\KimsonApp
+cd C:\Users\aarch\Desktop\opilex\app\OpilexApp
 
 # Check icon file
 Get-Item assets\icon.png
@@ -131,7 +131,7 @@ The icon is configured. It will show in any standalone build. Expo Go is just a 
 Run this to verify everything is ready:
 
 ```powershell
-cd C:\Users\aarch\Desktop\kimson\app\KimsonApp
+cd C:\Users\aarch\Desktop\opilex\app\OpilexApp
 
 # Check configuration
 Test-Path app.config.js
@@ -162,7 +162,7 @@ Test-Path android\app\src\main\res\mipmap-mdpi\ic_launcher.webp
 ### Command to Run:
 
 ```bash
-cd C:\Users\aarch\Desktop\kimson\app\KimsonApp
+cd C:\Users\aarch\Desktop\opilex\app\OpilexApp
 npm install -g eas-cli
 eas build --platform android
 ```
@@ -208,7 +208,7 @@ The icon IS configured correctly. You just need a standalone build to see it.
 
 ```bash
 # Navigate to project
-cd C:\Users\aarch\Desktop\kimson\app\KimsonApp
+cd C:\Users\aarch\Desktop\opilex\app\OpilexApp
 
 # Install EAS CLI
 npm install -g eas-cli

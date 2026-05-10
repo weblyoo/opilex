@@ -1,10 +1,10 @@
-# Firebase Setup Guide for Kimson Admin Panel
+# Firebase Setup Guide for Opilex Admin Panel
 
 This document outlines the Firebase configuration and setup for the admin panel.
 
 ## ✅ Current Setup Status
 
-- ✅ Firebase Project: `kimson-3373e`
+- ✅ Firebase Project: `opilex-3373e`
 - ✅ Web App: Configured and active
 - ✅ Firestore Security Rules: Created and validated
 - ✅ Storage Security Rules: Created and validated
@@ -27,9 +27,9 @@ The Firebase config now supports environment variables. Create a `.env` file (se
 
 ```bash
 VITE_FIREBASE_API_KEY=your-api-key
-VITE_FIREBASE_AUTH_DOMAIN=kimson-3373e.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=kimson-3373e
-VITE_FIREBASE_STORAGE_BUCKET=kimson-3373e.firebasestorage.app
+VITE_FIREBASE_AUTH_DOMAIN=opilex-3373e.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=opilex-3373e
+VITE_FIREBASE_STORAGE_BUCKET=opilex-3373e.firebasestorage.app
 VITE_FIREBASE_MESSAGING_SENDER_ID=1002505057634
 VITE_FIREBASE_APP_ID=1:1002505057634:web:fe5a29d0d3945c850ae83b
 VITE_FIREBASE_MEASUREMENT_ID=G-40Z3KKDR4Y
@@ -71,7 +71,7 @@ The following composite indexes are configured:
 ### Required: Enable Email/Password Authentication
 
 1. Go to [Firebase Console](https://console.firebase.google.com/)
-2. Select project: `kimson-3373e`
+2. Select project: `opilex-3373e`
 3. Navigate to **Authentication** > **Sign-in method**
 4. Enable **Email/Password** provider
 5. Click **Save**
@@ -188,7 +188,7 @@ If you see "index required" errors:
 
 ## 📚 Additional Resources
 
-- [Firebase Console](https://console.firebase.google.com/project/kimson-3373e)
+- [Firebase Console](https://console.firebase.google.com/project/opilex-3373e)
 - [Firebase Documentation](https://firebase.google.com/docs)
 - [Firestore Security Rules](https://firebase.google.com/docs/firestore/security/get-started)
 - [Storage Security Rules](https://firebase.google.com/docs/storage/security)

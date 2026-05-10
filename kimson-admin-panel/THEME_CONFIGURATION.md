@@ -102,7 +102,7 @@ This ensures the system UI (status bar, navigation bar) defaults to light mode.
 
 The app uses AsyncStorage to save the user's theme preference:
 
-- **Storage Key**: `@kimson_theme_mode`
+- **Storage Key**: `@opilex_theme_mode`
 - **Saved Values**: `'light'` or `'dark'`
 - **Behavior**: 
   - First launch: Light mode (default)
@@ -119,10 +119,10 @@ Users can toggle between light and dark modes using the theme toggle button avai
 To test the default theme from scratch:
 ```bash
 # For iOS Simulator
-xcrun simctl uninstall booted com.kimson.wireauth
+xcrun simctl uninstall booted com.opilex.wireauth
 
 # For Android Emulator
-adb uninstall com.kimson.wireauth
+adb uninstall com.opilex.wireauth
 ```
 
 ### 2. Restart Development Server

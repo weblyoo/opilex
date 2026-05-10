@@ -2,7 +2,7 @@
 
 ## ✅ What You've Done:
 
-1. ✅ **Created Android App:** `com.kimson.wireauth` ✅
+1. ✅ **Created Android App:** `com.opilex.wireauth` ✅
 2. ✅ **Added SHA-1:** `5e:8f:16:06:2e:a3:cd:2c:4a:0d:54:78:76:ba:a6:f3:8c:ab:f6:25` ✅
 3. ✅ **Added SHA-256:** `fa:c6:17:45:dc:09:03:78:6f:b9:ed:e6:2a:96:2b:39:9f:73:48:f0:bb:6f:89:9b:83:32:66:75:91:03:3b:9c` ✅
 
@@ -15,7 +15,7 @@
 ### Step 1: Enable Phone Authentication (Verify)
 
 1. **Go to Phone Authentication Settings:**
-   - https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+   - https://console.firebase.google.com/project/opilex-3373e/authentication/providers
 
 2. **Click on "Phone" provider**
 
@@ -94,8 +94,8 @@ npx eas-cli build --platform android --profile preview
    - Make sure they match exactly (case-insensitive is OK)
 
 2. **Verify package name:**
-   - Firebase: `com.kimson.wireauth` ✅
-   - Your app: `com.kimson.wireauth` ✅
+   - Firebase: `com.opilex.wireauth` ✅
+   - Your app: `com.opilex.wireauth` ✅
 
 3. **Wait longer:**
    - Sometimes Firebase needs 15-20 minutes
@@ -127,7 +127,7 @@ npx eas-cli credentials
 
 Before testing, verify:
 
-- [x] ✅ Android app created: `com.kimson.wireauth`
+- [x] ✅ Android app created: `com.opilex.wireauth`
 - [x] ✅ SHA-1 fingerprint added
 - [x] ✅ SHA-256 fingerprint added
 - [ ] ⏰ Phone Authentication enabled (verify)
@@ -160,9 +160,9 @@ Your Firebase setup is now correct:
 ## 📚 Reference Links
 
 **Firebase Console:**
-- Project Settings: https://console.firebase.google.com/project/kimson-3373e/settings/general
-- Phone Auth: https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+- Project Settings: https://console.firebase.google.com/project/opilex-3373e/settings/general
+- Phone Auth: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
 
 **Your Android App:**
-- https://console.firebase.google.com/project/kimson-3373e/settings/general/android:5108de2c2f9ace6d0ae83b
+- https://console.firebase.google.com/project/opilex-3373e/settings/general/android:5108de2c2f9ace6d0ae83b
 

@@ -70,7 +70,7 @@ The new `logo-app-icon.png` will be used for:
 For the icon to appear, you need to rebuild the app:
 
 ```bash
-cd KimsonApp
+cd OpilexApp
 
 # Clear cache
 npx expo start --clear
@@ -204,7 +204,7 @@ To revert to old icons, restore these lines in **app.json** and **app.config.js*
 ## File Locations
 
 ```
-KimsonApp/
+OpilexApp/
 ├── assets/
 │   ├── logo-app-icon.png     ← NEW ICON (active)
 │   ├── icon.png               ← Old icon (backup)

@@ -9,7 +9,7 @@ Based on [Firebase Android Phone Auth Documentation](https://firebase.google.com
 ### 1. ✅ Enable Phone Authentication Provider
 - **Status:** We've provided instructions
 - **Action Needed:** Verify it's enabled in Firebase Console
-- **Link:** https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+- **Link:** https://console.firebase.google.com/project/opilex-3373e/authentication/providers
 
 ### 2. ✅ Get SHA Certificate Fingerprints
 - **Status:** ✅ DONE
@@ -19,13 +19,13 @@ Based on [Firebase Android Phone Auth Documentation](https://firebase.google.com
 
 ### 3. ✅ Add SHA Fingerprints to Firebase Console
 - **Status:** ⚠️ IN PROGRESS (You need to do this)
-- **Action:** Add both fingerprints to Android app `com.kimson.wireauth`
+- **Action:** Add both fingerprints to Android app `com.opilex.wireauth`
 - **Guide:** See `FIREBASE_SETUP_STEPS.md`
 
 ### 4. ✅ Verify Package Name Matches
 - **Status:** ✅ VERIFIED
-- **Firebase should have:** `com.kimson.wireauth`
-- **Your app has:** `com.kimson.wireauth` ✅
+- **Firebase should have:** `com.opilex.wireauth`
+- **Your app has:** `com.opilex.wireauth` ✅
 
 ---
 
@@ -68,11 +68,11 @@ According to Firebase docs, the **"Phone authentication setup required"** error 
 ### Step 1: Verify SHA Fingerprints Are Added
 
 1. **Go to Firebase Console:**
-   - https://console.firebase.google.com/project/kimson-3373e/settings/general
+   - https://console.firebase.google.com/project/opilex-3373e/settings/general
 
 2. **Find Android App:**
-   - Look for app with package name: `com.kimson.wireauth`
-   - **NOT** `com.kimsonindia` (that's wrong!)
+   - Look for app with package name: `com.opilex.wireauth`
+   - **NOT** `com.opilexindia` (that's wrong!)
 
 3. **Check SHA Fingerprints:**
    - Should see:
@@ -88,7 +88,7 @@ According to Firebase docs, the **"Phone authentication setup required"** error 
 ### Step 2: Verify Phone Auth is Enabled
 
 1. **Go to:**
-   - https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+   - https://console.firebase.google.com/project/opilex-3373e/authentication/providers
 
 2. **Click "Phone"**
 3. **Verify it says "Enabled"**
@@ -113,7 +113,7 @@ According to Firebase docs, the **"Phone authentication setup required"** error 
 | Get SHA Fingerprints | ✅ Done | Extracted from keystore |
 | Add to Firebase Console | ⚠️ Pending | You need to do this |
 | Enable Phone Auth | ⚠️ Verify | Check Firebase Console |
-| Package Name Match | ✅ Verified | `com.kimson.wireauth` |
+| Package Name Match | ✅ Verified | `com.opilex.wireauth` |
 | App Verification Setup | ⚠️ In Progress | Needs SHA fingerprints |
 | Code Implementation | ✅ Done | REST API approach implemented |
 
@@ -149,8 +149,8 @@ According to Firebase docs, the **"Phone authentication setup required"** error 
 ---
 
 **Quick Action:**
-1. Open: https://console.firebase.google.com/project/kimson-3373e/settings/general
-2. Find Android app: `com.kimson.wireauth`
+1. Open: https://console.firebase.google.com/project/opilex-3373e/settings/general
+2. Find Android app: `com.opilex.wireauth`
 3. Add SHA fingerprints (both SHA-1 and SHA-256)
 4. Wait 10 minutes
 5. Rebuild and test

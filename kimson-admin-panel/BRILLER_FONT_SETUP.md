@@ -1,7 +1,7 @@
 # Briller Bold Font Setup Instructions
 
 ## Overview
-The splash screen rolling "KIMSON" text is configured to use the **Briller Bold** font from Adobe Typekit.
+The splash screen rolling "OPILEX" text is configured to use the **Briller Bold** font from Adobe Typekit.
 
 ---
 
@@ -28,23 +28,23 @@ If Briller is not available through Adobe Fonts with your account, you'll need t
 
 1. Create a fonts folder in assets:
    ```
-   KimsonApp/assets/fonts/
+   OpilexApp/assets/fonts/
    ```
 
 2. Copy the font file:
    ```
-   KimsonApp/assets/fonts/Briller-Bold.ttf
+   OpilexApp/assets/fonts/Briller-Bold.ttf
    ```
    OR
    ```
-   KimsonApp/assets/fonts/Briller-Bold.otf
+   OpilexApp/assets/fonts/Briller-Bold.otf
    ```
 
 ---
 
 ### Step 3: Update App.tsx
 
-Open `KimsonApp/App.tsx` and find the font loading section (around line 25-33).
+Open `OpilexApp/App.tsx` and find the font loading section (around line 25-33).
 
 **Uncomment this line:**
 ```typescript
@@ -71,7 +71,7 @@ await Font.loadAsync({
 
 ### Step 4: Update Splash Screen
 
-Open `KimsonApp/src/screens/SplashScreen.tsx` and find the `logoLetter` style (around line 249).
+Open `OpilexApp/src/screens/SplashScreen.tsx` and find the `logoLetter` style (around line 249).
 
 **Change:**
 ```typescript
@@ -89,7 +89,7 @@ fontFamily: 'Briller-Bold',
 
 1. Clear cache and restart:
    ```bash
-   cd KimsonApp
+   cd OpilexApp
    npx expo start --clear
    ```
 
@@ -120,7 +120,7 @@ Currently using **Ubuntu-Bold** as fallback until Briller font is added.
 ## File Structure
 
 ```
-KimsonApp/
+OpilexApp/
 ├── assets/
 │   └── fonts/              ← Create this folder
 │       └── Briller-Bold.ttf ← Add font file here

@@ -10,9 +10,9 @@ import { execSync } from 'child_process';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  authDomain: "kimson-3373e.firebaseapp.com",
-  projectId: "kimson-3373e",
-  storageBucket: "kimson-3373e-storage",
+  authDomain: "opilex-3373e.firebaseapp.com",
+  projectId: "opilex-3373e",
+  storageBucket: "opilex-3373e-storage",
   messagingSenderId: "1002505057634",
   appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
   measurementId: "G-40Z3KKDR4Y"
@@ -63,7 +63,7 @@ async function checkAndDeploy() {
     console.log('='.repeat(60));
     console.log('\n📝 To fix this:\n');
     console.log('1. Open this link:');
-    console.log('   https://console.firebase.google.com/project/kimson-3373e/storage\n');
+    console.log('   https://console.firebase.google.com/project/opilex-3373e/storage\n');
     console.log('2. Click "Get Started"');
     console.log('\n3. ⚠️  IMPORTANT: Select location');
     console.log('   Choose: "us-central1" (Iowa)');

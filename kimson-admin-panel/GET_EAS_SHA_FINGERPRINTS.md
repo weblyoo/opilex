@@ -80,12 +80,12 @@ npx eas-cli credentials
 
 ### For Local Development Testing:
 - ✅ **Use the debug keystore fingerprints** (already have them)
-- ✅ Add them to Firebase Console for `com.kimson.wireauth`
+- ✅ Add them to Firebase Console for `com.opilex.wireauth`
 - ✅ Test with `npx expo run:android`
 
 ### For EAS Build Testing:
 - ⚠️ **Need EAS keystore fingerprints** (different from debug!)
-- ⚠️ Add EAS fingerprints to Firebase Console for `com.kimson.wireauth`
+- ⚠️ Add EAS fingerprints to Firebase Console for `com.opilex.wireauth`
 - ⚠️ Test with EAS-built APK
 
 ### Best Practice: Add BOTH Sets!

@@ -2,7 +2,7 @@
 
 ## User Information
 
-**Email**: `superadmin@kimson.com`  
+**Email**: `superadmin@opilex.com`  
 **UID**: `0GpunGg9R7NaLpsXZNfwyz2KfZd2`  
 **Role**: `superAdmin`
 
@@ -13,7 +13,7 @@
 
 ## Login Credentials
 
-- **Email**: `superadmin@kimson.com`
+- **Email**: `superadmin@opilex.com`
 - **Password**: (Use the password you set in Firebase Authentication)
 
 ## Verifying Setup
@@ -21,18 +21,18 @@
 To verify the admin user is properly configured:
 
 1. **Check Firebase Authentication**:
-   - Go to: https://console.firebase.google.com/project/kimson-3373e/authentication/users
-   - Verify user exists with email: `superadmin@kimson.com`
+   - Go to: https://console.firebase.google.com/project/opilex-3373e/authentication/users
+   - Verify user exists with email: `superadmin@opilex.com`
    - UID should be: `0GpunGg9R7NaLpsXZNfwyz2KfZd2`
 
 2. **Check Firestore Admins Collection**:
-   - Go to: https://console.firebase.google.com/project/kimson-3373e/firestore
+   - Go to: https://console.firebase.google.com/project/opilex-3373e/firestore
    - Collection: `admins`
    - Document ID: `0GpunGg9R7NaLpsXZNfwyz2KfZd2`
    - Should contain **exactly**:
      ```json
      {
-       "email": "superadmin@kimson.com",
+       "email": "superadmin@opilex.com",
        "role": "superAdmin",
        "name": "Admin User",
        "permissions": ["users", "authentications", "rewards", "transactions"],
@@ -51,14 +51,14 @@ To verify the admin user is properly configured:
 
 1. Start the admin panel:
    ```bash
-   cd kimson-admin-panel
+   cd opilex-admin-panel
    npm run dev
    ```
 
 2. Navigate to: http://localhost:5173
 
 3. Login with:
-   - Email: `superadmin@kimson.com`
+   - Email: `superadmin@opilex.com`
    - Password: (Your Firebase Auth password)
 
 ## Troubleshooting
@@ -66,7 +66,7 @@ To verify the admin user is properly configured:
 If login fails:
 
 1. **Check Email/Password Auth is enabled**:
-   - https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+   - https://console.firebase.google.com/project/opilex-3373e/authentication/providers
    - Ensure Email/Password is enabled
 
 2. **Verify Admin Document**:

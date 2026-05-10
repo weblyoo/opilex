@@ -4,10 +4,10 @@ This file provides guidance to WARP (warp.dev) when working with code in this re
 
 ## Project Overview
 
-Kimson App is a React Native mobile application (Expo/TypeScript) for authenticating Kimson wire purchases via QR code scanning and earning reward points. The app supports phone-based authentication (OTP), KYC verification, multi-language support (English, Hindi, Marathi, Gujarati), and a black-and-white themed UI design.
+Opilex App is a React Native mobile application (Expo/TypeScript) for authenticating Opilex wire purchases via QR code scanning and earning reward points. The app supports phone-based authentication (OTP), KYC verification, multi-language support (English, Hindi, Marathi, Gujarati), and a black-and-white themed UI design.
 
-**Firebase Project**: `kimson-3373e`  
-**Bundle ID**: `com.kimson.wireauth`
+**Firebase Project**: `opilex-3373e`  
+**Bundle ID**: `com.opilex.wireauth`
 
 ## Common Commands
 
@@ -47,7 +47,7 @@ firebase deploy --only firestore:rules
 node test-firebase.js
 ```
 
-**Note**: Firebase CLI and deployment operations use project ID `kimson-3373e` (configured in `.firebaserc`).
+**Note**: Firebase CLI and deployment operations use project ID `opilex-3373e` (configured in `.firebaserc`).
 
 ## Architecture & Structure
 
@@ -88,7 +88,7 @@ Each service provides CRUD operations with proper error handling and Firestore t
 
 ### Wire Authentication Flow
 1. User scans QR code via `expo-camera` or enters code manually
-2. Code validated (must start with `KIMSON_` and be >10 chars)
+2. Code validated (must start with `OPILEX_` and be >10 chars)
 3. Check if code already authenticated (no duplicate redemptions)
 4. Create authentication record in `wireAuthentications` collection
 5. Award points to user (default 50 points per authentication)
@@ -145,7 +145,7 @@ All TypeScript types centralized in `src/types/index.ts`:
 ## Important Development Notes
 
 ### Firebase Configuration
-**Never commit real Firebase API keys**. The current `src/config/firebase.ts` contains hardcoded keys for the `kimson-3373e` project. For team development, move to environment variables:
+**Never commit real Firebase API keys**. The current `src/config/firebase.ts` contains hardcoded keys for the `opilex-3373e` project. For team development, move to environment variables:
 
 ```typescript
 // Use expo-constants for env vars:
@@ -162,10 +162,10 @@ Common issues:
 See `FIREBASE_AUTH_ERROR_FIXES.md` for detailed solutions.
 
 ### Testing QR Codes
-Valid test QR codes (must start with `KIMSON_`):
-- `KIMSON_WIRE_BATCH001_2024`
-- `KIMSON_WIRE_BATCH002_2024`
-- `KIMSON_COPPER_TEST_2024`
+Valid test QR codes (must start with `OPILEX_`):
+- `OPILEX_WIRE_BATCH001_2024`
+- `OPILEX_WIRE_BATCH002_2024`
+- `OPILEX_COPPER_TEST_2024`
 
 Generate more codes using `generate-test-qr.html` or see `DUMMY_QR_CODES.md` for 40+ test codes.
 
@@ -341,7 +341,7 @@ The codebase contains many Windows-style paths in markdown docs. When working cr
 
 - **Always use TypeScript**: No plain JS files in `src/`
 - **Theme-aware styling**: All components must use `useTheme()` hook for colors
-- **AsyncStorage keys**: Prefix with `@kimson_` (e.g., `@kimson_user_data`)
+- **AsyncStorage keys**: Prefix with `@opilex_` (e.g., `@opilex_user_data`)
 - **Console logging**: Use descriptive prefixes with emojis (✅, ❌, ⚠️, 📤, 📥) for visibility
 - **Firebase operations**: Always include try-catch with user-friendly error messages
 - **Form validation**: Use validators from `src/utils/validators.ts` for phone numbers, Aadhaar, etc.

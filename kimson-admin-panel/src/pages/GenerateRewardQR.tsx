@@ -49,7 +49,7 @@ export const GenerateRewardQR = () => {
       
       // Create QR code data as JSON (includes userType)
       const qrCodeData = {
-        type: 'kimson_reward',
+        type: 'opilex_reward',
         rewardId: qrCodeId,
         points: pointsNum,
         description: description.trim(),
@@ -99,7 +99,7 @@ export const GenerateRewardQR = () => {
       ctx?.drawImage(img, 0, 0);
       const pngFile = canvas.toDataURL('image/png');
       const downloadLink = document.createElement('a');
-      downloadLink.download = `kimson-reward-qr-${userType}-${qrId}.png`;
+      downloadLink.download = `opilex-reward-qr-${userType}-${qrId}.png`;
       downloadLink.href = pngFile;
       downloadLink.click();
     };
@@ -261,7 +261,7 @@ export const GenerateRewardQR = () => {
           </div>
 
           <p className="text-white/50 font-ubuntu-light text-xs text-center">
-            Only {getUserTypeDisplay(userType)} users can scan this QR code in the Kimson app to receive {points} points
+            Only {getUserTypeDisplay(userType)} users can scan this QR code in the Opilex app to receive {points} points
           </p>
         </div>
       </Modal>

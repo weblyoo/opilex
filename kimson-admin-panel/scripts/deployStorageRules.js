@@ -33,7 +33,7 @@ try {
   if (error.message.includes('Storage has not been set up')) {
     console.log('\n💡 Firebase Storage is not initialized yet.');
     console.log('\n📝 Please complete these steps first:');
-    console.log('\n1. Go to: https://console.firebase.google.com/project/kimson-3373e/storage');
+    console.log('\n1. Go to: https://console.firebase.google.com/project/opilex-3373e/storage');
     console.log('2. Click "Get Started"');
     console.log('3. Select location: "us-central1" (Iowa)');
     console.log('4. Storage Class: "Standard"');

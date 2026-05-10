@@ -1,4 +1,4 @@
-# 🔐 Sandbox KYC Integration Plan - Kimson App
+# 🔐 Sandbox KYC Integration Plan - Opilex App
 
 **Date:** January 2025  
 **API Provider:** Sandbox Financial Technologies  
@@ -9,7 +9,7 @@
 
 ## 📋 Overview
 
-This document outlines the complete implementation plan for integrating Sandbox KYC API into the Kimson App. The integration will replace the current mock KYC service with real Aadhaar verification using Sandbox's Aadhaar Offline e-KYC API.
+This document outlines the complete implementation plan for integrating Sandbox KYC API into the Opilex App. The integration will replace the current mock KYC service with real Aadhaar verification using Sandbox's Aadhaar Offline e-KYC API.
 
 ### Current Status
 - ✅ UI is ready (KYCScreen.tsx)

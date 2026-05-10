@@ -28,7 +28,7 @@ This will open a browser window for authentication.
 
 #### Step 2: Verify Project
 ```bash
-firebase use kimson-3373e
+firebase use opilex-3373e
 ```
 
 #### Step 3: Deploy Rules
@@ -44,7 +44,7 @@ node test-firebase.js
 ## 📋 Project Structure
 
 ```
-KimsonApp/
+OpilexApp/
 ├── firebase.json          # Firebase configuration
 ├── .firebaserc            # Project ID configuration
 ├── firestore.rules        # Security rules (deployable)
@@ -69,7 +69,7 @@ KimsonApp/
 ```json
 {
   "projects": {
-    "default": "kimson-3373e"
+    "default": "opilex-3373e"
   }
 }
 ```
@@ -150,7 +150,7 @@ Expected output:
 
 ## 📞 Support
 
-- **Firebase Console**: https://console.firebase.google.com/project/kimson-3373e
+- **Firebase Console**: https://console.firebase.google.com/project/opilex-3373e
 - **Firebase CLI Docs**: https://firebase.google.com/docs/cli
 - **Firestore Rules**: https://firebase.google.com/docs/firestore/security/get-started
 

@@ -4,7 +4,7 @@
 
 ### Step 1: Navigate to Admin Panel Directory
 ```bash
-cd kimson-admin-panel
+cd opilex-admin-panel
 ```
 
 ### Step 2: Start Development Server
@@ -23,7 +23,7 @@ You should see the **Login Page**.
 
 ### 1. Enable Email/Password Authentication
 
-1. Go to: https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+1. Go to: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
 2. Click **Email/Password**
 3. Enable it
 4. Click **Save**
@@ -32,19 +32,19 @@ You should see the **Login Page**.
 
 **Option A: Using Script** (Recommended)
 ```bash
-node scripts/createAdmin.js admin@kimson.com YourPassword123
+node scripts/createAdmin.js admin@opilex.com YourPassword123
 ```
 
 **Option B: Manual**
 1. Firebase Console → Authentication → Add user
-   - Email: admin@kimson.com
+   - Email: admin@opilex.com
    - Password: (choose secure password)
 2. Copy the User UID
 3. Firebase Console → Firestore → Create Collection `admins`
 4. Add document with UID as Document ID:
    ```json
    {
-     "email": "admin@kimson.com",
+     "email": "admin@opilex.com",
      "role": "superAdmin",
      "name": "Admin User",
      "permissions": ["users", "authentications", "rewards", "transactions"],

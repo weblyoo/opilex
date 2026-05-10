@@ -10,7 +10,7 @@
 Now run the update script:
 
 ```bash
-cd kimson-admin-panel
+cd opilex-admin-panel
 node scripts/updateAdminUser.js 123456
 ```
 

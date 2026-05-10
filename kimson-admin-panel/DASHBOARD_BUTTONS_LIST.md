@@ -180,7 +180,7 @@ Opens from the **bell icon** (🔔) in the top-right corner:
    - Top-left corner
    - Opens side drawer menu
 
-2. **Title**: "KIMSON"
+2. **Title**: "OPILEX"
    - Center of header
 
 3. **Notification Bell** (🔔)

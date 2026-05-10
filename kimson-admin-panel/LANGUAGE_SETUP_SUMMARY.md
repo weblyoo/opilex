@@ -1,4 +1,4 @@
-# Language Setup Summary - Kimson App
+# Language Setup Summary - Opilex App
 
 ## ✅ What Was Fixed
 

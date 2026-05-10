@@ -2,7 +2,7 @@
 
 ## Overview
 
-The splash screen now features an individual letter rolling animation where each letter in "KIMSON" rolls up and down independently with a staggered effect, creating a dynamic and engaging entrance animation.
+The splash screen now features an individual letter rolling animation where each letter in "OPILEX" rolls up and down independently with a staggered effect, creating a dynamic and engaging entrance animation.
 
 ## Animation Details
 
@@ -238,13 +238,13 @@ Animated.spring(anim, {
 1. **Eye-Catching**: Letter-by-letter animation draws attention
 2. **Modern**: Sophisticated animation technique
 3. **Smooth**: Hardware-accelerated performance
-4. **Branded**: Emphasizes the KIMSON brand name
+4. **Branded**: Emphasizes the OPILEX brand name
 5. **Professional**: High-quality visual effect
 6. **Fast**: Quick animation doesn't delay app startup
 
 ## Files Modified
 
-- `KimsonApp/src/screens/SplashScreen.tsx`
+- `OpilexApp/src/screens/SplashScreen.tsx`
   - Replaced single text animation with individual letter animations
   - Added staggered rolling effect
   - Optimized container styles for letter layout
@@ -259,4 +259,4 @@ Animated.spring(anim, {
 ✅ Smooth 60 FPS animation  
 ✅ Professional and modern appearance  
 
-The KIMSON text now features a captivating letter-by-letter rolling animation that makes the splash screen memorable and engaging!
+The OPILEX text now features a captivating letter-by-letter rolling animation that makes the splash screen memorable and engaging!

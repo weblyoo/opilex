@@ -23,12 +23,12 @@ Successfully implemented a QR code generator system that creates separate QR cod
 - Icons (⚡ for Electrician, 🏪 for Dealer)
 - Clear labels: "For Electricians Only" and "For Dealers Only"
 - Modal displays user type information
-- Download filename includes user type: `kimson-reward-qr-{userType}-{qrId}.png`
+- Download filename includes user type: `opilex-reward-qr-{userType}-{qrId}.png`
 
 #### QR Code Data Structure:
 ```json
 {
-  "type": "kimson_reward",
+  "type": "opilex_reward",
   "rewardId": "REWARD-{timestamp}-{random}",
   "points": number,
   "description": string,

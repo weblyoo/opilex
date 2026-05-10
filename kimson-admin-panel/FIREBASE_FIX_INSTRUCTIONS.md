@@ -11,7 +11,7 @@ This error occurs because **Firestore security rules haven't been deployed yet**
 1. **Go to Firebase Console**
    - Visit: https://console.firebase.google.com
    - Sign in with your Google account
-   - Select project: **kimson-3373e**
+   - Select project: **opilex-3373e**
 
 2. **Navigate to Firestore Rules**
    - Click on **Firestore Database** in the left menu
@@ -101,7 +101,7 @@ Then deploy the proper rules from `firestore-rules.txt` before going to producti
 
 ## 📞 Need Help?
 
-- **Firebase Console**: https://console.firebase.google.com/project/kimson-3373e
+- **Firebase Console**: https://console.firebase.google.com/project/opilex-3373e
 - **Firestore Rules Docs**: https://firebase.google.com/docs/firestore/security/get-started
 - **Phone Auth Setup**: https://firebase.google.com/docs/auth/web/phone-auth
 
@@ -137,7 +137,7 @@ The rules must include the **scratchRewards** collection so that admins can crea
 
 1. Open **`firestore.rules`** in this project (same folder as this file).
 2. Copy its **entire** content.
-3. In [Firebase Console](https://console.firebase.google.com/project/kimson-3373e) → **Firestore Database** → **Rules**, paste and click **Publish**.
+3. In [Firebase Console](https://console.firebase.google.com/project/opilex-3373e) → **Firestore Database** → **Rules**, paste and click **Publish**.
 
 The `firestore.rules` file includes a `scratchRewards` block that allows:
 - **create** only for admins (`isAdmin()`)

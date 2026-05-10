@@ -5,7 +5,7 @@ The admin user document in Firestore needs to match this exact structure:
 
 ```json
 {
-  "email": "superadmin@kimson.com",
+  "email": "superadmin@opilex.com",
   "role": "superAdmin",
   "name": "Admin User",
   "permissions": ["users", "authentications", "rewards", "transactions"],
@@ -14,14 +14,14 @@ The admin user document in Firestore needs to match this exact structure:
 ```
 
 ## Current Admin User
-- **Email**: `superadmin@kimson.com`
+- **Email**: `superadmin@opilex.com`
 - **UID**: `0GpunGg9R7NaLpsXZNfwyz2KfZd2`
 
 ## ✅ Fix Using Firebase Console
 
 ### Step 1: Open Firestore
 
-1. Go to: https://console.firebase.google.com/project/kimson-3373e/firestore
+1. Go to: https://console.firebase.google.com/project/opilex-3373e/firestore
 
 ### Step 2: Navigate to Admins Collection
 
@@ -34,7 +34,7 @@ The admin user document in Firestore needs to match this exact structure:
 Click on the document and ensure it has these exact fields:
 
 1. **email** (string)
-   - Value: `superadmin@kimson.com`
+   - Value: `superadmin@opilex.com`
 
 2. **role** (string)
    - Value: `superAdmin`
@@ -63,7 +63,7 @@ Click **"Update"** or **"Save"** to save the document.
 **Option B**: Run the fix script:
 
 ```bash
-cd kimson-admin-panel
+cd opilex-admin-panel
 node scripts/fixAdminUser.js
 ```
 
@@ -71,7 +71,7 @@ node scripts/fixAdminUser.js
 
 After fixing, verify the document structure:
 
-1. Go to Firestore: https://console.firebase.google.com/project/kimson-3373e/firestore
+1. Go to Firestore: https://console.firebase.google.com/project/opilex-3373e/firestore
 2. Open `admins` collection
 3. Check document `0GpunGg9R7NaLpsXZNfwyz2KfZd2`
 4. Ensure all fields match the structure above
@@ -85,7 +85,7 @@ Collection: admins
 Document ID: 0GpunGg9R7NaLpsXZNfwyz2KfZd2
 
 Fields:
-├── email: "superadmin@kimson.com"
+├── email: "superadmin@opilex.com"
 ├── role: "superAdmin"
 ├── name: "Admin User"
 ├── permissions: ["users", "authentications", "rewards", "transactions"]
@@ -98,7 +98,7 @@ After fixing, test login:
 
 1. Start admin panel: `npm run dev`
 2. Go to: http://localhost:5173
-3. Login with: `superadmin@kimson.com` + your password
+3. Login with: `superadmin@opilex.com` + your password
 4. Should successfully authenticate and show dashboard
 
 ## Troubleshooting

@@ -50,13 +50,13 @@ When you try to create Storage in Firebase Console:
 **This method bypasses Firebase Console entirely:**
 
 1. **Open Google Cloud Console:**
-   https://console.cloud.google.com/storage/browser?project=kimson-3373e
+   https://console.cloud.google.com/storage/browser?project=opilex-3373e
 
 2. **Click "Create Bucket"**
 
 3. **Configure:**
    ```
-   Name: kimson-3373e.firebasestorage.app
+   Name: opilex-3373e.firebasestorage.app
    Location: us-central1 (Iowa)
    Storage class: Standard
    ```

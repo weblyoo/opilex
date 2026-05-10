@@ -15,7 +15,7 @@
 
 ## 📖 Overview
 
-This guide will help you create a **web admin panel** that connects to the same Firebase database (`kimson-3373e`) used by your React Native mobile app. The admin panel will allow you to:
+This guide will help you create a **web admin panel** that connects to the same Firebase database (`opilex-3373e`) used by your React Native mobile app. The admin panel will allow you to:
 
 - View all users and their data
 - Monitor wire authentications
@@ -32,7 +32,7 @@ Before starting, ensure you have:
 
 - Node.js 16+ installed
 - npm or yarn package manager
-- Firebase project access (kimson-3373e)
+- Firebase project access (opilex-3373e)
 - Basic knowledge of React/Next.js
 - Git installed
 
@@ -44,8 +44,8 @@ Before starting, ensure you have:
 
 ```bash
 # Create new React project
-npm create vite@latest kimson-admin-panel -- --template react-ts
-cd kimson-admin-panel
+npm create vite@latest opilex-admin-panel -- --template react-ts
+cd opilex-admin-panel
 npm install
 
 # Install Firebase and UI dependencies
@@ -60,8 +60,8 @@ npm install date-fns   # For date formatting
 
 ```bash
 # Create Next.js project
-npx create-next-app@latest kimson-admin-panel --typescript --tailwind --app
-cd kimson-admin-panel
+npx create-next-app@latest opilex-admin-panel --typescript --tailwind --app
+cd opilex-admin-panel
 
 # Install Firebase dependencies
 npm install firebase
@@ -97,9 +97,9 @@ import { getAnalytics } from 'firebase/analytics';
 // ⚠️ SAME CONFIG AS MOBILE APP
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  authDomain: "kimson-3373e.firebaseapp.com",
-  projectId: "kimson-3373e",
-  storageBucket: "kimson-3373e.firebasestorage.app",
+  authDomain: "opilex-3373e.firebaseapp.com",
+  projectId: "opilex-3373e",
+  storageBucket: "opilex-3373e.firebasestorage.app",
   messagingSenderId: "1002505057634",
   appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
   measurementId: "G-40Z3KKDR4Y"
@@ -210,7 +210,7 @@ Add admin users to Firestore:
 // Collection: 'admins'
 // Document ID: Firebase UID
 {
-  email: 'admin@kimson.com',
+  email: 'admin@opilex.com',
   role: 'superAdmin',
   name: 'Admin User',
   createdAt: serverTimestamp(),
@@ -247,7 +247,7 @@ export const Login = () => {
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-md w-96">
         <h2 className="text-2xl font-bold mb-6 text-center">
-          Kimson Admin Panel
+          Opilex Admin Panel
         </h2>
         <form onSubmit={handleLogin}>
           <div className="mb-4">
@@ -890,7 +890,7 @@ netlify deploy --prod
 ## 📝 Complete Project Structure
 
 ```
-kimson-admin-panel/
+opilex-admin-panel/
 ├── src/
 │   ├── config/
 │   │   └── firebase.ts          # Firebase configuration
@@ -934,9 +934,9 @@ kimson-admin-panel/
 
 ## 🔗 Useful Links
 
-- **Firebase Console**: https://console.firebase.google.com/project/kimson-3373e
-- **Firestore Rules**: https://console.firebase.google.com/project/kimson-3373e/firestore/rules
-- **Authentication**: https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+- **Firebase Console**: https://console.firebase.google.com/project/opilex-3373e
+- **Firestore Rules**: https://console.firebase.google.com/project/opilex-3373e/firestore/rules
+- **Authentication**: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
 - **Firebase Docs**: https://firebase.google.com/docs
 
 ---

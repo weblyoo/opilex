@@ -1,15 +1,15 @@
 {
   "project_info": {
     "project_number": "1002505057634",
-    "project_id": "kimson-3373e",
-    "storage_bucket": "kimson-3373e.firebasestorage.app"
+    "project_id": "opilex-3373e",
+    "storage_bucket": "opilex-3373e.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:1002505057634:android:5108de2c2f9ace6d0ae83b",
         "android_client_info": {
-          "package_name": "com.kimson.wireauth"
+          "package_name": "com.opilex.wireauth"
         }
       },
       "oauth_client": [],
@@ -28,7 +28,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:1002505057634:android:462ce0293d35d5f50ae83b",
         "android_client_info": {
-          "package_name": "com.kimsonindia"
+          "package_name": "com.opilexindia"
         }
       },
       "oauth_client": [],

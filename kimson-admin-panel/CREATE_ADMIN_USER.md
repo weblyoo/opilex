@@ -11,7 +11,7 @@ This error means **Email/Password authentication is not enabled** in Firebase.
 ### Step 1: Enable Email/Password Auth
 
 1. **Open Firebase Console**
-   - Go to: https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+   - Go to: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
 
 2. **Enable Email/Password**
    - Click on **Email/Password** in the providers list
@@ -30,10 +30,10 @@ This error means **Email/Password authentication is not enabled** in Firebase.
 #### Part 1: Create Firebase Auth User
 
 1. **In Firebase Console**
-   - Go to: https://console.firebase.google.com/project/kimson-3373e/authentication/users
+   - Go to: https://console.firebase.google.com/project/opilex-3373e/authentication/users
    - Click **Add user** button
    - Enter:
-     - **Email**: `admin@kimson.com`
+     - **Email**: `admin@opilex.com`
      - **Password**: `Admin@123456` (or your secure password)
    - Click **Add user**
    - **Copy the User UID** (you'll need it in the next step)
@@ -41,7 +41,7 @@ This error means **Email/Password authentication is not enabled** in Firebase.
 #### Part 2: Add to Admins Collection
 
 1. **Go to Firestore**
-   - Navigate to: https://console.firebase.google.com/project/kimson-3373e/firestore
+   - Navigate to: https://console.firebase.google.com/project/opilex-3373e/firestore
 
 2. **Create Admins Collection**
    - Click **Start collection** (if collection doesn't exist)
@@ -49,7 +49,7 @@ This error means **Email/Password authentication is not enabled** in Firebase.
    - Document ID: **Paste the User UID you copied**
    - Add these fields:
      ```
-     email: admin@kimson.com (string)
+     email: admin@opilex.com (string)
      role: superAdmin (string)
      name: Admin User (string)
      permissions: ["users", "authentications", "rewards", "transactions"] (array)
@@ -66,8 +66,8 @@ This error means **Email/Password authentication is not enabled** in Firebase.
 Once Email/Password is enabled, you can use the script:
 
 ```bash
-cd kimson-admin-panel
-node scripts/createAdmin.js admin@kimson.com YourPassword123
+cd opilex-admin-panel
+node scripts/createAdmin.js admin@opilex.com YourPassword123
 ```
 
 ---
@@ -86,7 +86,7 @@ Create a simple HTML file to create admin:
 </head>
 <body>
     <h2>Create Admin User</h2>
-    <input type="email" id="email" placeholder="Email" value="admin@kimson.com"><br><br>
+    <input type="email" id="email" placeholder="Email" value="admin@opilex.com"><br><br>
     <input type="password" id="password" placeholder="Password"><br><br>
     <button onclick="createAdmin()">Create Admin</button>
     <div id="result"></div>
@@ -98,9 +98,9 @@ Create a simple HTML file to create admin:
 
         const firebaseConfig = {
             apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-            authDomain: "kimson-3373e.firebaseapp.com",
-            projectId: "kimson-3373e",
-            storageBucket: "kimson-3373e.firebasestorage.app",
+            authDomain: "opilex-3373e.firebaseapp.com",
+            projectId: "opilex-3373e",
+            storageBucket: "opilex-3373e.firebasestorage.app",
             messagingSenderId: "1002505057634",
             appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
             measurementId: "G-40Z3KKDR4Y"
@@ -170,9 +170,9 @@ After creating the admin user:
 
 ## 🔗 Quick Links
 
-- **Enable Auth**: https://console.firebase.google.com/project/kimson-3373e/authentication/providers
-- **Add User**: https://console.firebase.google.com/project/kimson-3373e/authentication/users
-- **Firestore**: https://console.firebase.google.com/project/kimson-3373e/firestore
+- **Enable Auth**: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+- **Add User**: https://console.firebase.google.com/project/opilex-3373e/authentication/users
+- **Firestore**: https://console.firebase.google.com/project/opilex-3373e/firestore
 
 ---
 
@@ -182,7 +182,7 @@ When creating the admin document in Firestore, use this structure:
 
 ```json
 {
-  "email": "admin@kimson.com",
+  "email": "admin@opilex.com",
   "role": "superAdmin",
   "name": "Admin User",
   "permissions": [

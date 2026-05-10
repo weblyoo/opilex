@@ -95,13 +95,13 @@ const AdminLoginScreen: React.FC<AdminLoginScreenProps> = ({ onLoginSuccess, nav
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
       >
         <View style={styles.splitContainer}>
-          {/* Left Half - Kimson Logo */}
+          {/* Left Half - Opilex Logo */}
           <View style={styles.logoSection}>
             <View style={styles.logoContainer}>
               <View style={styles.logoCircle}>
                 <Text style={styles.logoText}>K</Text>
               </View>
-              <Text style={styles.brandName}>KIMSON</Text>
+              <Text style={styles.brandName}>OPILEX</Text>
               <View style={styles.logoDivider} />
               <Text style={styles.brandTagline}>Admin Portal</Text>
               <Text style={styles.brandSubtitle}>Wire Authentication System</Text>
@@ -119,7 +119,7 @@ const AdminLoginScreen: React.FC<AdminLoginScreenProps> = ({ onLoginSuccess, nav
                 <View style={styles.inputWrapper}>
                   <TextInput
                     style={styles.input}
-                    placeholder="admin@kimson.com"
+                    placeholder="admin@opilex.com"
                     placeholderTextColor="#999"
                     value={email}
                     onChangeText={(text) => {

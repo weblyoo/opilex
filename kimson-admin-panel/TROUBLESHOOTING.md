@@ -8,7 +8,7 @@
 
 **Solution**:
 ```bash
-cd kimson-admin-panel
+cd opilex-admin-panel
 npm run dev
 ```
 
@@ -81,7 +81,7 @@ The app needs Firebase to be properly configured:
 
 **Critical Step**:
 
-1. Go to: https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+1. Go to: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
 2. Click "Email/Password"
 3. Enable it
 4. Save
@@ -92,7 +92,7 @@ Before you can login, create an admin user:
 
 **Option A**: Use script
 ```bash
-node scripts/createAdmin.js admin@kimson.com YourPassword
+node scripts/createAdmin.js admin@opilex.com YourPassword
 ```
 
 **Option B**: Manual

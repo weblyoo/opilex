@@ -25,7 +25,7 @@ Instead of using the context's current theme, we directly assign `darkTheme` to 
 **3. Pass Dark Mode to Header:**
 ```typescript
 <Header 
-  title="KIMSON"
+  title="OPILEX"
   showBackButton={false}
   leftElement={renderHamburgerMenu()}
   rightElement={renderHeaderRight()}

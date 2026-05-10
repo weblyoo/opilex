@@ -1,7 +1,7 @@
 # Fix: Domain Verification Error for Storage Bucket
 
 ## ❌ Problem
-Error: "To create a bucket named kimson-3373e.firebasestorage.app, you must verify that you're authorized to use that domain name."
+Error: "To create a bucket named opilex-3373e.firebasestorage.app, you must verify that you're authorized to use that domain name."
 
 ## ✅ Solution: Use Different Bucket Name
 
@@ -10,13 +10,13 @@ The `.firebasestorage.app` domain requires verification. Instead, create a regul
 ### Option 1: Create Regular Bucket (Recommended)
 
 1. **Go to Google Cloud Console:**
-   https://console.cloud.google.com/storage/browser?project=kimson-3373e
+   https://console.cloud.google.com/storage/browser?project=opilex-3373e
 
 2. **Click "Create Bucket"**
 
 3. **Use this name instead:**
    ```
-   Name: kimson-3373e-storage
+   Name: opilex-3373e-storage
    (or any name without .firebasestorage.app)
    ```
 
@@ -36,7 +36,7 @@ The `.firebasestorage.app` domain requires verification. Instead, create a regul
 ### Option 2: Let Firebase Auto-Create Bucket
 
 1. **Go to Firebase Console:**
-   https://console.firebase.google.com/project/kimson-3373e/storage
+   https://console.firebase.google.com/project/opilex-3373e/storage
 
 2. **Click "Get Started"**
 
@@ -51,7 +51,7 @@ If this still gives errors, use Option 1.
 Create bucket with format: `PROJECT_ID.appspot.com`
 
 ```
-Name: kimson-3373e.appspot.com
+Name: opilex-3373e.appspot.com
 Location: us-central1
 ```
 

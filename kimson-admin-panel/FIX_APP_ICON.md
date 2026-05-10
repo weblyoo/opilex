@@ -9,7 +9,7 @@ The app icon is not displaying in Expo Go or on the device.
 First, stop the currently running development server by pressing `Ctrl+C` in the terminal.
 
 ### Step 2: Clear Expo Cache
-Run the following commands in the KimsonApp directory:
+Run the following commands in the OpilexApp directory:
 
 ```bash
 # Clear Expo cache
@@ -39,7 +39,7 @@ If testing on Android:
 
 ```bash
 # Uninstall the app from the device/emulator
-adb uninstall com.kimson.wireauth
+adb uninstall com.opilex.wireauth
 
 # Then restart Expo
 npx expo start --clear
@@ -52,7 +52,7 @@ If testing on iOS:
 
 ```bash
 # Uninstall the app from simulator
-xcrun simctl uninstall booted com.kimson.wireauth
+xcrun simctl uninstall booted com.opilex.wireauth
 
 # Then restart Expo
 npx expo start --clear
@@ -199,7 +199,7 @@ npm cache clean --force
 npx expo start -c
 
 # 4. For Android, uninstall first:
-adb uninstall com.kimson.wireauth
+adb uninstall com.opilex.wireauth
 
 # 5. Then start fresh:
 npx expo start --clear

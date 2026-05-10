@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Admin User - Kimson</title>
+    <title>Create Admin User - Opilex</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -74,10 +74,10 @@
         <h2>🔐 Create Admin User</h2>
         <p class="info" style="padding: 10px; margin-bottom: 20px;">
             <strong>⚠️ First:</strong> Make sure Email/Password authentication is enabled in Firebase Console.
-            <br><a href="https://console.firebase.google.com/project/kimson-3373e/authentication/providers" target="_blank">Enable it here</a>
+            <br><a href="https://console.firebase.google.com/project/opilex-3373e/authentication/providers" target="_blank">Enable it here</a>
         </p>
         
-        <input type="email" id="email" placeholder="Email" value="admin@kimson.com">
+        <input type="email" id="email" placeholder="Email" value="admin@opilex.com">
         <input type="password" id="password" placeholder="Password (min 6 characters)">
         <button onclick="createAdmin()" id="createBtn">Create Admin User</button>
         
@@ -91,9 +91,9 @@
 
         const firebaseConfig = {
             apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-            authDomain: "kimson-3373e.firebaseapp.com",
-            projectId: "kimson-3373e",
-            storageBucket: "kimson-3373e.firebasestorage.app",
+            authDomain: "opilex-3373e.firebaseapp.com",
+            projectId: "opilex-3373e",
+            storageBucket: "opilex-3373e.firebasestorage.app",
             messagingSenderId: "1002505057634",
             appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
             measurementId: "G-40Z3KKDR4Y"
@@ -159,7 +159,7 @@
                         <h3>❌ Error: ${errorMessage}</h3>
                         <p><strong>Error Code:</strong> ${error.code || 'Unknown'}</p>
                         <p style="margin-top: 10px;">
-                            <a href="https://console.firebase.google.com/project/kimson-3373e/authentication/providers" target="_blank">
+                            <a href="https://console.firebase.google.com/project/opilex-3373e/authentication/providers" target="_blank">
                                 Enable Email/Password Authentication
                             </a>
                         </p>

@@ -7,13 +7,13 @@ console.log('='.repeat(70));
 console.log('\n📝 Since Firebase Console is giving errors, use Google Cloud Console:\n');
 
 console.log('Step 1: Open Google Cloud Console');
-console.log('   https://console.cloud.google.com/storage/browser?project=kimson-3373e\n');
+console.log('   https://console.cloud.google.com/storage/browser?project=opilex-3373e\n');
 
 console.log('Step 2: Click "Create Bucket" button\n');
 
 console.log('Step 3: Configure Bucket:');
 console.log('   ┌─────────────────────────────────────────────────┐');
-console.log('   │ Name: kimson-3373e.firebasestorage.app          │');
+console.log('   │ Name: opilex-3373e.firebasestorage.app          │');
 console.log('   │ Location type: Single region                    │');
 console.log('   │ Location: us-central1 (Iowa)                    │');
 console.log('   │ Storage class: Standard                         │');
@@ -37,8 +37,8 @@ console.log('   - Firebase will auto-detect the bucket');
 console.log('   - Same result, different path\n');
 
 console.log('📋 Quick Links:');
-console.log('   Google Cloud Storage: https://console.cloud.google.com/storage/browser?project=kimson-3373e');
-console.log('   Firebase Storage: https://console.firebase.google.com/project/kimson-3373e/storage');
-console.log('   IAM Permissions: https://console.cloud.google.com/iam-admin/iam?project=kimson-3373e');
-console.log('   Storage API: https://console.cloud.google.com/apis/library/storage-component.googleapis.com?project=kimson-3373e\n');
+console.log('   Google Cloud Storage: https://console.cloud.google.com/storage/browser?project=opilex-3373e');
+console.log('   Firebase Storage: https://console.firebase.google.com/project/opilex-3373e/storage');
+console.log('   IAM Permissions: https://console.cloud.google.com/iam-admin/iam?project=opilex-3373e');
+console.log('   Storage API: https://console.cloud.google.com/apis/library/storage-component.googleapis.com?project=opilex-3373e\n');
 

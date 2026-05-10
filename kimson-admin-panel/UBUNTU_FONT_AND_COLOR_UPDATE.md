@@ -107,7 +107,7 @@ All text styles automatically inherit Ubuntu fonts through the centralized font 
 
 ### Step 1: Install Dependencies
 ```bash
-cd KimsonApp
+cd OpilexApp
 npm install
 ```
 

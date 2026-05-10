@@ -1,7 +1,7 @@
 # Quick Admin Setup Guide
 
 ## Current Situation
-- ✅ User `admin@kimson.com` exists in Firebase Authentication
+- ✅ User `admin@opilex.com` exists in Firebase Authentication
 - ❌ User is NOT in Firestore `admins` collection
 - User ID: `LnDHQWN8uQaQQPKCBpCLvNXDWgu1`
 
@@ -9,11 +9,11 @@
 
 ### Option 1: Use Script with Password (Recommended)
 
-If you know the password for `admin@kimson.com`:
+If you know the password for `admin@opilex.com`:
 
 ```bash
 # Use the addExistingAdmin script
-node scripts/addExistingAdmin.js admin@kimson.com <your-password>
+node scripts/addExistingAdmin.js admin@opilex.com <your-password>
 ```
 
 This will:
@@ -23,7 +23,7 @@ This will:
 
 ### Option 2: Manual Setup in Firebase Console (Easiest)
 
-1. Go to [Firebase Console - Firestore](https://console.firebase.google.com/project/kimson-3373e/firestore)
+1. Go to [Firebase Console - Firestore](https://console.firebase.google.com/project/opilex-3373e/firestore)
 2. Click on **"admins"** collection (create it if it doesn't exist)
 3. Click **"Add document"**
 4. Set **Document ID** to: `LnDHQWN8uQaQQPKCBpCLvNXDWgu1`
@@ -31,7 +31,7 @@ This will:
 
 ```json
 {
-  "email": "admin@kimson.com",
+  "email": "admin@opilex.com",
   "role": "superAdmin",
   "name": "Admin User",
   "permissions": [
@@ -55,8 +55,8 @@ This will:
 
 If you don't remember the password:
 
-1. Go to [Firebase Console - Authentication](https://console.firebase.google.com/project/kimson-3373e/authentication/users)
-2. Find `admin@kimson.com`
+1. Go to [Firebase Console - Authentication](https://console.firebase.google.com/project/opilex-3373e/authentication/users)
+2. Find `admin@opilex.com`
 3. Click the three dots menu → **"Reset password"**
 4. Send password reset email
 5. Reset your password
@@ -66,7 +66,7 @@ If you don't remember the password:
 
 After setup, verify:
 
-1. Go to [Firestore Console](https://console.firebase.google.com/project/kimson-3373e/firestore/data/~2Fadmins~2FLnDHQWN8uQaQQPKCBpCLvNXDWgu1)
+1. Go to [Firestore Console](https://console.firebase.google.com/project/opilex-3373e/firestore/data/~2Fadmins~2FLnDHQWN8uQaQQPKCBpCLvNXDWgu1)
 2. You should see the admin document with all fields
 
 ## Login
@@ -74,7 +74,7 @@ After setup, verify:
 Once set up, you can login to the admin panel:
 
 - **URL**: http://localhost:5173/login (or your deployed URL)
-- **Email**: admin@kimson.com
+- **Email**: admin@opilex.com
 - **Password**: Your Firebase Auth password
 
 ## Troubleshooting
@@ -87,7 +87,7 @@ Once set up, you can login to the admin panel:
 
 ### "User not found" error
 - Verify the user exists in Firebase Authentication
-- Check the email is correct: `admin@kimson.com`
+- Check the email is correct: `admin@opilex.com`
 
 ### Still can't login
 - Check browser console for errors

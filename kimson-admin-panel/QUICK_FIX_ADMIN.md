@@ -11,7 +11,7 @@ This means Email/Password authentication is **disabled** in Firebase.
 ### Step 1: Enable Email/Password (30 seconds)
 
 1. **Click this link**:
-   https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+   https://console.firebase.google.com/project/opilex-3373e/authentication/providers
 
 2. **Find "Email/Password"** in the list
 
@@ -36,7 +36,7 @@ Now you can create admin using any method:
 
 **Option B: Use Script**
 ```bash
-node scripts/createAdmin.js admin@kimson.com YourPassword123
+node scripts/createAdmin.js admin@opilex.com YourPassword123
 ```
 
 **Option C: Manual in Firebase Console**
@@ -52,5 +52,5 @@ Once Email/Password is enabled, everything works! 🎉
 
 ---
 
-**Quick Link**: https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+**Quick Link**: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
 

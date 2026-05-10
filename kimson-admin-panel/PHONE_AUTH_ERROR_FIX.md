@@ -11,19 +11,19 @@ This error means Firebase can't verify your Android app. Check the following:
 ### 1. ✅ Verify Android App Exists in Firebase
 
 **Check:**
-- Go to: https://console.firebase.google.com/project/kimson-3373e/settings/general
+- Go to: https://console.firebase.google.com/project/opilex-3373e/settings/general
 - Scroll to "Your apps" section
-- **Look for:** Android app with package name `com.kimson.wireauth`
+- **Look for:** Android app with package name `com.opilex.wireauth`
 
 **If NOT found:**
 1. Click "Add app" → Select Android
-2. Package name: `com.kimson.wireauth` (must match exactly!)
-3. App nickname: Kimson Wire Auth (optional)
+2. Package name: `com.opilex.wireauth` (must match exactly!)
+3. App nickname: Opilex Wire Auth (optional)
 4. Click "Register app"
 
 **If found but package name is different:**
-- ❌ Wrong: `com.kimsonindia` → Won't work!
-- ✅ Correct: `com.kimson.wireauth` → This is what you need!
+- ❌ Wrong: `com.opilexindia` → Won't work!
+- ✅ Correct: `com.opilex.wireauth` → This is what you need!
 
 ---
 
@@ -32,7 +32,7 @@ This error means Firebase can't verify your Android app. Check the following:
 **For Local Development Builds (`npx expo run:android`):**
 
 1. **Go to your Android app in Firebase Console:**
-   - https://console.firebase.google.com/project/kimson-3373e/settings/general/android:com.kimson.wireauth
+   - https://console.firebase.google.com/project/opilex-3373e/settings/general/android:com.opilex.wireauth
    - (If the link doesn't work, go to settings → find your app → click on it)
 
 2. **Scroll to "SHA certificate fingerprints"**
@@ -60,7 +60,7 @@ If you're using EAS to build, you need different fingerprints:
 ### 3. ✅ Enable Phone Authentication Provider
 
 **Check:**
-1. Go to: https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+1. Go to: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
 2. Click on "Phone" provider
 3. **Verify it shows "Enabled" ✅**
 
@@ -76,16 +76,16 @@ If you're using EAS to build, you need different fingerprints:
 **Your app's package name MUST match Firebase exactly:**
 
 **In your code:**
-- `android/app/build.gradle`: `applicationId 'com.kimson.wireauth'`
-- `app.json`: `"package": "com.kimson.wireauth"`
-- `app.config.js`: `package: "com.kimson.wireauth"`
+- `android/app/build.gradle`: `applicationId 'com.opilex.wireauth'`
+- `app.json`: `"package": "com.opilex.wireauth"`
+- `app.config.js`: `package: "com.opilex.wireauth"`
 
 **In Firebase:**
-- Should be: `com.kimson.wireauth`
+- Should be: `com.opilex.wireauth`
 
 **Check Firebase:**
 - Go to Firebase Console → Project Settings → Your Android app
-- Verify package name shows: `com.kimson.wireauth`
+- Verify package name shows: `com.opilex.wireauth`
 
 ---
 
@@ -134,13 +134,13 @@ npx expo run:android
 ### Issue: "Multiple Android apps in Firebase"
 
 **If you have:**
-- `com.kimsonindia` (old/wrong)
-- `com.kimson.wireauth` (correct)
+- `com.opilexindia` (old/wrong)
+- `com.opilex.wireauth` (correct)
 
 **Solution:**
-- Use `com.kimson.wireauth` only
+- Use `com.opilex.wireauth` only
 - Add fingerprints to the correct app
-- You can delete `com.kimsonindia` later if you want
+- You can delete `com.opilexindia` later if you want
 
 ### Issue: "Still getting MISSING_CLIENT_IDENTIFIER error"
 
@@ -149,7 +149,7 @@ npx expo run:android
 - Most likely: fingerprints not added correctly or wrong app
 
 **Check:**
-1. Verify you added fingerprints to `com.kimson.wireauth` (not `com.kimsonindia`)
+1. Verify you added fingerprints to `com.opilex.wireauth` (not `com.opilexindia`)
 2. Verify both SHA-1 and SHA-256 are added
 3. Verify fingerprints are correct (no extra spaces, correct format)
 4. Wait 10-15 minutes after adding
@@ -161,7 +161,7 @@ npx expo run:android
 
 Before testing, verify ALL of these:
 
-- [ ] Android app exists in Firebase with package name: `com.kimson.wireauth`
+- [ ] Android app exists in Firebase with package name: `com.opilex.wireauth`
 - [ ] SHA-1 fingerprint added: `5E:8F:16:06:2E:A3:CD:2C:4A:0D:54:78:76:BA:A6:F3:8C:AB:F6:25`
 - [ ] SHA-256 fingerprint added: `FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C`
 - [ ] Phone Authentication provider is ENABLED
@@ -177,13 +177,13 @@ Before testing, verify ALL of these:
 ## 🚀 Quick Links
 
 **Firebase Project Settings:**
-- https://console.firebase.google.com/project/kimson-3373e/settings/general
+- https://console.firebase.google.com/project/opilex-3373e/settings/general
 
 **Phone Authentication Settings:**
-- https://console.firebase.google.com/project/kimson-3373e/authentication/providers
+- https://console.firebase.google.com/project/opilex-3373e/authentication/providers
 
 **Your Android App (if already registered):**
-- https://console.firebase.google.com/project/kimson-3373e/settings/general/android:com.kimson.wireauth
+- https://console.firebase.google.com/project/opilex-3373e/settings/general/android:com.opilex.wireauth
 
 ---
 

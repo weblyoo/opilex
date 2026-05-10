@@ -4,9 +4,9 @@ import { getStorage, ref, listAll, getMetadata } from 'firebase/storage';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  authDomain: "kimson-3373e.firebaseapp.com",
-  projectId: "kimson-3373e",
-  storageBucket: "kimson-3373e.firebasestorage.app",
+  authDomain: "opilex-3373e.firebaseapp.com",
+  projectId: "opilex-3373e",
+  storageBucket: "opilex-3373e.firebasestorage.app",
   messagingSenderId: "1002505057634",
   appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
   measurementId: "G-40Z3KKDR4Y"
@@ -39,21 +39,21 @@ async function diagnose() {
       console.log('\n📋 Solution: Create bucket using one of these methods:\n');
       
       console.log('Method 1: Google Cloud Console (Recommended)');
-      console.log('   1. Go to: https://console.cloud.google.com/storage/browser?project=kimson-3373e');
+      console.log('   1. Go to: https://console.cloud.google.com/storage/browser?project=opilex-3373e');
       console.log('   2. Click "Create Bucket"');
-      console.log('   3. Name: kimson-3373e.firebasestorage.app');
+      console.log('   3. Name: opilex-3373e.firebasestorage.app');
       console.log('   4. Location: us-central1');
       console.log('   5. Click "Create"\n');
       
       console.log('Method 2: Firebase Console');
-      console.log('   1. Go to: https://console.firebase.google.com/project/kimson-3373e/storage');
+      console.log('   1. Go to: https://console.firebase.google.com/project/opilex-3373e/storage');
       console.log('   2. Click "Get Started"');
       console.log('   3. If you get location error, use Method 1 instead\n');
       
     } else if (error.code === 'storage/unauthorized') {
       console.log('💡 Diagnosis: Permission denied');
       console.log('\n📋 Solution: Grant Storage permissions');
-      console.log('   1. Go to: https://console.cloud.google.com/iam-admin/iam?project=kimson-3373e');
+      console.log('   1. Go to: https://console.cloud.google.com/iam-admin/iam?project=opilex-3373e');
       console.log('   2. Find: weblyo.com@gmail.com');
       console.log('   3. Add role: Storage Admin\n');
       

@@ -102,7 +102,7 @@ PhoneAuthProvider.verifyPhoneNumber(options)
 ## ⚠️ What Needs Fixing:
 
 1. **SHA Fingerprints in Firebase:**
-   - Need to verify they're added to correct app (`com.kimson.wireauth`)
+   - Need to verify they're added to correct app (`com.opilex.wireauth`)
    - Need both SHA-1 and SHA-256
    - Must match the keystore used for signing
 
@@ -123,7 +123,7 @@ PhoneAuthProvider.verifyPhoneNumber(options)
 
 1. **✅ Verify SHA Fingerprints Added:**
    - Go to Firebase Console
-   - Project Settings → Android App (`com.kimson.wireauth`)
+   - Project Settings → Android App (`com.opilex.wireauth`)
    - Add SHA-1: `5E:8F:16:06:2E:A3:CD:2C:4A:0D:54:78:76:BA:A6:F3:8C:AB:F6:25`
    - Add SHA-256: `FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C`
 
@@ -132,8 +132,8 @@ PhoneAuthProvider.verifyPhoneNumber(options)
    - Enable it if not already enabled
 
 3. **✅ Verify Package Name:**
-   - Firebase: `com.kimson.wireauth`
-   - Your app: `com.kimson.wireauth`
+   - Firebase: `com.opilex.wireauth`
+   - Your app: `com.opilex.wireauth`
    - Must match exactly!
 
 4. **✅ Wait and Rebuild:**
@@ -171,7 +171,7 @@ PhoneAuthProvider.verifyPhoneNumber(options)
 - ✅ Error handling for common issues
 
 **What needs to be done:**
-- ⚠️ Add SHA fingerprints to Firebase Console (for `com.kimson.wireauth`)
+- ⚠️ Add SHA fingerprints to Firebase Console (for `com.opilex.wireauth`)
 - ⚠️ Verify package name matches
 - ⚠️ Enable Phone Authentication provider
 - ⚠️ Rebuild and test

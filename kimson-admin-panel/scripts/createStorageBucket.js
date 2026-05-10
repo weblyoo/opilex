@@ -1,7 +1,7 @@
 // Script to create Firebase Storage bucket programmatically using Google Cloud Storage API
 import { Storage } from '@google-cloud/storage';
 
-const projectId = 'kimson-3373e';
+const projectId = 'opilex-3373e';
 const bucketName = `${projectId}.firebasestorage.app`;
 const location = 'US-CENTRAL1'; // Iowa - supports no-cost tier
 
@@ -61,7 +61,7 @@ async function createBucket() {
       console.log('   firebase deploy --only storage\n');
     } else {
       console.log('\n💡 Alternative: Create bucket manually');
-      console.log('   1. Go to: https://console.firebase.google.com/project/kimson-3373e/storage');
+      console.log('   1. Go to: https://console.firebase.google.com/project/opilex-3373e/storage');
       console.log('   2. Click "Get Started"');
       console.log(`   3. Select location: us-central1`);
       console.log('   4. Click "Done"\n');

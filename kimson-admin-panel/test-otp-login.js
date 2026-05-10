@@ -12,7 +12,7 @@ try {
     const serviceAccount = JSON.parse(readFileSync('./serviceAccountKey.json', 'utf8'));
     admin.initializeApp({
       credential: admin.credential.cert(serviceAccount),
-      projectId: 'kimson-3373e'
+      projectId: 'opilex-3373e'
     });
   } else {
     throw new Error('serviceAccountKey.json not found');
@@ -21,7 +21,7 @@ try {
   console.log('⚠️  serviceAccountKey.json not found. Using default credentials.');
   try {
     admin.initializeApp({
-      projectId: 'kimson-3373e'
+      projectId: 'opilex-3373e'
     });
   } catch (err) {
     console.error('❌ Failed to initialize Firebase Admin:', err.message);
@@ -39,7 +39,7 @@ const db = admin.firestore();
 const auth = admin.auth();
 
 async function testOTPLoginSetup() {
-  console.log('\n🔍 Testing OTP Login Setup for Kimson App\n');
+  console.log('\n🔍 Testing OTP Login Setup for Opilex App\n');
   console.log('='.repeat(60));
 
   const results = {
@@ -54,7 +54,7 @@ async function testOTPLoginSetup() {
     // Test 1: Check Firebase Project
     console.log('\n1️⃣  Checking Firebase Project...');
     try {
-      const project = await admin.projectManager().getProject('kimson-3373e');
+      const project = await admin.projectManager().getProject('opilex-3373e');
       console.log('   ✅ Project ID:', project.projectId);
       console.log('   ✅ Project Number:', project.projectNumber);
       results.project = true;
@@ -83,7 +83,7 @@ async function testOTPLoginSetup() {
       // List auth providers (this requires Firebase Admin SDK)
       console.log('   ⚠️  Phone auth provider status cannot be checked via Admin SDK');
       console.log('   💡 Check Firebase Console: Authentication > Sign-in method');
-      console.log('   📍 URL: https://console.firebase.google.com/project/kimson-3373e/authentication/providers');
+      console.log('   📍 URL: https://console.firebase.google.com/project/opilex-3373e/authentication/providers');
       results.authConfig = true; // Assume true, needs manual check
     } catch (error) {
       console.log('   ❌ Auth config check failed:', error.message);
@@ -187,7 +187,7 @@ async function testOTPLoginSetup() {
   
   console.log('\n📚 Documentation:');
   console.log('   - See OTP_LOGIN_STATUS_REPORT.md for detailed instructions');
-  console.log('   - Firebase Console: https://console.firebase.google.com/project/kimson-3373e\n');
+  console.log('   - Firebase Console: https://console.firebase.google.com/project/opilex-3373e\n');
 
   process.exit(0);
 }

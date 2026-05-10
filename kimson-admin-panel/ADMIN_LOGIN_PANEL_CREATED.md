@@ -7,12 +7,12 @@ A modern, stylish admin login panel has been created with a split-screen design:
 ### Design Features
 
 1. **Split-Screen Layout**:
-   - **Left Half (50%)**: Black background with Kimson logo
+   - **Left Half (50%)**: Black background with Opilex logo
    - **Right Half (50%)**: White background with login form
 
 2. **Left Section - Logo Display**:
    - Large white circle with "K" letter
-   - "KIMSON" brand name in white
+   - "OPILEX" brand name in white
    - Divider line
    - "Admin Portal" tagline
    - "Wire Authentication System" subtitle
@@ -91,7 +91,7 @@ import AdminLoginScreen from './admin-panel/AdminLoginScreen';
    - Document structure:
      ```typescript
      {
-       email: 'admin@kimson.com',
+       email: 'admin@opilex.com',
        role: 'superAdmin',
        name: 'Admin User',
        permissions: ['users', 'authentications', 'rewards', 'transactions']

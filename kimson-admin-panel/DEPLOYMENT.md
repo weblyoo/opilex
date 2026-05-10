@@ -1,4 +1,4 @@
-# 🚀 Deployment Guide - Kimson Admin Panel to Netlify
+# 🚀 Deployment Guide - Opilex Admin Panel to Netlify
 
 ## Step 1: Push to GitHub
 
@@ -6,14 +6,14 @@
 
 1. **Create a new repository on GitHub**:
    - Go to https://github.com/new
-   - Name it: `kimson-admin-panel`
+   - Name it: `opilex-admin-panel`
    - Make it Private (recommended)
    - Don't initialize with README (we already have one)
    - Click "Create repository"
 
 2. **Connect local repository to GitHub**:
    ```bash
-   git remote add origin https://github.com/YOUR_USERNAME/kimson-admin-panel.git
+   git remote add origin https://github.com/YOUR_USERNAME/opilex-admin-panel.git
    git branch -M main
    git push -u origin main
    ```
@@ -21,7 +21,7 @@
 ### If you already have a GitHub repository:
 
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/kimson-admin-panel.git
+git remote add origin https://github.com/YOUR_USERNAME/opilex-admin-panel.git
 git branch -M main
 git push -u origin main
 ```
@@ -38,7 +38,7 @@ git push -u origin main
    - Click "Add new site" → "Import an existing project"
    - Click "Deploy with GitHub"
    - Authorize Netlify to access your GitHub account
-   - Select the `kimson-admin-panel` repository
+   - Select the `opilex-admin-panel` repository
 
 3. **Configure build settings** (should auto-detect):
    - Build command: `npm run build`

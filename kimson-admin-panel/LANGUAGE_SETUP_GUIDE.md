@@ -1,8 +1,8 @@
-# Language Setup Guide for Kimson App
+# Language Setup Guide for Opilex App
 
 ## Overview
 
-The Kimson app supports **4 languages**:
+The Opilex app supports **4 languages**:
 - **English** (en) - Default
 - **Hindi** (हिंदी) (hi)
 - **Marathi** (मराठी) (mr)

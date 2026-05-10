@@ -1,8 +1,8 @@
-# 📋 Kimson App - Web Admin Panel Requirements Document
+# 📋 Opilex App - Web Admin Panel Requirements Document
 
 **Version:** 1.0  
 **Date:** October 2024  
-**Project:** Kimson Wire Authentication System  
+**Project:** Opilex Wire Authentication System  
 **Status:** Draft for Review
 
 ---
@@ -32,22 +32,22 @@
 
 | Item | Details |
 |------|---------|
-| **Document Title** | Kimson Web Admin Panel Requirements Document |
+| **Document Title** | Opilex Web Admin Panel Requirements Document |
 | **Version** | 1.0 |
 | **Author** | Development Team |
 | **Last Updated** | October 29, 2024 |
-| **Project Code** | KIMSON-ADMIN-WEB |
-| **Firebase Project** | kimson-3373e |
+| **Project Code** | OPILEX-ADMIN-WEB |
+| **Firebase Project** | opilex-3373e |
 
 ---
 
 ## 📊 Executive Summary
 
 ### Purpose
-The Kimson Web Admin Panel is a comprehensive administrative interface that connects to the same Firebase backend as the Kimson mobile application. It enables administrators to manage users, monitor wire authentications, handle rewards, process transactions, and analyze system data.
+The Opilex Web Admin Panel is a comprehensive administrative interface that connects to the same Firebase backend as the Opilex mobile application. It enables administrators to manage users, monitor wire authentications, handle rewards, process transactions, and analyze system data.
 
 ### Objectives
-- Provide centralized administration of the Kimson mobile app ecosystem
+- Provide centralized administration of the Opilex mobile app ecosystem
 - Enable real-time monitoring and management of user activities
 - Facilitate efficient processing of rewards and transactions
 - Support data analysis and reporting capabilities
@@ -71,7 +71,7 @@ The Kimson Web Admin Panel is a comprehensive administrative interface that conn
 ## 🎯 Project Overview
 
 ### Background
-The Kimson mobile app allows users (electricians and dealers) to authenticate Kimson wire products via QR code scanning, earning reward points in the process. The admin panel is required to manage and oversee all operations.
+The Opilex mobile app allows users (electricians and dealers) to authenticate Opilex wire products via QR code scanning, earning reward points in the process. The admin panel is required to manage and oversee all operations.
 
 ### Target Users
 - **System Administrators**: Full access to all features

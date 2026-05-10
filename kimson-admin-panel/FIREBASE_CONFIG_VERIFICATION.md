@@ -8,9 +8,9 @@ Generated: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
 ## 1. Firebase Project Information
 
 ### Project Details (Verified via MCP)
-- **Project ID**: `kimson-3373e` ✅
+- **Project ID**: `opilex-3373e` ✅
 - **Project Number**: `1002505057634` ✅
-- **Display Name**: `kimson` ✅
+- **Display Name**: `opilex` ✅
 - **Status**: ✅ **ACTIVE**
 - **Lifecycle State**: ACTIVE
 - **Created**: 2025-09-19T16:32:54.109355Z
@@ -20,9 +20,9 @@ Generated: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
   - `firebase-core: disabled`
 
 ### Project Configuration
-- **Project Directory**: `c:\Users\info\OneDrive\Desktop\kimson\kimson\app\KimsonApp`
+- **Project Directory**: `c:\Users\info\OneDrive\Desktop\opilex\opilex\app\OpilexApp`
 - **Firebase Config Path**: `firebase.json`
-- **Active Project ID**: `kimson-3373e` (alias: default)
+- **Active Project ID**: `opilex-3373e` (alias: default)
 - **Authenticated User**: weblyo.com@gmail.com
 - **Gemini TOS**: ✅ Accepted
 
@@ -34,29 +34,29 @@ Generated: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
 
 #### Android App 1
 - **App ID**: `1:1002505057634:android:462ce0293d35d5f50ae83b` ✅
-- **Package Name**: `com.kimsonindia` ✅
-- **Display Name**: kimson
+- **Package Name**: `com.opilexindia` ✅
+- **Display Name**: opilex
 - **Status**: ✅ **ACTIVE**
 - **API Key ID**: a6369c92-8e88-425e-823b-2bf3e796f58c
 - **Expire Time**: Never expires (1970-01-01)
 
 #### Android App 2
 - **App ID**: `1:1002505057634:android:5108de2c2f9ace6d0ae83b` ✅
-- **Package Name**: `com.kimson.wireauth` ✅
-- **Display Name**: kimson
+- **Package Name**: `com.opilex.wireauth` ✅
+- **Display Name**: opilex
 - **Status**: ✅ **ACTIVE**
 - **API Key ID**: a6369c92-8e88-425e-823b-2bf3e796f58c
 - **Expire Time**: Never expires (1970-01-01)
 
 **Note**: Both Android apps detected in environment:
-- `'1:1002505057634:android:5108de2c2f9ace6d0ae83b': com.kimson.wireauth` ✅
-- `'1:1002505057634:android:462ce0293d35d5f50ae83b': com.kimsonindia` ✅
+- `'1:1002505057634:android:5108de2c2f9ace6d0ae83b': com.opilex.wireauth` ✅
+- `'1:1002505057634:android:462ce0293d35d5f50ae83b': com.opilexindia` ✅
 
 ### Web App (1 App Configured)
 
 #### Web App
 - **App ID**: `1:1002505057634:web:fe5a29d0d3945c850ae83b` ✅
-- **Display Name**: kimson
+- **Display Name**: opilex
 - **Status**: ✅ **ACTIVE**
 - **API Key ID**: 4a17550d-f245-4ca1-86c1-ce20b396e156
 - **Expire Time**: Never expires (1970-01-01)
@@ -70,11 +70,11 @@ Generated: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
 ### Web SDK Config (Verified via MCP)
 ```json
 {
-  "projectId": "kimson-3373e",
+  "projectId": "opilex-3373e",
   "appId": "1:1002505057634:web:fe5a29d0d3945c850ae83b",
-  "storageBucket": "kimson-3373e.firebasestorage.app",
+  "storageBucket": "opilex-3373e.firebasestorage.app",
   "apiKey": "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  "authDomain": "kimson-3373e.firebaseapp.com",
+  "authDomain": "opilex-3373e.firebaseapp.com",
   "messagingSenderId": "1002505057634",
   "measurementId": "G-40Z3KKDR4Y",
   "projectNumber": "1002505057634",
@@ -86,9 +86,9 @@ Generated: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
 ```typescript
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",           ✅ MATCHES
-  authDomain: "kimson-3373e.firebaseapp.com",                  ✅ MATCHES
-  projectId: "kimson-3373e",                                   ✅ MATCHES
-  storageBucket: "kimson-3373e.firebasestorage.app",           ✅ MATCHES
+  authDomain: "opilex-3373e.firebaseapp.com",                  ✅ MATCHES
+  projectId: "opilex-3373e",                                   ✅ MATCHES
+  storageBucket: "opilex-3373e.firebasestorage.app",           ✅ MATCHES
   messagingSenderId: "1002505057634",                          ✅ MATCHES
   appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",         ✅ MATCHES
   measurementId: "G-40Z3KKDR4Y"                                ✅ MATCHES
@@ -162,20 +162,20 @@ const firebaseConfig = {
 ## 6. Google Services Configuration (Android)
 
 ### google-services.json
-- **Project ID**: `kimson-3373e` ✅
+- **Project ID**: `opilex-3373e` ✅
 - **Project Number**: `1002505057634` ✅
-- **Storage Bucket**: `kimson-3373e.firebasestorage.app` ✅
+- **Storage Bucket**: `opilex-3373e.firebasestorage.app` ✅
 
 ### Android Apps in google-services.json
 
 #### App 1
 - **App ID**: `1:1002505057634:android:5108de2c2f9ace6d0ae83b` ✅
-- **Package**: `com.kimson.wireauth` ✅
+- **Package**: `com.opilex.wireauth` ✅
 - **API Key**: `AIzaSyD5eJ5TGK-3lgYTuodBXWWrgp1z0q9SrMw`
 
 #### App 2
 - **App ID**: `1:1002505057634:android:462ce0293d35d5f50ae83b` ✅
-- **Package**: `com.kimsonindia` ✅
+- **Package**: `com.opilexindia` ✅
 - **API Key**: `AIzaSyD5eJ5TGK-3lgYTuodBXWWrgp1z0q9SrMw`
 
 **Note**: Android apps use a different API key than the web app (this is normal - different platforms can have different keys).
@@ -190,12 +190,12 @@ const firebaseConfig = {
 
 | Configuration Item | MCP (Firebase Console) | Code (firebase.ts) | Status |
 |-------------------|------------------------|-------------------|--------|
-| Project ID | kimson-3373e | kimson-3373e | ✅ MATCH |
+| Project ID | opilex-3373e | opilex-3373e | ✅ MATCH |
 | Project Number | 1002505057634 | - | ✅ VERIFIED |
 | Web App ID | 1:1002505057634:web:fe5a29d0d3945c850ae83b | 1:1002505057634:web:fe5a29d0d3945c850ae83b | ✅ MATCH |
 | API Key | AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c | AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c | ✅ MATCH |
-| Auth Domain | kimson-3373e.firebaseapp.com | kimson-3373e.firebaseapp.com | ✅ MATCH |
-| Storage Bucket | kimson-3373e.firebasestorage.app | kimson-3373e.firebasestorage.app | ✅ MATCH |
+| Auth Domain | opilex-3373e.firebaseapp.com | opilex-3373e.firebaseapp.com | ✅ MATCH |
+| Storage Bucket | opilex-3373e.firebasestorage.app | opilex-3373e.firebasestorage.app | ✅ MATCH |
 | Messaging Sender ID | 1002505057634 | 1002505057634 | ✅ MATCH |
 | Measurement ID | G-40Z3KKDR4Y | G-40Z3KKDR4Y | ✅ MATCH |
 
@@ -259,10 +259,10 @@ const firebaseConfig = {
 
 ## 🔗 Firebase Console Links
 
-- **Firebase Console**: https://console.firebase.google.com/project/kimson-3373e
-- **Firestore Rules**: https://console.firebase.google.com/project/kimson-3373e/firestore/rules
-- **Authentication**: https://console.firebase.google.com/project/kimson-3373e/authentication/providers
-- **Project Settings**: https://console.firebase.google.com/project/kimson-3373e/settings/general
+- **Firebase Console**: https://console.firebase.google.com/project/opilex-3373e
+- **Firestore Rules**: https://console.firebase.google.com/project/opilex-3373e/firestore/rules
+- **Authentication**: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+- **Project Settings**: https://console.firebase.google.com/project/opilex-3373e/settings/general
 
 ---
 
