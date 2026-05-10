@@ -21,7 +21,7 @@ export const Logo: React.FC<LogoProps> = ({
   
   // Use Opilex logo - works on both dark and light backgrounds
   // The logo has red text which is visible on both
-  const logoSource = '/Opilex-Logo.png';
+  const logoSource = '/logo.png';
 
   // Use width/height if provided, otherwise fall back to size for both
   const logoWidth = width || (style?.width ? undefined : (size || 48));
