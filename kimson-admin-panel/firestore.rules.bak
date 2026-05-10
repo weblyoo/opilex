@@ -1,0 +1,131 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper function to check if user is admin
+    function isAdmin() {
+      return request.auth != null && 
+             exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    // Admin collection - allow users to create/update their own admin document
+    // Once created, only admins can read/write
+    match /admins/{adminId} {
+      // Allow authenticated user to create/update their own admin document (first time setup)
+      allow create, update: if request.auth != null && request.auth.uid == adminId;
+      // Allow admins to read/write any admin document
+      allow read, write: if isAdmin();
+    }
+
+    // Users - users can access own data, admins can access all
+    match /users/{userId} {
+      allow read, write: if request.auth != null && 
+                             (request.auth.uid == userId || isAdmin());
+    }
+    
+    // Wire authentications - users can create and read own, admins can read all
+    match /wireAuthentications/{authId} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null && 
+                       (resource.data.userId == request.auth.uid || isAdmin());
+      allow write: if isAdmin(); // Only admins can modify
+    }
+    
+    // Rewards - users can read own and create for self (e.g. when scanning reward QR), admins can do all
+    match /rewards/{rewardId} {
+      allow read: if request.auth != null && 
+                       (resource.data.userId == request.auth.uid || isAdmin());
+      allow create: if request.auth != null && request.resource.data.userId == request.auth.uid;
+      allow update, delete: if isAdmin();
+    }
+    
+    // Transactions - users can create (withdrawal requests) for self and read own, admins can read/update all
+    match /transactions/{transactionId} {
+      allow create: if request.auth != null && request.resource.data.userId == request.auth.uid;
+      allow read: if request.auth != null && 
+                       (resource.data.userId == request.auth.uid || isAdmin());
+      allow update: if isAdmin(); // Only admins can update transaction status (approve/reject)
+    }
+    
+    // GST Verifications - users can create and read own, admins can read all
+    match /gst_verifications/{userId} {
+      allow create, update: if request.auth != null && request.auth.uid == userId;
+      allow read: if request.auth != null && 
+                       (request.auth.uid == userId || isAdmin());
+    }
+    
+    // KYC Verifications - users can create and read own, admins can read all
+    match /kyc_verifications/{userId} {
+      allow create, update: if request.auth != null && request.auth.uid == userId;
+      allow read: if request.auth != null && 
+                       (request.auth.uid == userId || isAdmin());
+    }
+    
+    // Bank Accounts - users can create, read, and update own, admins can read all
+    match /bankAccounts/{accountId} {
+      allow create: if request.auth != null && request.resource.data.userId == request.auth.uid;
+      allow read: if request.auth != null && 
+                       (resource.data.userId == request.auth.uid || isAdmin());
+      allow update: if request.auth != null && 
+                         resource.data.userId == request.auth.uid;
+      allow delete: if request.auth != null && 
+                         resource.data.userId == request.auth.uid;
+    }
+    
+    // Reward QR Codes - admins can create, users can read unused codes, can update when used
+    match /rewardQRCodes/{qrId} {
+      allow read: if request.auth != null;
+      allow create: if isAdmin();
+      allow update: if request.auth != null && 
+                         (request.resource.data.used == true && 
+                          request.resource.data.usedBy == request.auth.uid);
+    }
+
+    // Products - only admins can read/write (used in Generate QR)
+    match /products/{productId} {
+      allow read, write: if isAdmin();
+    }
+
+    // Schemes collection - admins can read all; users can read only active/published schemes
+    match /schemes/{schemeId} {
+      allow read: if request.auth != null && 
+                       (isAdmin() || 
+                        (resource.data.isActive == true && resource.data.isPublished == true));
+      allow write: if isAdmin(); // Only admins can create/update/delete schemes
+    }
+
+    // Settings collection - only admins can manage
+    match /settings/{document=**} {
+      allow read: if request.auth != null; // Users can read settings
+      allow write: if isAdmin(); // Only admins can write
+    }
+
+    // Documents subcollection under settings - for price list and product catalog
+    match /settings/documents/{kind}/{document=**} {
+      allow read: if request.auth != null; // Authenticated users can read
+      allow write: if isAdmin(); // Only admins can write
+    }
+
+    // Sliders collection - users can read active sliders, admins can manage all
+    match /sliders/{sliderType}/{document=**} {
+      allow read: if request.auth != null;
+      allow write: if isAdmin();
+    }
+
+    // Scratch rewards (Send Gift) - admin creates; user reads own unclaimed and updates to claim
+    match /scratchRewards/{rewardId} {
+      allow create: if isAdmin();
+      allow read: if request.auth != null &&
+                       (resource.data.userId == request.auth.uid || isAdmin());
+      allow update: if request.auth != null &&
+                         resource.data.userId == request.auth.uid &&
+                         resource.data.claimed == false;
+      allow delete: if isAdmin();
+    }
+    
+    // Test collection - allow for testing (can be removed in production)
+    match /test/{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
