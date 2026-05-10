@@ -30,7 +30,7 @@ export default defineConfig(({ command }) => ({
   base: '/', // Netlify and dev: serve at root
   plugins: [react()],
   build: {
-    outDir: 'out',
+    outDir: 'dist',
     rollupOptions: {
       // Removed externals that might be causing resolution issues
     },
