@@ -6,9 +6,9 @@ import { getStorage, ref, listAll } from 'firebase/storage';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  authDomain: "opilex-3373e.firebaseapp.com",
-  projectId: "opilex-3373e",
-  storageBucket: "opilex-3373e.firebasestorage.app",
+  authDomain: "opilex-2a79f.firebaseapp.com",
+  projectId: "opilex-2a79f",
+  storageBucket: "opilex-2a79f.firebasestorage.app",
   messagingSenderId: "1002505057634",
   appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
   measurementId: "G-40Z3KKDR4Y"
@@ -28,7 +28,7 @@ async function checkStorage() {
     console.log('='.repeat(60));
     console.log('✅ Firebase Storage is initialized and working!');
     console.log('='.repeat(60));
-    console.log('\n📝 Storage Bucket: opilex-3373e.firebasestorage.app');
+    console.log('\n📝 Storage Bucket: opilex-2a79f.firebasestorage.app');
     console.log('✨ You can now deploy storage rules:');
     console.log('   firebase deploy --only storage\n');
     
@@ -39,7 +39,7 @@ async function checkStorage() {
     console.log('='.repeat(60));
     console.log('\n📝 To fix this, you need to:');
     console.log('\n1. Go to Firebase Console:');
-    console.log('   https://console.firebase.google.com/project/opilex-3373e/storage');
+    console.log('   https://console.firebase.google.com/project/opilex-2a79f/storage');
     console.log('\n2. Click "Get Started"');
     console.log('\n3. ⚠️  IMPORTANT: Select location "us-central1" (Iowa)');
     console.log('   - This region supports no-cost tier');

@@ -6,7 +6,7 @@ This file provides guidance to WARP (warp.dev) when working with code in this re
 
 Opilex App is a React Native mobile application (Expo/TypeScript) for authenticating Opilex wire purchases via QR code scanning and earning reward points. The app supports phone-based authentication (OTP), KYC verification, multi-language support (English, Hindi, Marathi, Gujarati), and a black-and-white themed UI design.
 
-**Firebase Project**: `opilex-3373e`  
+**Firebase Project**: `opilex-2a79f`  
 **Bundle ID**: `com.opilex.wireauth`
 
 ## Common Commands
@@ -47,7 +47,7 @@ firebase deploy --only firestore:rules
 node test-firebase.js
 ```
 
-**Note**: Firebase CLI and deployment operations use project ID `opilex-3373e` (configured in `.firebaserc`).
+**Note**: Firebase CLI and deployment operations use project ID `opilex-2a79f` (configured in `.firebaserc`).
 
 ## Architecture & Structure
 
@@ -145,7 +145,7 @@ All TypeScript types centralized in `src/types/index.ts`:
 ## Important Development Notes
 
 ### Firebase Configuration
-**Never commit real Firebase API keys**. The current `src/config/firebase.ts` contains hardcoded keys for the `opilex-3373e` project. For team development, move to environment variables:
+**Never commit real Firebase API keys**. The current `src/config/firebase.ts` contains hardcoded keys for the `opilex-2a79f` project. For team development, move to environment variables:
 
 ```typescript
 // Use expo-constants for env vars:

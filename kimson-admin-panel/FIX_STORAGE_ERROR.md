@@ -13,7 +13,7 @@ Firebase Storage **has not been initialized** in your Firebase project yet. The 
 ### Step 1: Open Firebase Console
 
 **Click this link:**
-👉 [https://console.firebase.google.com/project/opilex-3373e/storage](https://console.firebase.google.com/project/opilex-3373e/storage)
+👉 [https://console.firebase.google.com/project/opilex-2a79f/storage](https://console.firebase.google.com/project/opilex-2a79f/storage)
 
 ### Step 2: Initialize Storage
 
@@ -31,14 +31,14 @@ Firebase Storage **has not been initialized** in your Firebase project yet. The 
 After Storage is initialized, Firebase creates a default bucket. Check:
 
 1. In Firebase Console → Storage, note the bucket name
-2. If it's NOT `opilex-3373e-storage`, update `src/config/firebase.ts`:
+2. If it's NOT `opilex-2a79f-storage`, update `src/config/firebase.ts`:
 
 ```typescript
-// If default bucket is: opilex-3373e.firebasestorage.app
-storageBucket: "opilex-3373e.firebasestorage.app"
+// If default bucket is: opilex-2a79f.firebasestorage.app
+storageBucket: "opilex-2a79f.firebasestorage.app"
 
-// OR if you created custom bucket: opilex-3373e-storage
-storageBucket: "opilex-3373e-storage"
+// OR if you created custom bucket: opilex-2a79f-storage
+storageBucket: "opilex-2a79f-storage"
 ```
 
 ### Step 4: Deploy Storage Rules
@@ -60,7 +60,7 @@ node scripts/checkAndDeployStorage.js
 After setup, verify:
 
 1. **Check Storage in Console:**
-   - Go to: https://console.firebase.google.com/project/opilex-3373e/storage
+   - Go to: https://console.firebase.google.com/project/opilex-2a79f/storage
    - You should see a bucket created
 
 2. **Test Upload:**

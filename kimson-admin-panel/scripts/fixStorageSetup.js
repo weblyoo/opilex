@@ -6,9 +6,9 @@ import { getStorage, ref, listAll } from 'firebase/storage';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  authDomain: "opilex-3373e.firebaseapp.com",
-  projectId: "opilex-3373e",
-  storageBucket: "opilex-3373e-storage", // Try custom bucket first
+  authDomain: "opilex-2a79f.firebaseapp.com",
+  projectId: "opilex-2a79f",
+  storageBucket: "opilex-2a79f-storage", // Try custom bucket first
   messagingSenderId: "1002505057634",
   appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
   measurementId: "G-40Z3KKDR4Y"
@@ -18,7 +18,7 @@ async function checkStorage() {
   console.log('🔍 Checking Firebase Storage status...\n');
 
   // Try custom bucket name first
-  let bucketName = 'opilex-3373e-storage';
+  let bucketName = 'opilex-2a79f-storage';
   let storage = null;
   let app = null;
 
@@ -43,7 +43,7 @@ async function checkStorage() {
       try {
         const defaultConfig = {
           ...firebaseConfig,
-          storageBucket: 'opilex-3373e.firebasestorage.app'
+          storageBucket: 'opilex-2a79f.firebasestorage.app'
         };
         
         app = initializeApp(defaultConfig, 'default-check');
@@ -56,7 +56,7 @@ async function checkStorage() {
         console.log('='.repeat(60));
         console.log('\n📝 Update your config file:');
         console.log('   File: src/config/firebase.ts');
-        console.log('   Change: storageBucket: "opilex-3373e.firebasestorage.app"\n');
+        console.log('   Change: storageBucket: "opilex-2a79f.firebasestorage.app"\n');
         process.exit(0);
 
       } catch (defaultError) {
@@ -66,7 +66,7 @@ async function checkStorage() {
         console.log('='.repeat(60));
         console.log('\n📝 ACTION REQUIRED:\n');
         console.log('1. Open Firebase Console:');
-        console.log('   https://console.firebase.google.com/project/opilex-3373e/storage\n');
+        console.log('   https://console.firebase.google.com/project/opilex-2a79f/storage\n');
         console.log('2. Click "Get Started"\n');
         console.log('3. ⚠️  IMPORTANT: Select Location');
         console.log('   Choose: "us-central1" (Iowa)');

@@ -8,13 +8,13 @@ The `.firebasestorage.app` domain requires verification. Use a **regular bucket 
 ### Step 1: Create Bucket in Google Cloud Console
 
 1. **Open Google Cloud Console:**
-   [Create Bucket](https://console.cloud.google.com/storage/browser?project=opilex-3373e)
+   [Create Bucket](https://console.cloud.google.com/storage/browser?project=opilex-2a79f)
 
 2. **Click "Create Bucket"**
 
 3. **Bucket Configuration:**
    ```
-   Name: opilex-3373e-storage
+   Name: opilex-2a79f-storage
    ⚠️  IMPORTANT: Do NOT use .firebasestorage.app (requires verification)
    
    Location type: Single region
@@ -29,7 +29,7 @@ The `.firebasestorage.app` domain requires verification. Use a **regular bucket 
 
 I've already updated `src/config/firebase.ts` to use:
 ```typescript
-storageBucket: "opilex-3373e-storage"
+storageBucket: "opilex-2a79f-storage"
 ```
 
 ✅ **No action needed** - config is ready!
@@ -59,10 +59,10 @@ After completing Step 1 (creating bucket), your Storage will be ready!
 
 ## 🔍 Alternative Bucket Names
 
-If `opilex-3373e-storage` is taken, you can use:
+If `opilex-2a79f-storage` is taken, you can use:
 - `opilex-storage`
-- `opilex-3373e-app-storage`  
-- `opilex-3373e-bucket`
+- `opilex-2a79f-app-storage`  
+- `opilex-2a79f-bucket`
 - Any name without `.firebasestorage.app`
 
 Then update config:
@@ -72,7 +72,7 @@ node scripts/updateFirebaseConfigForBucket.js YOUR_BUCKET_NAME
 
 ## 📋 Quick Checklist
 
-- [ ] Create bucket in Google Cloud Console (name: `opilex-3373e-storage`)
+- [ ] Create bucket in Google Cloud Console (name: `opilex-2a79f-storage`)
 - [ ] Wait 2-3 minutes
 - [ ] Run: `firebase deploy --only storage`
 - [ ] Test: Upload file in Price List or Product Catalog page

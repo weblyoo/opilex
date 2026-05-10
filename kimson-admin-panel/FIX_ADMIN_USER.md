@@ -21,7 +21,7 @@ You need to ensure the admin user document in Firestore matches this exact struc
 See: `QUICK_FIX_ADMIN_DOCUMENT.md` for step-by-step instructions.
 
 **Quick Steps:**
-1. Go to: https://console.firebase.google.com/project/opilex-3373e/firestore
+1. Go to: https://console.firebase.google.com/project/opilex-2a79f/firestore
 2. Open `admins` collection
 3. Create/update document ID: `0GpunGg9R7NaLpsXZNfwyz2KfZd2`
 4. Add fields: email, role, name, permissions, createdAt
@@ -47,7 +47,7 @@ This will:
 See detailed step-by-step instructions in: `scripts/fixAdminUserFirebaseConsole.md`
 
 **Quick Steps:**
-1. Go to: https://console.firebase.google.com/project/opilex-3373e/firestore
+1. Go to: https://console.firebase.google.com/project/opilex-2a79f/firestore
 2. Open `admins` collection
 3. Find/create document with ID: `0GpunGg9R7NaLpsXZNfwyz2KfZd2`
 4. Add fields:

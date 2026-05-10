@@ -13,7 +13,7 @@
 **Cause:** Phone Authentication provider is not enabled in Firebase Console
 
 **Solution:**
-1. Go to Firebase Console: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+1. Go to Firebase Console: https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
 2. Click on **"Phone"** provider
 3. Toggle **"Enable"** to ON
 4. Click **"Save"**
@@ -126,20 +126,20 @@
 
 1. **Verify Phone Auth is Enabled:**
    ```
-   https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+   https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
    ```
    - Phone provider should be **Enabled**
 
 2. **Check Authentication Logs:**
    ```
-   https://console.firebase.google.com/project/opilex-3373e/authentication
+   https://console.firebase.google.com/project/opilex-2a79f/authentication
    ```
    - Check "Users" tab for authentication attempts
    - Check for error messages
 
 3. **Verify Project Settings:**
    ```
-   https://console.firebase.google.com/project/opilex-3373e/settings/general
+   https://console.firebase.google.com/project/opilex-2a79f/settings/general
    ```
    - Ensure project is active
    - Check API keys are valid

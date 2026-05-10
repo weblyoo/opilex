@@ -4,13 +4,13 @@
 
 ### ✅ MCP Server Configuration
 - **Location**: `.cursor/mcp.json`
-- **Project ID**: `opilex-3373e`
+- **Project ID**: `opilex-2a79f`
 - **Status**: Configured and ready
 
 ### ✅ Firebase CLI
 - **Version**: 14.22.0
 - **Status**: Installed and authenticated
-- **Active Project**: `opilex-3373e` ✓
+- **Active Project**: `opilex-2a79f` ✓
 
 ### ✅ Firebase Project Files
 - `.firebaserc` - Project configuration ✓
@@ -32,7 +32,7 @@ The Firebase MCP server is configured in `.cursor/mcp.json`:
         "experimental:mcp"
       ],
       "env": {
-        "FIREBASE_PROJECT": "opilex-3373e"
+        "FIREBASE_PROJECT": "opilex-2a79f"
       }
     }
   }
@@ -56,9 +56,9 @@ Once Cursor restarts, the Firebase MCP server will be available. You can use it 
 
 ## Firebase Project Information
 
-- **Project ID**: `opilex-3373e`
+- **Project ID**: `opilex-2a79f`
 - **Project Number**: `1002505057634`
-- **Console URL**: https://console.firebase.google.com/project/opilex-3373e
+- **Console URL**: https://console.firebase.google.com/project/opilex-2a79f
 
 ## Next Steps
 
@@ -79,7 +79,7 @@ If Firebase MCP doesn't work after restarting:
 
 2. **Verify Project**:
    ```bash
-   firebase use opilex-3373e
+   firebase use opilex-2a79f
    ```
 
 3. **Test Firebase CLI**:
@@ -91,7 +91,7 @@ If Firebase MCP doesn't work after restarting:
 
 ## Additional Resources
 
-- [Firebase Console](https://console.firebase.google.com/project/opilex-3373e)
+- [Firebase Console](https://console.firebase.google.com/project/opilex-2a79f)
 - [Firebase Documentation](https://firebase.google.com/docs)
 - [MCP Documentation](https://modelcontextprotocol.io)
 

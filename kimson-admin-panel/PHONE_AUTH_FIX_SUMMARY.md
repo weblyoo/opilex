@@ -32,7 +32,7 @@
 
 1. **Enable Phone Authentication in Firebase Console:**
    ```
-   - Go to: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+   - Go to: https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
    - Click on "Phone"
    - Toggle "Enable" ON
    - Click "Save"

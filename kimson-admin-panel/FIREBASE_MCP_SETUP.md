@@ -28,7 +28,7 @@ This will open a browser window for authentication.
 
 #### Step 2: Verify Project
 ```bash
-firebase use opilex-3373e
+firebase use opilex-2a79f
 ```
 
 #### Step 3: Deploy Rules
@@ -69,7 +69,7 @@ OpilexApp/
 ```json
 {
   "projects": {
-    "default": "opilex-3373e"
+    "default": "opilex-2a79f"
   }
 }
 ```
@@ -150,7 +150,7 @@ Expected output:
 
 ## 📞 Support
 
-- **Firebase Console**: https://console.firebase.google.com/project/opilex-3373e
+- **Firebase Console**: https://console.firebase.google.com/project/opilex-2a79f
 - **Firebase CLI Docs**: https://firebase.google.com/docs/cli
 - **Firestore Rules**: https://firebase.google.com/docs/firestore/security/get-started
 

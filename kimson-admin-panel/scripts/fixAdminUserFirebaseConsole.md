@@ -21,7 +21,7 @@ The admin user document in Firestore needs to match this exact structure:
 
 ### Step 1: Open Firestore
 
-1. Go to: https://console.firebase.google.com/project/opilex-3373e/firestore
+1. Go to: https://console.firebase.google.com/project/opilex-2a79f/firestore
 
 ### Step 2: Navigate to Admins Collection
 
@@ -71,7 +71,7 @@ node scripts/fixAdminUser.js
 
 After fixing, verify the document structure:
 
-1. Go to Firestore: https://console.firebase.google.com/project/opilex-3373e/firestore
+1. Go to Firestore: https://console.firebase.google.com/project/opilex-2a79f/firestore
 2. Open `admins` collection
 3. Check document `0GpunGg9R7NaLpsXZNfwyz2KfZd2`
 4. Ensure all fields match the structure above

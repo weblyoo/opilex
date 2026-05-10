@@ -1,7 +1,7 @@
 # 📱 OTP Login Status Report - Firebase MCP Analysis
 
 **Generated:** $(date)  
-**Project:** opilex-3373e  
+**Project:** opilex-2a79f  
 **Analysis Method:** Firebase MCP
 
 ---
@@ -9,7 +9,7 @@
 ## 🔍 Current Status
 
 ### ✅ Firebase Project Status
-- **Project ID:** `opilex-3373e`
+- **Project ID:** `opilex-2a79f`
 - **Project Number:** `1002505057634`
 - **Status:** ✅ ACTIVE
 - **Web App:** ✅ Configured (`1:1002505057634:web:fe5a29d0d3945c850ae83b`)
@@ -94,7 +94,7 @@ const result = await mockAuthService.verifyOTP(phoneNumber, otpCode);
 
 1. **Go to Firebase Console:**
    ```
-   https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+   https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
    ```
 
 2. **Enable Phone Provider:**
@@ -301,7 +301,7 @@ This will check:
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| Firebase Project | ✅ Active | Project `opilex-3373e` is active |
+| Firebase Project | ✅ Active | Project `opilex-2a79f` is active |
 | Firestore Rules | ✅ Deployed | Security rules are in place |
 | Phone Auth Provider | ⚠️ Not Enabled | Needs to be enabled in console |
 | OTP Sending | ❌ Mock | Using mock service |
@@ -333,6 +333,6 @@ This will check:
 ---
 
 **Report Generated Using:** Firebase MCP  
-**Project:** opilex-3373e  
+**Project:** opilex-2a79f  
 **Date:** $(date)
 

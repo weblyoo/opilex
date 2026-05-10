@@ -23,7 +23,7 @@ This will:
 
 ### Option 2: Manual Setup in Firebase Console (Easiest)
 
-1. Go to [Firebase Console - Firestore](https://console.firebase.google.com/project/opilex-3373e/firestore)
+1. Go to [Firebase Console - Firestore](https://console.firebase.google.com/project/opilex-2a79f/firestore)
 2. Click on **"admins"** collection (create it if it doesn't exist)
 3. Click **"Add document"**
 4. Set **Document ID** to: `LnDHQWN8uQaQQPKCBpCLvNXDWgu1`
@@ -55,7 +55,7 @@ This will:
 
 If you don't remember the password:
 
-1. Go to [Firebase Console - Authentication](https://console.firebase.google.com/project/opilex-3373e/authentication/users)
+1. Go to [Firebase Console - Authentication](https://console.firebase.google.com/project/opilex-2a79f/authentication/users)
 2. Find `admin@opilex.com`
 3. Click the three dots menu → **"Reset password"**
 4. Send password reset email
@@ -66,7 +66,7 @@ If you don't remember the password:
 
 After setup, verify:
 
-1. Go to [Firestore Console](https://console.firebase.google.com/project/opilex-3373e/firestore/data/~2Fadmins~2FLnDHQWN8uQaQQPKCBpCLvNXDWgu1)
+1. Go to [Firestore Console](https://console.firebase.google.com/project/opilex-2a79f/firestore/data/~2Fadmins~2FLnDHQWN8uQaQQPKCBpCLvNXDWgu1)
 2. You should see the admin document with all fields
 
 ## Login

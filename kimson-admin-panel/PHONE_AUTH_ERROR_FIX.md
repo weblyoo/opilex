@@ -11,7 +11,7 @@ This error means Firebase can't verify your Android app. Check the following:
 ### 1. ✅ Verify Android App Exists in Firebase
 
 **Check:**
-- Go to: https://console.firebase.google.com/project/opilex-3373e/settings/general
+- Go to: https://console.firebase.google.com/project/opilex-2a79f/settings/general
 - Scroll to "Your apps" section
 - **Look for:** Android app with package name `com.opilex.wireauth`
 
@@ -32,7 +32,7 @@ This error means Firebase can't verify your Android app. Check the following:
 **For Local Development Builds (`npx expo run:android`):**
 
 1. **Go to your Android app in Firebase Console:**
-   - https://console.firebase.google.com/project/opilex-3373e/settings/general/android:com.opilex.wireauth
+   - https://console.firebase.google.com/project/opilex-2a79f/settings/general/android:com.opilex.wireauth
    - (If the link doesn't work, go to settings → find your app → click on it)
 
 2. **Scroll to "SHA certificate fingerprints"**
@@ -60,7 +60,7 @@ If you're using EAS to build, you need different fingerprints:
 ### 3. ✅ Enable Phone Authentication Provider
 
 **Check:**
-1. Go to: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+1. Go to: https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
 2. Click on "Phone" provider
 3. **Verify it shows "Enabled" ✅**
 
@@ -177,13 +177,13 @@ Before testing, verify ALL of these:
 ## 🚀 Quick Links
 
 **Firebase Project Settings:**
-- https://console.firebase.google.com/project/opilex-3373e/settings/general
+- https://console.firebase.google.com/project/opilex-2a79f/settings/general
 
 **Phone Authentication Settings:**
-- https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+- https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
 
 **Your Android App (if already registered):**
-- https://console.firebase.google.com/project/opilex-3373e/settings/general/android:com.opilex.wireauth
+- https://console.firebase.google.com/project/opilex-2a79f/settings/general/android:com.opilex.wireauth
 
 ---
 

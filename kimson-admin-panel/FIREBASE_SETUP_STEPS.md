@@ -10,7 +10,7 @@
 ### Step 1: Add New Android App to Firebase
 
 1. **Go to Firebase Console:**
-   - Open: https://console.firebase.google.com/project/opilex-3373e/settings/general
+   - Open: https://console.firebase.google.com/project/opilex-2a79f/settings/general
 
 2. **Click "Add app" → Select Android:**
    - Look for the "Add app" button (usually at the top or in "Your apps" section)
@@ -62,7 +62,7 @@
 ### Step 3: Enable Phone Authentication (If Not Already Enabled)
 
 1. **Go to Authentication:**
-   - https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+   - https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
 
 2. **Click "Phone" provider**
 
@@ -103,10 +103,10 @@
 ## 🔗 Quick Links
 
 **Firebase Project Settings:**
-- https://console.firebase.google.com/project/opilex-3373e/settings/general
+- https://console.firebase.google.com/project/opilex-2a79f/settings/general
 
 **Firebase Authentication:**
-- https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+- https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
 
 ---
 

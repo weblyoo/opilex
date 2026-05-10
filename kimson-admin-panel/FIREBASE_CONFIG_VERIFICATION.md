@@ -8,7 +8,7 @@ Generated: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
 ## 1. Firebase Project Information
 
 ### Project Details (Verified via MCP)
-- **Project ID**: `opilex-3373e` ✅
+- **Project ID**: `opilex-2a79f` ✅
 - **Project Number**: `1002505057634` ✅
 - **Display Name**: `opilex` ✅
 - **Status**: ✅ **ACTIVE**
@@ -22,7 +22,7 @@ Generated: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
 ### Project Configuration
 - **Project Directory**: `c:\Users\info\OneDrive\Desktop\opilex\opilex\app\OpilexApp`
 - **Firebase Config Path**: `firebase.json`
-- **Active Project ID**: `opilex-3373e` (alias: default)
+- **Active Project ID**: `opilex-2a79f` (alias: default)
 - **Authenticated User**: weblyo.com@gmail.com
 - **Gemini TOS**: ✅ Accepted
 
@@ -70,11 +70,11 @@ Generated: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
 ### Web SDK Config (Verified via MCP)
 ```json
 {
-  "projectId": "opilex-3373e",
+  "projectId": "opilex-2a79f",
   "appId": "1:1002505057634:web:fe5a29d0d3945c850ae83b",
-  "storageBucket": "opilex-3373e.firebasestorage.app",
+  "storageBucket": "opilex-2a79f.firebasestorage.app",
   "apiKey": "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  "authDomain": "opilex-3373e.firebaseapp.com",
+  "authDomain": "opilex-2a79f.firebaseapp.com",
   "messagingSenderId": "1002505057634",
   "measurementId": "G-40Z3KKDR4Y",
   "projectNumber": "1002505057634",
@@ -86,9 +86,9 @@ Generated: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
 ```typescript
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",           ✅ MATCHES
-  authDomain: "opilex-3373e.firebaseapp.com",                  ✅ MATCHES
-  projectId: "opilex-3373e",                                   ✅ MATCHES
-  storageBucket: "opilex-3373e.firebasestorage.app",           ✅ MATCHES
+  authDomain: "opilex-2a79f.firebaseapp.com",                  ✅ MATCHES
+  projectId: "opilex-2a79f",                                   ✅ MATCHES
+  storageBucket: "opilex-2a79f.firebasestorage.app",           ✅ MATCHES
   messagingSenderId: "1002505057634",                          ✅ MATCHES
   appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",         ✅ MATCHES
   measurementId: "G-40Z3KKDR4Y"                                ✅ MATCHES
@@ -162,9 +162,9 @@ const firebaseConfig = {
 ## 6. Google Services Configuration (Android)
 
 ### google-services.json
-- **Project ID**: `opilex-3373e` ✅
+- **Project ID**: `opilex-2a79f` ✅
 - **Project Number**: `1002505057634` ✅
-- **Storage Bucket**: `opilex-3373e.firebasestorage.app` ✅
+- **Storage Bucket**: `opilex-2a79f.firebasestorage.app` ✅
 
 ### Android Apps in google-services.json
 
@@ -190,12 +190,12 @@ const firebaseConfig = {
 
 | Configuration Item | MCP (Firebase Console) | Code (firebase.ts) | Status |
 |-------------------|------------------------|-------------------|--------|
-| Project ID | opilex-3373e | opilex-3373e | ✅ MATCH |
+| Project ID | opilex-2a79f | opilex-2a79f | ✅ MATCH |
 | Project Number | 1002505057634 | - | ✅ VERIFIED |
 | Web App ID | 1:1002505057634:web:fe5a29d0d3945c850ae83b | 1:1002505057634:web:fe5a29d0d3945c850ae83b | ✅ MATCH |
 | API Key | AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c | AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c | ✅ MATCH |
-| Auth Domain | opilex-3373e.firebaseapp.com | opilex-3373e.firebaseapp.com | ✅ MATCH |
-| Storage Bucket | opilex-3373e.firebasestorage.app | opilex-3373e.firebasestorage.app | ✅ MATCH |
+| Auth Domain | opilex-2a79f.firebaseapp.com | opilex-2a79f.firebaseapp.com | ✅ MATCH |
+| Storage Bucket | opilex-2a79f.firebasestorage.app | opilex-2a79f.firebasestorage.app | ✅ MATCH |
 | Messaging Sender ID | 1002505057634 | 1002505057634 | ✅ MATCH |
 | Measurement ID | G-40Z3KKDR4Y | G-40Z3KKDR4Y | ✅ MATCH |
 
@@ -259,10 +259,10 @@ const firebaseConfig = {
 
 ## 🔗 Firebase Console Links
 
-- **Firebase Console**: https://console.firebase.google.com/project/opilex-3373e
-- **Firestore Rules**: https://console.firebase.google.com/project/opilex-3373e/firestore/rules
-- **Authentication**: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
-- **Project Settings**: https://console.firebase.google.com/project/opilex-3373e/settings/general
+- **Firebase Console**: https://console.firebase.google.com/project/opilex-2a79f
+- **Firestore Rules**: https://console.firebase.google.com/project/opilex-2a79f/firestore/rules
+- **Authentication**: https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
+- **Project Settings**: https://console.firebase.google.com/project/opilex-2a79f/settings/general
 
 ---
 

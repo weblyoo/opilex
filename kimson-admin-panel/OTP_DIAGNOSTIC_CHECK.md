@@ -1,7 +1,7 @@
 # 🔍 OTP Sending Diagnostic Checklist
 
 ## Firebase Project Status
-- **Project ID:** opilex-3373e
+- **Project ID:** opilex-2a79f
 - **Project Number:** 1002505057634
 - **Status:** ACTIVE ✅
 
@@ -25,7 +25,7 @@ LOG  📥 REST API Response Data: {...}
 #### Error 1: `OPERATION_NOT_ALLOWED`
 - **Meaning:** Phone authentication is not enabled in Firebase Console
 - **Fix:** 
-  1. Go to: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+  1. Go to: https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
   2. Click "Phone"
   3. Toggle "Enable" ON
   4. Click "Save"

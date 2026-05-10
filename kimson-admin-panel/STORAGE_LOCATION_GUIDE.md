@@ -28,7 +28,7 @@ Choose one of these regions when setting up Firebase Storage:
 ### Option 1: Via Firebase Console (Recommended)
 
 1. **Go to Firebase Console Storage:**
-   - [Storage Setup](https://console.firebase.google.com/project/opilex-3373e/storage)
+   - [Storage Setup](https://console.firebase.google.com/project/opilex-2a79f/storage)
 
 2. **Click "Get Started"**
 
@@ -59,11 +59,11 @@ firebase init storage
 ### Option 3: Create Cloud Storage Bucket Manually
 
 1. **Go to Google Cloud Console:**
-   - [Cloud Storage](https://console.cloud.google.com/storage/browser?project=opilex-3373e)
+   - [Cloud Storage](https://console.cloud.google.com/storage/browser?project=opilex-2a79f)
 
 2. **Create Bucket:**
    - Click "Create Bucket"
-   - Name: `opilex-3373e.firebasestorage.app` (or let Firebase auto-generate)
+   - Name: `opilex-2a79f.firebasestorage.app` (or let Firebase auto-generate)
    - Location: Choose **us-central1** or another recommended region
    - Storage class: **Standard**
    - Click "Create"
@@ -106,7 +106,7 @@ Once Storage is initialized with the correct location:
 ## 🎯 Quick Setup (Recommended)
 
 **Fastest path:**
-1. Go to: https://console.firebase.google.com/project/opilex-3373e/storage
+1. Go to: https://console.firebase.google.com/project/opilex-2a79f/storage
 2. Click "Get Started"
 3. Select **"us-central1"** as location
 4. Click "Done"

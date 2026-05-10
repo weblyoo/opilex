@@ -10,7 +10,7 @@ const replacements = [
   { from: /Opilex/g, to: 'Opilex' },
   { from: /opilex/g, to: 'opilex' },
   { from: /OPILEX/g, to: 'OPILEX' },
-  { from: /opilex-3373e/g, to: 'opilex-2a79f' }
+  { from: /opilex-2a79f/g, to: 'opilex-2a79f' }
 ];
 
 const extensions = ['.tsx', '.ts', '.js', '.jsx', '.html', '.css', '.json', '.md'];

@@ -1,6 +1,6 @@
-# Kimson App
+# Opilex App
 
-A React Native app built with Expo for authenticating Kimson wire purchases and earning rewards.
+A React Native app built with Expo for authenticating Opilex wire purchases and earning rewards.
 
 ## Features
 

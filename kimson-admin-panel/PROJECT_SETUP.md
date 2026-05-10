@@ -35,7 +35,7 @@ opilex-admin-panel/
 - ✅ Date-fns (for date formatting)
 
 ### 3. Firebase Configuration
-- ✅ Connected to same Firebase project (opilex-3373e)
+- ✅ Connected to same Firebase project (opilex-2a79f)
 - ✅ Firestore database ready
 - ✅ Authentication ready
 - ✅ Services implemented
@@ -51,7 +51,7 @@ opilex-admin-panel/
 
 ### Step 1: Enable Email/Password Authentication
 
-1. Go to Firebase Console: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+1. Go to Firebase Console: https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
 2. Click on **Email/Password**
 3. Enable it
 4. Click **Save**

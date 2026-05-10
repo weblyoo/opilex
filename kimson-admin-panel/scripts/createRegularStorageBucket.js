@@ -3,7 +3,7 @@
 
 import { Storage } from '@google-cloud/storage';
 
-const projectId = 'opilex-3373e';
+const projectId = 'opilex-2a79f';
 // Use regular bucket name (not .firebasestorage.app to avoid domain verification)
 const bucketName = `${projectId}-storage`;
 const location = 'US-CENTRAL1';
@@ -73,7 +73,7 @@ async function createBucket() {
       
     } else if (error.code === 403) {
       console.log('\n💡 Permission denied. Grant Storage Admin role:');
-      console.log('   https://console.cloud.google.com/iam-admin/iam?project=opilex-3373e\n');
+      console.log('   https://console.cloud.google.com/iam-admin/iam?project=opilex-2a79f\n');
     } else {
       console.log('\n💡 Create bucket manually in Google Cloud Console');
       console.log('   Use bucket name WITHOUT .firebasestorage.app\n');

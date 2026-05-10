@@ -20,7 +20,7 @@
 ### Step 1: Create Storage Bucket
 
 1. **Open this link:**
-   [Firebase Storage Console](https://console.firebase.google.com/project/opilex-3373e/storage)
+   [Firebase Storage Console](https://console.firebase.google.com/project/opilex-2a79f/storage)
 
 2. **Click "Get Started"**
 
@@ -62,7 +62,7 @@ firebase deploy --only storage
 After deployment, verify:
 
 1. **Check Storage in Console:**
-   - Go to: https://console.firebase.google.com/project/opilex-3373e/storage
+   - Go to: https://console.firebase.google.com/project/opilex-2a79f/storage
    - You should see the bucket created
 
 2. **Check Rules:**

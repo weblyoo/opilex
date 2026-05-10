@@ -15,7 +15,7 @@ You must choose a compatible region. See **STORAGE_LOCATION_GUIDE.md** for detai
 
 ### 1. Initialize Firebase Storage
 
-1. Go to [Firebase Console - Storage](https://console.firebase.google.com/project/opilex-3373e/storage)
+1. Go to [Firebase Console - Storage](https://console.firebase.google.com/project/opilex-2a79f/storage)
 2. Click **"Get Started"** or **"Create bucket"**
 3. **⚠️ CRITICAL:** Choose location: **us-central1** (Iowa) or another compatible region
    - ✅ Recommended: **us-central1** (supports no-cost tier)

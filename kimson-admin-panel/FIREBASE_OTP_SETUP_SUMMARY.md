@@ -45,7 +45,7 @@ Using Firebase MCP tools, I've successfully updated all code files to use **real
 
 ## 🔍 Firebase Project Status
 
-**Project:** opilex-3373e  
+**Project:** opilex-2a79f  
 **Status:** ✅ Active  
 **Project Number:** 1002505057634  
 **Web App:** Configured (1:1002505057634:web:fe5a29d0d3945c850ae83b)
@@ -60,7 +60,7 @@ The code is **100% ready**, but you need to enable Phone Authentication in Fireb
 
 1. **Go to Firebase Console:**
    ```
-   https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+   https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
    ```
 
 2. **Enable Phone Provider:**

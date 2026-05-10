@@ -51,7 +51,7 @@ The code is ready, but you need to **enable Phone Authentication** in Firebase C
 
 1. Go to Firebase Console:
    ```
-   https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+   https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
    ```
 
 2. Click on **"Phone"** in the Sign-in method providers list
@@ -280,6 +280,6 @@ Check console logs for:
 ---
 
 **Last Updated:** January 2025  
-**Firebase Project:** opilex-3373e  
+**Firebase Project:** opilex-2a79f  
 **Implementation Status:** ✅ Complete
 

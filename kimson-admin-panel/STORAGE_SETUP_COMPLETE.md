@@ -2,14 +2,14 @@
 
 ## 🎉 What's Been Done
 
-1. ✅ **Storage bucket created**: `opilex-3373e-storage`
+1. ✅ **Storage bucket created**: `opilex-2a79f-storage`
 2. ✅ **Firebase config updated**: Using new bucket name
 3. ✅ **Storage rules deployed**: Successfully deployed to Firebase
 4. ✅ **Rules validated**: All security rules are active
 
 ## ✅ Current Status
 
-- **Bucket Name**: `opilex-3373e-storage`
+- **Bucket Name**: `opilex-2a79f-storage`
 - **Location**: us-central1 (Iowa)
 - **Storage Rules**: ✅ Deployed and active
 - **Firebase Config**: ✅ Updated to use new bucket

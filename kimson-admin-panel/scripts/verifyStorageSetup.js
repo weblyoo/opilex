@@ -4,9 +4,9 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  authDomain: "opilex-3373e.firebaseapp.com",
-  projectId: "opilex-3373e",
-  storageBucket: "opilex-3373e-storage",
+  authDomain: "opilex-2a79f.firebaseapp.com",
+  projectId: "opilex-2a79f",
+  storageBucket: "opilex-2a79f-storage",
   messagingSenderId: "1002505057634",
   appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
   measurementId: "G-40Z3KKDR4Y"
@@ -48,7 +48,7 @@ async function verify() {
       console.log('   ✅ Price List: /price-list');
       console.log('   ✅ Product Catalog: /product-catalog');
       console.log('\n📋 Storage Configuration:');
-      console.log(`   Bucket: opilex-3373e-storage`);
+      console.log(`   Bucket: opilex-2a79f-storage`);
       console.log(`   Location: us-central1`);
       console.log(`   Rules: Deployed ✅\n`);
       
@@ -68,8 +68,8 @@ async function verify() {
     if (error.code === 'storage/bucket-not-found' || error.message.includes('bucket')) {
       console.log('❌ Bucket not found or not accessible');
       console.log('\n💡 Make sure:');
-      console.log('   1. Bucket "opilex-3373e-storage" exists in Google Cloud Console');
-      console.log('   2. Bucket is in project: opilex-3373e');
+      console.log('   1. Bucket "opilex-2a79f-storage" exists in Google Cloud Console');
+      console.log('   2. Bucket is in project: opilex-2a79f');
       console.log('   3. Wait 2-3 minutes after creation for propagation\n');
     } else {
       console.log('❌ Error:', error.message);

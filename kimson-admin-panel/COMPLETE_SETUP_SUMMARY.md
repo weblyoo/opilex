@@ -134,9 +134,9 @@ Run: `node test-firebase.js`
 
 ## 🔗 Firebase Project
 
-- **Project ID**: opilex-3373e
-- **Auth Domain**: opilex-3373e.firebaseapp.com
-- **Console**: https://console.firebase.google.com/project/opilex-3373e
+- **Project ID**: opilex-2a79f
+- **Auth Domain**: opilex-2a79f.firebaseapp.com
+- **Console**: https://console.firebase.google.com/project/opilex-2a79f
 
 ---
 
@@ -175,7 +175,7 @@ All database connections are established, tested, and documented. You can now:
 
 **Test Connection**: `node test-firebase.js`
 **Deploy Rules**: `firebase deploy --only firestore:rules`
-**Firebase Console**: https://console.firebase.google.com/project/opilex-3373e
+**Firebase Console**: https://console.firebase.google.com/project/opilex-2a79f
 
 ---
 

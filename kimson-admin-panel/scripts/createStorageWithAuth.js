@@ -3,7 +3,7 @@
 
 import { Storage } from '@google-cloud/storage';
 
-const projectId = 'opilex-3373e';
+const projectId = 'opilex-2a79f';
 const bucketName = `${projectId}.firebasestorage.app`;
 const location = 'US-CENTRAL1';
 
@@ -57,7 +57,7 @@ async function createBucket() {
     if (error.message.includes('Could not load the default credentials')) {
       console.log('\n💡 Authentication required. Options:\n');
       console.log('Option 1: Use Firebase Console (Easiest)');
-      console.log('   1. Go to: https://console.firebase.google.com/project/opilex-3373e/storage');
+      console.log('   1. Go to: https://console.firebase.google.com/project/opilex-2a79f/storage');
       console.log('   2. Click "Get Started"');
       console.log('   3. Select location: us-central1');
       console.log('   4. Click "Done"\n');

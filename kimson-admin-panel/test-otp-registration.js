@@ -16,7 +16,7 @@ const serviceAccount = require('./serviceAccountKey.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  projectId: 'opilex-3373e'
+  projectId: 'opilex-2a79f'
 });
 
 const auth = admin.auth();

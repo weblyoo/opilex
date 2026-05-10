@@ -1,7 +1,7 @@
 # Fix: Storage Domain Verification Issue
 
 ## ❌ Problem
-Error: "To create a bucket named opilex-3373e.firebasestorage.app, you must verify that you're authorized to use that domain name."
+Error: "To create a bucket named opilex-2a79f.firebasestorage.app, you must verify that you're authorized to use that domain name."
 
 ## ✅ Solution: Use Regular Bucket Name
 
@@ -10,15 +10,15 @@ Create a bucket with a **regular name** (without `.firebasestorage.app`) to avoi
 ### Step 1: Create Bucket in Google Cloud Console
 
 1. **Open Google Cloud Console:**
-   https://console.cloud.google.com/storage/browser?project=opilex-3373e
+   https://console.cloud.google.com/storage/browser?project=opilex-2a79f
 
 2. **Click "Create Bucket"**
 
 3. **Use this name (IMPORTANT - no .firebasestorage.app):**
    ```
-   Name: opilex-3373e-storage
+   Name: opilex-2a79f-storage
    ```
-   ⚠️ **DO NOT use** `opilex-3373e.firebasestorage.app` - that requires verification
+   ⚠️ **DO NOT use** `opilex-2a79f.firebasestorage.app` - that requires verification
 
 4. **Configure:**
    ```
@@ -39,17 +39,17 @@ After creating the bucket, update your Firebase config to use the new bucket nam
 
 Change this line:
 ```typescript
-storageBucket: "opilex-3373e.firebasestorage.app",
+storageBucket: "opilex-2a79f.firebasestorage.app",
 ```
 
 To:
 ```typescript
-storageBucket: "opilex-3373e-storage",
+storageBucket: "opilex-2a79f-storage",
 ```
 
 Or run this script:
 ```bash
-node scripts/updateFirebaseConfigForBucket.js opilex-3373e-storage
+node scripts/updateFirebaseConfigForBucket.js opilex-2a79f-storage
 ```
 
 ### Step 3: Deploy Storage Rules
@@ -68,10 +68,10 @@ node scripts/setupStorage.js
 
 ## ✅ Alternative Bucket Names
 
-If `opilex-3373e-storage` is taken, use any of these:
+If `opilex-2a79f-storage` is taken, use any of these:
 - `opilex-storage`
-- `opilex-3373e-app-storage`
-- `opilex-3373e-bucket`
+- `opilex-2a79f-app-storage`
+- `opilex-2a79f-bucket`
 - Any name without `.firebasestorage.app` or special domains
 
 ## 🎯 Quick Commands
@@ -80,7 +80,7 @@ After creating bucket in Google Cloud Console:
 
 ```bash
 # Update Firebase config
-node scripts/updateFirebaseConfigForBucket.js opilex-3373e-storage
+node scripts/updateFirebaseConfigForBucket.js opilex-2a79f-storage
 
 # Deploy rules
 firebase deploy --only storage

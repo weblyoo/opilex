@@ -154,7 +154,7 @@ Create test QR codes with format: `OPILEX_WIRE_BATCH123_2024`
 ```javascript
 // Create .env file
 FIREBASE_API_KEY=AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c
-FIREBASE_PROJECT_ID=opilex-3373e
+FIREBASE_PROJECT_ID=opilex-2a79f
 FIREBASE_APP_ID=1:1002505057634:web:fe5a29d0d3945c850ae83b
 ```
 
@@ -195,7 +195,7 @@ FIREBASE_APP_ID=1:1002505057634:web:fe5a29d0d3945c850ae83b
 
 ## 📞 Support & Resources
 
-- Firebase Console: https://console.firebase.google.com/project/opilex-3373e
+- Firebase Console: https://console.firebase.google.com/project/opilex-2a79f
 - Expo Documentation: https://docs.expo.dev/
 - React Navigation: https://reactnavigation.org/
 

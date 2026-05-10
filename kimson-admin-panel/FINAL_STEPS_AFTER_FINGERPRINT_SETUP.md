@@ -15,7 +15,7 @@
 ### Step 1: Enable Phone Authentication (Verify)
 
 1. **Go to Phone Authentication Settings:**
-   - https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+   - https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
 
 2. **Click on "Phone" provider**
 
@@ -160,9 +160,9 @@ Your Firebase setup is now correct:
 ## 📚 Reference Links
 
 **Firebase Console:**
-- Project Settings: https://console.firebase.google.com/project/opilex-3373e/settings/general
-- Phone Auth: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+- Project Settings: https://console.firebase.google.com/project/opilex-2a79f/settings/general
+- Phone Auth: https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
 
 **Your Android App:**
-- https://console.firebase.google.com/project/opilex-3373e/settings/general/android:5108de2c2f9ace6d0ae83b
+- https://console.firebase.google.com/project/opilex-2a79f/settings/general/android:5108de2c2f9ace6d0ae83b
 

@@ -28,7 +28,7 @@ The rules need to allow an authenticated user to create their own admin document
 
 ### Option 2: Update in Firebase Console
 
-1. Go to: https://console.firebase.google.com/project/opilex-3373e/firestore/rules
+1. Go to: https://console.firebase.google.com/project/opilex-2a79f/firestore/rules
 
 2. Update the `admins` collection rule from:
    ```javascript

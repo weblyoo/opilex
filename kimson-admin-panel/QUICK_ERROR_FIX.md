@@ -19,7 +19,7 @@ Check your console/logs for the error code. Look for:
 
 **Fix:** Enable Phone Authentication in Firebase Console
 
-1. Go to: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+1. Go to: https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
 2. Click **"Phone"**
 3. Toggle **"Enable"** ON
 4. Click **"Save"**

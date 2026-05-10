@@ -13,7 +13,7 @@
 - **Contains:** Correct Android app configuration
 
 ### 3. ✅ Firebase Project Status (Verified via MCP)
-- **Project ID:** `opilex-3373e` ✅
+- **Project ID:** `opilex-2a79f` ✅
 - **Project Number:** `1002505057634` ✅
 - **State:** ACTIVE ✅
 

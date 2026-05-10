@@ -10,7 +10,7 @@ The admin user document in Firestore needs to have this exact structure, but the
 
 ### Step 1: Open Firestore
 
-Go to: https://console.firebase.google.com/project/opilex-3373e/firestore
+Go to: https://console.firebase.google.com/project/opilex-2a79f/firestore
 
 ### Step 2: Open/Create Document
 

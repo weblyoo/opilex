@@ -35,13 +35,13 @@ If you see "✅ Firestore connection successful!" - you're done!
 ## 📋 What Gets Created
 
 - `firebase.json` - Firebase configuration ✅
-- `.firebaserc` - Project ID (opilex-3373e) ✅
+- `.firebaserc` - Project ID (opilex-2a79f) ✅
 - `firestore.rules` - Security rules ready to deploy ✅
 
 ## 🔧 Manual Option
 
 If you prefer to deploy rules manually:
-1. Go to: https://console.firebase.google.com/project/opilex-3373e/firestore/rules
+1. Go to: https://console.firebase.google.com/project/opilex-2a79f/firestore/rules
 2. Copy contents from `firestore.rules`
 3. Paste in Firebase Console
 4. Click "Publish"

@@ -8,7 +8,7 @@ Your data location doesn't support no-cost Storage buckets. You need to select a
 ### Step 1: Initialize Storage with Correct Location
 
 1. **Open this link:**
-   [Firebase Storage Setup](https://console.firebase.google.com/project/opilex-3373e/storage)
+   [Firebase Storage Setup](https://console.firebase.google.com/project/opilex-2a79f/storage)
 
 2. **Click "Get Started"**
 

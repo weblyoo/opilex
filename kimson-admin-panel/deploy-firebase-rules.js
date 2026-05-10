@@ -65,7 +65,7 @@ try {
 } catch (error) {
   console.error('\n❌ Deployment failed:', error.message);
   console.log('\n💡 Manual deployment option:');
-  console.log('   1. Go to: https://console.firebase.google.com/project/opilex-3373e/firestore/rules');
+  console.log('   1. Go to: https://console.firebase.google.com/project/opilex-2a79f/firestore/rules');
   console.log('   2. Copy contents from firestore.rules');
   console.log('   3. Paste and click Publish\n');
   process.exit(1);

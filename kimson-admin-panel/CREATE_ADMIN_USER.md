@@ -11,7 +11,7 @@ This error means **Email/Password authentication is not enabled** in Firebase.
 ### Step 1: Enable Email/Password Auth
 
 1. **Open Firebase Console**
-   - Go to: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+   - Go to: https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
 
 2. **Enable Email/Password**
    - Click on **Email/Password** in the providers list
@@ -30,7 +30,7 @@ This error means **Email/Password authentication is not enabled** in Firebase.
 #### Part 1: Create Firebase Auth User
 
 1. **In Firebase Console**
-   - Go to: https://console.firebase.google.com/project/opilex-3373e/authentication/users
+   - Go to: https://console.firebase.google.com/project/opilex-2a79f/authentication/users
    - Click **Add user** button
    - Enter:
      - **Email**: `admin@opilex.com`
@@ -41,7 +41,7 @@ This error means **Email/Password authentication is not enabled** in Firebase.
 #### Part 2: Add to Admins Collection
 
 1. **Go to Firestore**
-   - Navigate to: https://console.firebase.google.com/project/opilex-3373e/firestore
+   - Navigate to: https://console.firebase.google.com/project/opilex-2a79f/firestore
 
 2. **Create Admins Collection**
    - Click **Start collection** (if collection doesn't exist)
@@ -98,9 +98,9 @@ Create a simple HTML file to create admin:
 
         const firebaseConfig = {
             apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-            authDomain: "opilex-3373e.firebaseapp.com",
-            projectId: "opilex-3373e",
-            storageBucket: "opilex-3373e.firebasestorage.app",
+            authDomain: "opilex-2a79f.firebaseapp.com",
+            projectId: "opilex-2a79f",
+            storageBucket: "opilex-2a79f.firebasestorage.app",
             messagingSenderId: "1002505057634",
             appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
             measurementId: "G-40Z3KKDR4Y"
@@ -170,9 +170,9 @@ After creating the admin user:
 
 ## 🔗 Quick Links
 
-- **Enable Auth**: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
-- **Add User**: https://console.firebase.google.com/project/opilex-3373e/authentication/users
-- **Firestore**: https://console.firebase.google.com/project/opilex-3373e/firestore
+- **Enable Auth**: https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
+- **Add User**: https://console.firebase.google.com/project/opilex-2a79f/authentication/users
+- **Firestore**: https://console.firebase.google.com/project/opilex-2a79f/firestore
 
 ---
 

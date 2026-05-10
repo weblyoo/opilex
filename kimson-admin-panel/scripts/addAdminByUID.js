@@ -7,9 +7,9 @@ import { getFirestore, doc, setDoc, serverTimestamp } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  authDomain: "opilex-3373e.firebaseapp.com",
-  projectId: "opilex-3373e",
-  storageBucket: "opilex-3373e.firebasestorage.app",
+  authDomain: "opilex-2a79f.firebaseapp.com",
+  projectId: "opilex-2a79f",
+  storageBucket: "opilex-2a79f.firebasestorage.app",
   messagingSenderId: "1002505057634",
   appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
   measurementId: "G-40Z3KKDR4Y"
@@ -69,7 +69,7 @@ async function addAdminByUID() {
     console.log('   Collection: admins');
     console.log(`   Document ID: ${adminUID}`);
     console.log('\n🔍 Verify in Firebase Console:');
-    console.log('   https://console.firebase.google.com/project/opilex-3373e/firestore/data/~2Fadmins~2F' + adminUID);
+    console.log('   https://console.firebase.google.com/project/opilex-2a79f/firestore/data/~2Fadmins~2F' + adminUID);
     console.log('\n✨ You can now login to the admin panel!');
     console.log('   URL: http://localhost:5173/login');
     console.log('   Email: admin@opilex.com');
@@ -84,14 +84,14 @@ async function addAdminByUID() {
     if (error.code === 'permission-denied' || error.message.includes('permission')) {
       console.log('\n💡 Permission denied.');
       console.log('   Make sure Firestore security rules allow admin document creation.');
-      console.log('   Check: https://console.firebase.google.com/project/opilex-3373e/firestore/rules');
+      console.log('   Check: https://console.firebase.google.com/project/opilex-2a79f/firestore/rules');
       console.log('\n📝 You may need to:');
       console.log('   1. Deploy Firestore rules: firebase deploy --only firestore:rules');
       console.log('   2. Or manually add the document in Firebase Console');
     }
 
     console.log('\n📝 Alternative: Add manually in Firebase Console');
-    console.log('   https://console.firebase.google.com/project/opilex-3373e/firestore');
+    console.log('   https://console.firebase.google.com/project/opilex-2a79f/firestore');
     console.log('   Collection: admins');
     console.log(`   Document ID: ${adminUID}`);
     console.log('   Fields: { email: "admin@opilex.com", role: "superAdmin", ... }');

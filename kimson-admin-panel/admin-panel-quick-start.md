@@ -14,9 +14,9 @@ import { getAnalytics } from 'firebase/analytics';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  authDomain: "opilex-3373e.firebaseapp.com",
-  projectId: "opilex-3373e",
-  storageBucket: "opilex-3373e.firebasestorage.app",
+  authDomain: "opilex-2a79f.firebaseapp.com",
+  projectId: "opilex-2a79f",
+  storageBucket: "opilex-2a79f.firebasestorage.app",
   messagingSenderId: "1002505057634",
   appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
   measurementId: "G-40Z3KKDR4Y"
@@ -48,8 +48,8 @@ import { getFirestore, doc, setDoc, serverTimestamp } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  authDomain: "opilex-3373e.firebaseapp.com",
-  projectId: "opilex-3373e",
+  authDomain: "opilex-2a79f.firebaseapp.com",
+  projectId: "opilex-2a79f",
   // ... rest of config
 };
 

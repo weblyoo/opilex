@@ -15,7 +15,7 @@
 
 ## 📖 Overview
 
-This guide will help you create a **web admin panel** that connects to the same Firebase database (`opilex-3373e`) used by your React Native mobile app. The admin panel will allow you to:
+This guide will help you create a **web admin panel** that connects to the same Firebase database (`opilex-2a79f`) used by your React Native mobile app. The admin panel will allow you to:
 
 - View all users and their data
 - Monitor wire authentications
@@ -32,7 +32,7 @@ Before starting, ensure you have:
 
 - Node.js 16+ installed
 - npm or yarn package manager
-- Firebase project access (opilex-3373e)
+- Firebase project access (opilex-2a79f)
 - Basic knowledge of React/Next.js
 - Git installed
 
@@ -97,9 +97,9 @@ import { getAnalytics } from 'firebase/analytics';
 // ⚠️ SAME CONFIG AS MOBILE APP
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  authDomain: "opilex-3373e.firebaseapp.com",
-  projectId: "opilex-3373e",
-  storageBucket: "opilex-3373e.firebasestorage.app",
+  authDomain: "opilex-2a79f.firebaseapp.com",
+  projectId: "opilex-2a79f",
+  storageBucket: "opilex-2a79f.firebasestorage.app",
   messagingSenderId: "1002505057634",
   appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
   measurementId: "G-40Z3KKDR4Y"
@@ -934,9 +934,9 @@ opilex-admin-panel/
 
 ## 🔗 Useful Links
 
-- **Firebase Console**: https://console.firebase.google.com/project/opilex-3373e
-- **Firestore Rules**: https://console.firebase.google.com/project/opilex-3373e/firestore/rules
-- **Authentication**: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+- **Firebase Console**: https://console.firebase.google.com/project/opilex-2a79f
+- **Firestore Rules**: https://console.firebase.google.com/project/opilex-2a79f/firestore/rules
+- **Authentication**: https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
 - **Firebase Docs**: https://firebase.google.com/docs
 
 ---

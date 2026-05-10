@@ -37,7 +37,7 @@
 | **Author** | Development Team |
 | **Last Updated** | October 29, 2024 |
 | **Project Code** | OPILEX-ADMIN-WEB |
-| **Firebase Project** | opilex-3373e |
+| **Firebase Project** | opilex-2a79f |
 
 ---
 

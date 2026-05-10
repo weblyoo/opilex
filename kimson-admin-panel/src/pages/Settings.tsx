@@ -103,7 +103,7 @@ export const Settings = () => {
             System Information
           </h2>
           <div className="space-y-2 text-white/70 font-ubuntu-light">
-            <p>Firebase Project: opilex-3373e</p>
+            <p>Firebase Project: opilex-2a79f</p>
             <p>Admin Panel Version: 1.0.0</p>
             <p>Build Date: {new Date().toLocaleDateString()}</p>
           </div>

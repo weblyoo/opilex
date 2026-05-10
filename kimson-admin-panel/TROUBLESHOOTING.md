@@ -81,7 +81,7 @@ The app needs Firebase to be properly configured:
 
 **Critical Step**:
 
-1. Go to: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+1. Go to: https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
 2. Click "Email/Password"
 3. Enable it
 4. Save

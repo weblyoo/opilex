@@ -220,7 +220,7 @@ src/
 ## 🔐 Firebase Integration Status
 
 ### ✅ Configured
-- **Firebase Project:** `opilex-3373e` (Active)
+- **Firebase Project:** `opilex-2a79f` (Active)
 - **Firestore Database:** Configured with rules
 - **Firebase Config:** Properly initialized
 - **Collections:**

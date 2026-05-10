@@ -17,7 +17,7 @@ This guide will help you set up real Firebase Phone Authentication with OTP SMS 
 
 ### What's Currently Working
 - ✅ UI flow is complete (Login → OTP → Registration)
-- ✅ Firebase project is configured (`opilex-3373e`)
+- ✅ Firebase project is configured (`opilex-2a79f`)
 - ✅ Firestore is set up
 - ✅ Mock authentication for development
 
@@ -35,7 +35,7 @@ This guide will help you set up real Firebase Phone Authentication with OTP SMS 
 
 1. **Go to Firebase Console:**
    ```
-   https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+   https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
    ```
 
 2. **Enable Phone Provider:**
@@ -392,9 +392,9 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  authDomain: "opilex-3373e.firebaseapp.com",
-  projectId: "opilex-3373e",
-  storageBucket: "opilex-3373e.firebasestorage.app",
+  authDomain: "opilex-2a79f.firebaseapp.com",
+  projectId: "opilex-2a79f",
+  storageBucket: "opilex-2a79f.firebasestorage.app",
   messagingSenderId: "1002505057634",
   appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
   measurementId: "G-40Z3KKDR4Y"
@@ -589,7 +589,7 @@ Check console logs for:
 - **Firebase Phone Auth Docs:** https://firebase.google.com/docs/auth/web/phone-auth
 - **Expo Auth Session:** https://docs.expo.dev/guides/authentication/#phone-authentication
 - **React Native Firebase:** https://rnfirebase.io/auth/phone-auth
-- **Firebase Console:** https://console.firebase.google.com/project/opilex-3373e
+- **Firebase Console:** https://console.firebase.google.com/project/opilex-2a79f
 
 ---
 

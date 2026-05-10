@@ -12,7 +12,7 @@ The phone authentication code is now ready to work on mobile APK. However, you n
 
 1. Go to Firebase Console:
    ```
-   https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+   https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
    ```
 
 2. Click on **"Phone"** in the Sign-in method providers list
@@ -80,7 +80,7 @@ keytool -list -v -keystore debug.keystore -alias androiddebugkey -storepass andr
 
 1. Go to Firebase Console:
    ```
-   https://console.firebase.google.com/project/opilex-3373e/settings/general/android:com.opilexapp
+   https://console.firebase.google.com/project/opilex-2a79f/settings/general/android:com.opilexapp
    ```
 
 2. Scroll down to **"SHA certificate fingerprints"**

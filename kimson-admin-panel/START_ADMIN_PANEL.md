@@ -23,7 +23,7 @@ You should see the **Login Page**.
 
 ### 1. Enable Email/Password Authentication
 
-1. Go to: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+1. Go to: https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
 2. Click **Email/Password**
 3. Enable it
 4. Click **Save**

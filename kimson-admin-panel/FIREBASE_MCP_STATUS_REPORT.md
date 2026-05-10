@@ -15,7 +15,7 @@ Generated: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
 ---
 
 ## 2. Firebase Project
-- **Project ID**: `opilex-3373e`
+- **Project ID**: `opilex-2a79f`
 - **Project Number**: `1002505057634`
 - **Display Name**: `opilex`
 - **Status**: ✅ ACTIVE
@@ -70,7 +70,7 @@ Generated: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
 
 ### google-services.json
 - **Status**: ✅ Present
-- **Project ID**: `opilex-3373e` ✅ Matches
+- **Project ID**: `opilex-2a79f` ✅ Matches
 - **Project Number**: `1002505057634` ✅ Matches
 - **Configured Apps**: 
   - `com.opilex.wireauth` ✅
@@ -81,9 +81,9 @@ Generated: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
 ## 5. Firebase SDK Configuration (src/config/firebase.ts)
 
 - **API Key**: ✅ Configured
-- **Auth Domain**: `opilex-3373e.firebaseapp.com` ✅
-- **Project ID**: `opilex-3373e` ✅ Matches
-- **Storage Bucket**: `opilex-3373e.firebasestorage.app` ✅
+- **Auth Domain**: `opilex-2a79f.firebaseapp.com` ✅
+- **Project ID**: `opilex-2a79f` ✅ Matches
+- **Storage Bucket**: `opilex-2a79f.firebasestorage.app` ✅
 - **Messaging Sender ID**: `1002505057634` ✅ Matches
 - **Web App ID**: `1:1002505057634:web:fe5a29d0d3945c850ae83b` ✅ Matches
 - **Measurement ID**: `G-40Z3KKDR4Y` ✅

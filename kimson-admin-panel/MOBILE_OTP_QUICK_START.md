@@ -7,7 +7,7 @@
 ## ⚡ Quick Setup (5 Steps)
 
 ### Step 1: Enable Phone Auth in Firebase Console
-1. Go to: https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+1. Go to: https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
 2. Click **"Phone"** → Toggle **"Enable"** → **"Save"**
 
 ### Step 2: Add SHA Fingerprints (Android)

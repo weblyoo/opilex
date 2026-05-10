@@ -21,7 +21,7 @@
 ### Step 1: Download `google-services.json`
 
 1. **Go to Firebase Console:**
-   - https://console.firebase.google.com/project/opilex-3373e/settings/general
+   - https://console.firebase.google.com/project/opilex-2a79f/settings/general
 
 2. **Find Your Android App:**
    - App ID: `1:1002505057634:android:5108de2c2f9ace6d0ae83b`

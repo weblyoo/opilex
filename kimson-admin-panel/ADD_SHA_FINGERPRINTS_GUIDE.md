@@ -48,7 +48,7 @@
 ### Step 2: Add Fingerprints to Firebase Console
 
 1. **Open Firebase Console:**
-   - Go to: https://console.firebase.google.com/project/opilex-3373e/settings/general
+   - Go to: https://console.firebase.google.com/project/opilex-2a79f/settings/general
 
 2. **Find Your Android App:**
    - Scroll down to the "Your apps" section
@@ -85,7 +85,7 @@
 If you don't see your Android app in Firebase Console:
 
 1. **Go to Project Settings:**
-   - https://console.firebase.google.com/project/opilex-3373e/settings/general
+   - https://console.firebase.google.com/project/opilex-2a79f/settings/general
 
 2. **Click "Add app" → Select Android:**
    - Look for the "Add app" button
@@ -131,13 +131,13 @@ After adding the fingerprints:
 ## 🔗 Direct Links
 
 **Firebase Project Settings:**
-- https://console.firebase.google.com/project/opilex-3373e/settings/general
+- https://console.firebase.google.com/project/opilex-2a79f/settings/general
 
 **Firebase Authentication Providers:**
-- https://console.firebase.google.com/project/opilex-3373e/authentication/providers
+- https://console.firebase.google.com/project/opilex-2a79f/authentication/providers
 
 **Firebase Android App Settings (if app is registered):**
-- https://console.firebase.google.com/project/opilex-3373e/settings/general/android:com.opilex.wireauth
+- https://console.firebase.google.com/project/opilex-2a79f/settings/general/android:com.opilex.wireauth
 
 ---
 

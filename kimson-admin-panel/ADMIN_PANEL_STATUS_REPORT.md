@@ -13,7 +13,7 @@ The Opilex Admin Panel is **documented and configured** but **not yet implemente
 - ✅ **Firestore Security Rules**: Configured with admin support
 - ✅ **Admin Collection Structure**: Defined and ready
 - ✅ **Admin Permissions**: Properly configured in rules
-- ✅ **Firebase Project**: Connected and configured (opilex-3373e)
+- ✅ **Firebase Project**: Connected and configured (opilex-2a79f)
 - ✅ **Documentation**: Complete requirements and setup guides available
 
 ### Frontend Implementation Status
@@ -230,7 +230,7 @@ npm install firebase react-router-dom @tanstack/react-query recharts date-fns
 ## 🔗 Firebase Integration
 
 ### Firebase Project
-- **Project ID**: `opilex-3373e`
+- **Project ID**: `opilex-2a79f`
 - **Project Number**: `1002505057634`
 - **Web App ID**: `1:1002505057634:web:fe5a29d0d3945c850ae83b`
 
@@ -238,9 +238,9 @@ npm install firebase react-router-dom @tanstack/react-query recharts date-fns
 ```typescript
 const firebaseConfig = {
   apiKey: "AIzaSyCAGO0w4DOmPcNcvZ742kwePFdMyZTfx-c",
-  authDomain: "opilex-3373e.firebaseapp.com",
-  projectId: "opilex-3373e",
-  storageBucket: "opilex-3373e.firebasestorage.app",
+  authDomain: "opilex-2a79f.firebaseapp.com",
+  projectId: "opilex-2a79f",
+  storageBucket: "opilex-2a79f.firebasestorage.app",
   messagingSenderId: "1002505057634",
   appId: "1:1002505057634:web:fe5a29d0d3945c850ae83b",
   measurementId: "G-40Z3KKDR4Y"
@@ -355,7 +355,7 @@ All these collections are accessible to admin users via Firestore security rules
 - **Requirements Document**: `ADMIN_PANEL_REQUIREMENTS.md`
 - **Setup Guide**: `ADMIN_PANEL_SETUP_GUIDE.md`
 - **Quick Start**: `admin-panel-quick-start.md`
-- **Firebase Console**: https://console.firebase.google.com/project/opilex-3373e
+- **Firebase Console**: https://console.firebase.google.com/project/opilex-2a79f
 - **Firestore Rules**: Already deployed and active
 
 ---
